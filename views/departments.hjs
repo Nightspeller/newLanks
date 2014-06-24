@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/departments.css">
+</head>
+<body>
+    <a class='scrollTop' href='#header'></a>
+    <div id="wrapper">
+        {{{header}}}
+        <div id="content">
+            {{^mode}}
+                <h4>Филиалы</h4>
+                <hr>
+                <h3>Выберите филиал для того чтобы посмотреть адрес, часы работы, схему проезда, стоимость услуг<br/> и прочую полезную информацию.</h3>
+                <section>
+                    <article>
+                            <div id="departments_list">
+                                {{#allDepartments}}
+                                    <a href="departments?city={{cityEng}}">
+                                        <strong>{{city}}</strong>
+                                        <br/>
+                                        <img src="images/departments/{{cityEng}}.png">
+                                        <br/>
+                                        {{mainPhone}}
+                                        <br/>
+                                        <address>Подробнee..</address>
+                                    </a>
+                                {{/allDepartments}}
+                            </div>
+                        <div>
+                            <h3>Не нашли нужного Вам филиала? Ничего страшного! Мы также обслуживаем много других городов!</h3>
+                            <div class="align_center">Просто позвоните по Единому номеру <strong class="greenText">8-800-200-46-86</strong> для получения интересующей Вас информации - звонок бесплатный!</div>
+                        </div>
+                    </article>
+                </section>
+            {{/mode}}
+            {{#mode}}
+                {{#allDepartments}}
+
+                <h4 class="departmentHeader">Филиалы</h4><img class="cityEmblem" src=images/departments/{{cityEng}}.png />
+                <hr>
+                <section>
+                    <article id="departments_content">
+                        <h2 id="city">{{city}}</h2>
+
+                        <div id="map_wrapper">
+                            <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid={{mapID}}&width=400&height=300"></script>
+                        </div>
+                        <h3>Адрес офиса.</h3>
+                        <address>
+                            Адрес: {{address}}<br />
+                            E-mail: {{email}} <br />
+                            Телефон:{{mainPhone}}<br />
+                            Факс: {{fax}}<br />
+                            Дополнительные номера: {{additionalPhone}}<br />
+                        </address>
+                        <h3>Адрес склада.</h3>
+                        <address>
+                            Адрес: {{stockAddress}}<br />
+                            Координаты: {{coordinates}}
+                        </address>
+                        <h3>Цены.</h3>
+                        <p><a href="for_download/courier_prices/{{city}}.pdf">Скачать прайс на курьерские услуги.</a></p>
+                        <p><a href="for_download/sbor_dostavka_prices/{{city}}.doc">Скачать прайс на сбор и доставку груза по региону.</a></p>
+                        <p><a href="for_download/sborni_gruz_prices/Прайс в {{city}}.xls">Скачать прайс на покилограммную перевозку груза В этот город.</a></p>
+                        <p><a href="for_download/sborni_gruz_prices/Прайс из города {{city}}.xls">Скачать прайс на покилограммную перевозку груза ИЗ этого города.</a></p>
+                    </article>
+                </section>
+                {{/allDepartments}}
+            {{/mode}}
+            </div>
+        </div>
+	{{{footer}}}
+</body>
+</html>

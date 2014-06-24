@@ -1,0 +1,17 @@
+Форма договора с сайта<br />
+{{#mailData}}
+    Название организации: {{firm_name}}<br />
+    Юридический адрес: {{firm_address}}<br />
+    Фактический адрес: {{firm_real_address}}<br />
+    Генеральный директор: {{firm_gendir}}<br />
+    Действует на основании: {{firm_document}}<br />
+    От (число): {{firm_document_data}}<br />
+    ОГРН: {{firm_OGRN}}<br />
+    ОКПО: {{firm_OKPO}}<br />
+    ИНН: {{firm_INN}}<br />
+    КПП: {{firm_KPP}}<br />
+    Расчетный счет: {{firm_account}}<br />
+    БИК: {{firm_BIK}}<br />
+    Телефон: {{firm_phone}}<br />
+    Е-мейл:  {{firm_email}}<br />
+{{/mailData}}

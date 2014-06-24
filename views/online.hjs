@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+    <script type="text/javascript" src="dbs/cities.json"></script>
+    <script type="text/javascript" src="javascripts/handlebars.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/online.css">
+    <script type="text/javascript" src="javascripts/online.js"></script>
+</head>
+<body>
+<a class='scrollTop' href='#header'></a>
+<div id="wrapper">
+    {{{header}}}
+    <div id="content">
+        <h4>Он-лайн сервисы</h4>
+        <hr>
+        <h2>На данный момент мы рады предложить Вам следующие сервисы Он-лайн:</h2>
+        <section id="images">
+            <a href="order"><img src="images/online/order.png"/></a>
+            <a href="calculate"><img src="images/online/calculate.png"/></a>
+            <img src="images/online/documents.png" id="3"/>
+            <img src="images/online/track.png" id="4"/>
+            <img src="images/online/track_ori.png" id="6"/>
+            <a href="question?param=4"><img src="images/online/call.png"/></a>
+        </section>
+        <article>
+        <section id="section1">
+        </section>
+        <section id="section2">
+        </section>
+        <section id="section3">
+            <ol>
+                <li><a href="for_download/documents/Общие правила перевозки грузов.zip">Общие правила перевозок грузов автомобильным транспортом</a></li>
+                <li><a href="for_download/documents/Dogovor_TEO.zip">Типовой договор</a></li>
+                <li><a href="for_download/documents/Акт о повреждении груза.zip">Приложение акт о повреждении груза в пути (образец)</a></li>
+                <li><a href="for_download/documents/Zayavka.zip">Заявка на забор/доставку груза</a></li>
+                <li><a href="for_download/documents/Форма_претензии.zip">Форма претензии</a></li>
+            </ol>
+        </section>
+        <section id="section4">
+            <h4>Чтобы узнать текущее состояние грузоперевозки, введите код груза.</h4>
+            <input id="track_id" type="text" maxlength=16 size=16><br>
+            <input type="button" id="track_button" value="Проверить">
+        </section>
+        <section id="section5">
+        </section>
+        <section id="section6">
+            <h4>Чтобы узнать предположительное время доставки введите номер заказа.</h4>
+            <input id="track_orif_id" type="text" maxlength=16 size=16><br>
+            <input type="button" id="track_orif_button" value="Проверить">
+        </section>
+    </article>
+        </div>
+        </div>
+        {{{footer}}}
+</body>
+</html>

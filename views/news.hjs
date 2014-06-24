@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/news.css">
+    <script type="text/javascript" src="javascripts/news.js"></script>
+</head>
+<body>
+<a class='scrollTop' href='#header'></a>
+<div id="wrapper">
+    {{{header}}}
+    <div id="content">
+    <article>
+        <h4>Новости</h4><hr>
+        {{^mode}}
+            <h2>Новости ООО Ланкс</h2>
+            {{#user._id}} <a href="?newsID=-1">Добавить новость</a>{{/user._id}}
+            <ul id="mainNewsList">
+                {{#allNews}}
+                    <li>
+                        <a href="?newsID={{_id}}">
+                            <h3>
+                                <span>{{title}}</span>
+                                <small>({{date}})</small>
+                            </h3><br />
+                            <img src="images/news/{{logo}}">
+                        </a>
+                        <p>
+                            {{{description}}}
+                        </p>
+                        <a href="?newsID={{_id}}" class="blueLink">
+                            <p>Подробнее</p>
+                        </a>
+                    </li>
+                    {{#user._id}}
+                        <button class="deleteButton" data-id="{{_id}}">Удалить новость</button>
+                    {{/user._id}}
+                {{/allNews}}
+            </ul>
+        {{/mode}}
+        {{#mode}}
+            {{#allNews}}
+            {{#user._id}}
+                <article class="singleNews">
+                    <form id="newsForm">
+                        <h2><label>Заголовок: (25 символов максимум включая пробелы) <input type="text" name="title" value="{{title}}"/></label></h2>
+                        <img src="images/news/{{logo}}">
+                        <label>Изображение (190 на 160 пикселей): <input type="file" multiple="multiple" name="logo" placeholder="Изображение" /></label><br/>
+                        <p>
+                            <label>Краткое описание новости (для анонса на главной - 250 символов включая пробелы максимум): <textarea name="shortDescription">{{{shortDescription}}}</textarea></label>
+                        </p>
+                        <p>
+                            <label>Описание новости (будет в списке всех новостей): <textarea name="description">{{{description}}}</textarea></label>
+                        </p>
+                        <p>
+                            <label>Полный текст новости: <textarea name="fulltext">{{{fullText}}}</textarea></label>
+                        </p>
+                        <p>
+                            <small>({{date}})</small> <label>Дата публикации новости: <input type="date" name="date" value="{{date}}" /></label>
+                        </p>
+                        <p>
+                            <label>Порядковый номер новости: <input type="number" name="index" value="{{index}}" /></label>
+                        </p>
+                        <input type="hidden" name="_id" value="{{_id}}"/>
+                        <input type="submit" value="Отправить" />
+                    </form>
+                </article>
+            {{/user._id}}
+            {{^user._id}}
+                <article class="singleNews">
+                    <h2><span>{{title}}</span></h2>
+                    <a href="?newsID={{_id}}">
+                        <img src="images/news/{{logo}}">
+                    </a>
+                    <p>
+                        {{{fullText}}}
+                    </p>
+                    <small>({{date}})</small>
+                </article>
+            {{/user._id}}
+            {{/allNews}}
+        {{/mode}}
+
+    </article>
+    </div>
+</div>
+	{{{footer}}}
+</body>
+</html>

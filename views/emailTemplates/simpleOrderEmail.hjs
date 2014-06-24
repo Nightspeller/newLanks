@@ -1,0 +1,28 @@
+Заказ с сайта<br />
+{{#mailData}}
+        Отправитель: {{sender_FIO}}<br />
+        Компания: {{sender_firm}}<br />
+        E-mail: {{sender_email}}<br />
+        Телефон: {{sender_tel}}<br />
+        Адрес отправки: {{sender_address}} <br />
+        Время работы: {{sender_time}} <br />
+        <br />
+        Получатель: {{recipient_FIO}}<br />
+        Компания: {{recipient_firm}}<br />
+        E-mail: {{recipient_email}}<br />
+        Телефон: {{recipient_tel}}<br />
+        Адрес доставки: {{recipient_address}}<br />
+        Время работы: {{recipient_time}}<br />
+        <br />
+        Вес,кг: {{cargo_weight}}<br />
+        Объем, м куб: {{cargo_volume}}<br />
+        Количество мест: {{cargo_quantity}}<br />
+        Описание груза: {{cargo_description}}<br />
+        Я отправитель {{cargo_sender}}<br />
+        Я получатель {{cargo_recipient}}<br />
+        <br />
+        Дополнительная упаковка: {{cargo_package}}<br />
+        Застраховать груз: {{cargo_insurance}}<br />
+        Стоимость груза: {{cargo_price}}<br />
+        Дополнительная информация: {{notes}}<br />
+{{/mailData}}

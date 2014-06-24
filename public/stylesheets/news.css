@@ -1,0 +1,48 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+li,
+.singleNews {
+  overflow: hidden;
+}
+li a,
+.singleNews a {
+  color: #000;
+}
+li a h3,
+.singleNews a h3 {
+  display: inline-block;
+  text-align: left;
+}
+li a h3 span,
+.singleNews a h3 span {
+  text-decoration: underline;
+}
+li small,
+.singleNews small {
+  font-size: 0.5em;
+  font-weight: normal;
+}
+li img,
+.singleNews img {
+  float: left;
+  margin: 0 1em 1em 0;
+  border-radius: 0.5em;
+  width: 190px;
+  height: 160px;
+}
+li .blueLink,
+.singleNews .blueLink {
+  color: #00f;
+}
+.singleNews form textarea {
+  display: block;
+  width: 800px;
+  height: 100px;
+}
+.singleNews form input[type=submit] {
+  display: block;
+  margin: auto;
+  margin-bottom: 2em;
+}

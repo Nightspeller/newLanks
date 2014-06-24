@@ -1,0 +1,10 @@
+Сообщение от пользователя - руководству.<br />
+{{#mailData}}
+    Сообщение {{message}}<br />
+    Фамилия {{lastName}}<br />
+    Имя {{firstName}}<br />
+    Отчество {{middleName}}<br />
+    Компания {{company}}<br />
+    Телефон {{phone}}<br />
+    E-mail {{email}}<br />
+{{/mailData}}

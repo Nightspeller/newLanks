@@ -1,0 +1,50 @@
+h2, h3 {
+    text-align: center;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    color: #222222;
+    text-align: justify;
+}
+#images {
+    text-align: center;
+}
+#images img {
+    margin: 0 2em;
+}
+#images img:hover {
+    cursor:pointer;
+}
+article section{
+    display: none;
+    border-color: blue;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    color: #222222;
+    text-align: justify;
+}
+#section4{
+    text-align: center;
+}
+#section4 input[type="text"]{
+    font-size: 3em;
+}
+#section4 div{
+    font-size: 1.5em;
+}
+#section6{
+    text-align: center;
+}
+#section6 input[type="text"]{
+    font-size: 3em;
+}
+#section6 div{
+    font-size: 1.5em;
+}

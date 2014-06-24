@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/calculate.css">
+    <script type="text/javascript" src="javascripts/calculate.js"></script>
+</head>
+<body>
+<a class='scrollTop' href='#header'></a>
+<div id="wrapper">
+    {{{header}}}
+    <div id="content">
+        <h4>Рассчитать стоимость перевозки</h4>
+        <hr>
+        <div id="calculator_image">
+            <img id="road" src="images/calculate/road.png" />
+            <img id="truck" src="images/calculate/truck.png" />
+            <img id="umbrella" src="images/calculate/umbrella.png" />
+            <img id="city_from" src="images/calculate/msk.png" />
+            <img id="city_to" src="images/calculate/msk.png" />
+            <img id="warehouse_left" src="images/calculate/warehouse_left.png" />
+            <img id="warehouse_right" src="images/calculate/warehouse_right.png" />
+            <img id="client_from" src="images/calculate/clients_place.png" />
+            <img id="client_to" src="images/calculate/clients_place.png" />
+            <img id="arrow_from" src="images/calculate/deny_arrow_from.png" />
+            <img id="arrow_to" src="images/calculate/deny_arrow_to.png" />
+            <div id="output1"></div>
+        </div>
+        <div id="calculator_controls">
+            <div class="right">
+                <select id="select1" >
+                <option value="def">Выберите город отправления</option>
+                <option value="belgorod">Белгород</option>
+                <option value="volgograd">Волгоград</option>
+                <option value="vrn">Воронеж</option>
+                <option value="ekat">Екатеринбург</option>
+                <option value="krasnodar">Краснодар</option>
+                <option value="kursk">Курск</option>
+                <option value="lipetsk">Липецк</option>
+                <option value="moscow">Москва</option>
+                <option value="murmansk">Мурманск</option>
+                <option value="nn">Нижний Новгород</option>
+                <option value="novosib">Новосибирск</option>
+                <option value="orenburg">Оренбург</option>
+                <option value="orsk">Орск</option>
+                <option value="perm">Пермь</option>
+                <option value="rnd">Ростов-на-Дону</option>
+                <option value="samara">Самара</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="saratov">Саратов</option>
+                <option value="toljatti">Тольятти</option>
+                <option value="tumen">Тюмень</option>
+                <option value="chelyabinsk">Челябинск</option>
+                <option value="engels">Энгельс</option>
+            </select><br />
+                <label for="pickup">Забрать груз от отправителя</label><input type="checkbox" id="pickup">
+            </div>
+            <div class="left">
+                <select id="select2">
+                    <option value="def">Выберите город назначения</option>
+                    <option value="belgorod">Белгород</option>
+                    <option value="volgograd">Волгоград</option>
+                    <option value="vrn">Воронеж</option>
+                    <option value="ekat">Екатеринбург</option>
+                    <option value="krasnodar">Краснодар</option>
+                    <option value="kursk">Курск</option>
+                    <option value="lipetsk">Липецк</option>
+                    <option value="moscow">Москва</option>
+                    <option value="murmansk">Мурманск</option>
+                    <option value="nn">Нижний Новгород</option>
+                    <option value="novosib">Новосибирск</option>
+                    <option value="orenburg">Оренбург</option>
+                    <option value="orsk">Орск</option>
+                    <option value="perm">Пермь</option>
+                    <option value="rnd">Ростов-на-Дону</option>
+                    <option value="samara">Самара</option>
+                    <option value="spb">Санкт-Петербург</option>
+                    <option value="saratov">Саратов</option>
+                    <option value="toljatti">Тольятти</option>
+                    <option value="tumen">Тюмень</option>
+                    <option value="chelyabinsk">Челябинск</option>
+                    <option value="engels">Энгельс</option>
+                </select><br />
+                <label for="deliver">Доставить груз получателю</label><input type="checkbox" id="deliver">
+            </div>
+            <h2>Страховка</h2>
+            <label for="insurance">Застраховать груз</label><input type="checkbox" id="insurance"><br />
+            <label for="insurance_sum">Стоимость груза</label><input type="number" id="insurance_sum" min="1">
+            <h2>Дополнительные услуги</h2>
+            <label for="plomba">Пломбировка</label><input type="checkbox" id="plomba">
+            <label for="pallet">Паллетирование</label><input type="checkbox" id="pallet">
+            <label for="hard_pack">Жесткая упаковка</label><input type="checkbox" id="hard_pack">
+            <h2>Характеристики груза</h2>
+
+
+            <input type="button" id="add_input" value="Добавить поле">
+            <input type="button" id="del_input" value="Убрать поле">
+
+            <div id="inputi"></div>
+
+            <input type="button" id="calc" value="Рассчитать">
+
+        </div>
+    </div>
+</div>
+{{{footer}}}
+</body>
+</html>

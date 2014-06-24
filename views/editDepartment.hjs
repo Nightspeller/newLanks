@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/departments.css">
+    <script type="text/javascript" src="javascripts/editDepartment.js"></script>
+</head>
+<body>
+    <a class='scrollTop' href='#header'></a>
+    <div id="wrapper">
+        {{{header}}}
+        <div id="content" class="editing">
+            {{^mode}}
+                <h4>Филиалы</h4>
+                <hr>
+                <h3>Выберите филиал для редактирования</h3>
+                <section>
+                    <article>
+                            <div id="departments_list">
+                                {{#allDepartments}}
+                                    <a href="editDepartment?city={{cityEng}}">
+                                        <strong>{{city}}</strong>
+                                        <br/>
+                                        <img src="images/departments/{{cityEng}}.png">
+                                        <br/>
+                                        {{mainPhone}}
+                                        <br/>
+                                        <address>Редактировать..</address>
+                                    </a>
+                                {{/allDepartments}}
+                            </div>
+                        <div>
+                            <h3>Не нашли нужного Вам филиала? Ничего страшного! Мы также обслуживаем много других городов!</h3>
+                            <div class="align_center">Просто позвоните по Единому номеру <strong class="greenText">8-800-200-46-86</strong> для получения интересующей Вас информации - звонок бесплатный!</div>
+                        </div>
+                    </article>
+                </section>
+            {{/mode}}
+            {{#mode}}
+                {{#allDepartments}}
+
+                <h4 class="departmentHeader">Филиалы</h4><img class="cityEmblem" src=images/departments/{{cityEng}}.png />
+                <hr>
+                <section>
+                    <article id="departments_content">
+                        <form>
+                            <h2 id="city"><label>Город: <input type="text" name="city" value="{{city}}" /></label></h2>
+
+                            <h3>Адрес офиса.</h3>
+                            <address>
+                                <label>Адрес Офиса: <input type="text" name="address" value="{{address}}" /></label><br />
+                                <label>E-mail: <input type="text" name="email" value="{{email}}" /></label><br />
+                                <label>Скайп: <input type="text" name="skype" value="{{skype}}" /></label><br />
+                                <label>Телефон: <input type="text" name="mainPhone" value="{{mainPhone}}" /></label><br />
+                                <label>Факс: <input type="text" name="fax" value="{{fax}}" /></label><br />
+                                <label>Дополнительные телефоны: <input type="text" name="additionalPhone" value="{{additionalPhone}}" /></label><br />
+                            </address>
+                            <h3>Адрес склада.</h3>
+                            <address>
+                                <label>Адрес Склада: <input type="text" name="stockAddress" value="{{stockAddress}}" /></label><br />
+                                <label>Координаты Склада: <input type="text" name="coordinates" value="{{coordinates}}" /></label><br />
+                            </address>
+                            <h3>Прочее.</h3>
+                            <label>ID яндекс-карты: <input type="text" name="mapID" value="{{mapID}}" /></label><br />
+                            <label>Английский идентификатор города: <input type="text" name="cityEng" value="{{cityEng}}" /></label><br />
+                            <label>Номер города: <input type="text" name="index" value="{{index}}" /></label><br />
+
+                            <label>Греб: <input type="file" multiple="multiple" name="picture" placeholder="Изображение" /></label><br/>
+                            <input type="submit" value="Обновить">
+
+
+                        </form>
+                    </article>
+                </section>
+                {{/allDepartments}}
+            {{/mode}}
+            </div>
+        </div>
+	{{{footer}}}
+</body>
+</html>

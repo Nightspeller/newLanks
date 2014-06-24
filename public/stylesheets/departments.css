@@ -1,0 +1,46 @@
+#departments_list a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #000;
+  padding-top: 6pt;
+  margin: 8pt;
+  text-align: center;
+  min-width: 140px;
+  height: 200px;
+  background: #80b8dd;
+  border-radius: 10pt;
+}
+#departments_list a strong {
+  font-size: 11pt;
+}
+#departments_list a img {
+  display: block;
+  margin: 5pt auto;
+  height: 100px;
+  max-width: 100px;
+}
+#departments_list a address {
+  text-decoration: underline;
+  color: #00f;
+}
+#departments_list a:hover {
+  background: #36aeda;
+}
+.greenText {
+  color: #00f;
+}
+.departmentHeader {
+  display: inline-block;
+}
+.cityEmblem {
+  float: right;
+  max-height: 55px;
+  padding: 5pt;
+}
+#map_wrapper {
+  float: right;
+}
+.editing input {
+  width: 30em;
+}

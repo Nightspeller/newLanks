@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/question.css">
+    <script type="text/javascript" src="javascripts/question.js"></script>
+</head>
+<body>
+<a class='scrollTop' href='#header'></a>
+<div id="wrapper">
+    {{{header}}}
+    <div id="content">
+        <h4>Связаться с нами</h4>
+        <hr>
+        <h2>Здесь Вы можете легко связаться с нами, а так же оставить Ваши замечания, предложения и отзывы!</h2>
+        <section id="images">
+            <img src="images/question/question_form.png" id="4"/>
+            <img src="images/question/question_skype.png" id="2"/>
+            <img src="images/question/question_faq.png" id="1"/>
+            <img src="images/question/question_call.png" id="3"/>
+            <img src="images/question/question_quality.png" id="5"/>
+        </section>
+        <article>
+        <section id="section1">
+            <p>
+                <strong>Вопрос:</strong> Подскажите, можно через вас отправить груз с температурным режимом? <br>
+                <strong>Ответ:</strong> в нашей компании 95% машин с кузовом изотерм, что позволяет перевозить грузы с температурным режимом, на территории Урала, Сибири и Ленинградской области используем воздушные отопители кузова.
+            </p>
+            <p>
+                <strong>Вопрос:</strong> Поможете перевести личные вещи, т.к. я переехал работать в другой город? <br>
+                <strong>Ответ:</strong> Обратитесь к нашим логистам, и они помогут решить данный вопрос, организовав доставку вашего груза в нужный город и предоставив услуги грузчиков. Если вам требуются отчетные документы, мы заключим договор и выдадим закрывающие документы.
+            </p>
+            <p>
+                <strong>Вопрос:</strong> Если наша организация закажет у вас 4 - 5 полутора тонных автомобиля для доставки нашей продукции из Москвы по маршрутам в один регион России, можно надеяться на скидку?<br>
+                <strong>Ответ:</strong> Да, мы можем предоставить скидку, но клиентам с такими схемами доставки мы рекомендуем рассмотреть вариант кросс-докинга, тем самым сократить затраты на транспорт.
+            </p>
+            <p>
+                <strong>Вопрос:</strong> Наша фирма хочет улучшить сервис для своих клиентов – осуществлять доставку ко времени, ваша фирма оказывает такой сервис? <br>
+                <strong>Ответ:</strong> Если у вас интернет заказы, то наш менеджер свяжется с получателем, договорится о времени доставки, а курьер привезет заказ к указанному времени. Если вам требуется доставка по маршруту с множеством точек выгрузки, то мы прописываем в маршрутных листах время прибытия автомобиля, и водитель двигается по графику.
+            </p>
+            <p>
+                <strong>Вопрос:</strong> У меня интернет магазин, подскажите на какой день доставляется заказ по городу? <br>
+                <strong>Ответ:</strong> Если с вечера получаем реестр, то доставка осуществляется на следующий день. Возможна доставка нескольких реестров в течение дня.
+            </p>
+            <p>
+                <strong>Вопрос:</strong> У нашей компании свое производство, мы планируем расширение своей географии, нам необходимо оперативно доставлять новым клиентам небольшие партии товара, как можно оперативно осуществлять доставку? <br>
+                <strong>Ответ:</strong> В каждом нашем филиале имеется склад, на который мы можем доставить и хранить необходимый запас товара и, при необходимости, отгружать партии товара для ваших новых клиентов.
+            </p>
+            <p>
+                <strong>Вопрос:</strong> Наш магазин переезжает на другой адрес, подскажите, можете вы помочь в переезде? <br>
+                <strong>Ответ:</strong> Опытные грузчики упакуют мебель и оборудование, аккуратно погрузят в наши машины, водители доставят груз на новый адрес, а грузчики выгрузят и расставят мебель и оборудование по заранее спланированной вами схеме.
+            </p>
+        </section>
+        <section id="section2">
+            <table class="contact_table">
+                <tbody>
+                    <tr>
+                        <th colspan="3">Скайп-контакты филиалов ООО Ланкс</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Филиал</strong></td>
+                        <td><strong>Скайп</strong></td>
+                        <td><strong>Статус</strong></td>
+                    </tr>
+                    {{#allDepartments}}
+                        <tr><td>{{city}}</td><td>{{skype}}</td><td><a href="skype:{{skype}}?call"><img src="http://mystatus.skype.com/bigclassic/{{skype}}" style="border: none;" width="110" height="30" alt="My status" /></a></td></tr>
+                    {{/allDepartments}}
+                </tbody>
+            </table>
+            <p class="align_center">Если нужный Вам филиал не отвечает по скайпу, Вы всегда можете воспользоваться <a href="question?param=3">прямым телефонным номером</a> или <a href="question?param=4">попросить перезвонить Вам</a>!</p>
+        </section>
+        <section id="section3">
+            <table class="contact_table">
+                <tbody>
+                <tr>
+                    <th colspan="3">Телефоны филиалов ООО Ланкс</th>
+                </tr>
+                <tr>
+                    <td><strong>Филиал</strong></td>
+                    <td><strong>Телефон</strong></td>
+                    <td><strong>Доп. номер</strong></td>
+                </tr>
+                {{#allDepartments}}
+                    <tr><td>{{city}}</td><td>{{mainPhone}}</td><td>{{additionalPhone}}</td></tr>
+                {{/allDepartments}}
+                </tbody>
+            </table>
+        </section>
+        <section id="section4">
+            <form id="ask_question">
+                <fieldset>
+                    <legend>Форма обратной связи</legend>
+                    <label for="sender_FIO">Ф.И.О.:  <input id="sender_FIO" name="name" type="text" placeholder="Ф.И.О" /></label>
+                    <label for="sender_email">E-mail: <input id="sender_email" name="email" type="email" placeholder="example@mail.ru"  /></label>
+                    <label for="sender_tel">Телефон:  <input id="sender_tel" name="phone" type="tel" placeholder="8 (903) 123-45-67" /></label>
+                    <label for="message">Сообщение:  <textarea id="message" name="message" cols="30" rows="5" placeholder="Введите сюда информацию, которую посчитаете необходимой"></textarea></label>
+                    <label for="message">Перезвоните мне:  <input id="call_me" name="callMe" value="Да" type="checkbox"></label>
+                </fieldset><br>
+                <input type="submit" value="Отправить!"><input type="reset" value="Очистить форму">
+            </form>
+        </section>
+        <section id="section5">
+            <h3>Здравствуйте!</h3>
+            <img src="images/question/question_andreev.jpg" />
+            <p>
+                Я – Заместитель директора по развитию и координации филиалов Андрей Андреев. <br>
+                Если Вы находитесь на данной странице, то у вас появились отзывы, пожелания или претензии к качеству предоставляемых нами услуг.<br>
+                Пожалуйста, заполните форму, представленную ниже. В ближайшее время Я отвечу Вам по телефону или по электронной почте.
+            </p>
+            <form id="quality">
+                <table>
+                    <tr>
+                        <td>Что вы думаете о качестве нашей работы?</td><td><textarea name="message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Фамилия</td><td><input name="lastName" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Имя</td><td><input name="firstName" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Отчество</td><td><input name="middleName" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Ваша компания</td><td><input name="company" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Телефон</td><td><input name="phone" type="tel"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td><td><input name="email" type="email"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" value="Отправить!"></td>
+                    </tr>
+                </table>
+            </form>
+            <p>
+                Ваше мнение для нас очень важно. Спасибо!
+            </p>
+        </section>
+    </article>
+    </div>
+    </div>
+	{{{footer}}}
+</body>
+</html>

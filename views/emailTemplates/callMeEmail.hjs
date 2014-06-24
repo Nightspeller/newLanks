@@ -1,0 +1,8 @@
+Сообщение от пользователя.<br />
+{{#mailData}}
+    ФИО {{name}}<br />
+    E-mail {{email}}<br />
+    Телефон {{phone}}<br />
+    Сообщение {{message}}<br />
+    Перезвонить мне {{callMe}}<br />
+{{/mailData}}

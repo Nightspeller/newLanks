@@ -1,0 +1,37 @@
+<header id="header">
+<!--        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-49980548-3', 'lanks.org');
+            ga('send', 'pageview');
+
+        </script>-->
+            <table><tr>
+                <td><a href="/"><img id="logo_img"  src="images/template/logo.png" alt="Транспортно-экспедиционная компания Ланкс!" title="Перейти на Главную"></a></td>
+                <td style="width: 50%;"><a href="/"><img id="header_img" src="images/template/header.jpg" alt="Грузовые перевозки по России!" title="Перейти на Главную"></a></td>
+                <td><address>
+               				<strong>Единый номер:<br />8-800-200-46-86</strong><br />
+                            <strong>Москва:</strong><br />(495) 591-71-48<br />
+                            <strong>Санкт-Петербург:</strong><br />(812) 336-92-44<br />
+                            <strong>Воронеж:</strong><br />(473) 261-22-11<br />
+                            <strong><a href="departments">Другие Филиалы</a></strong>
+                </address></td>
+            </tr></table>
+        </header>
+        <nav id="menu">
+            <table><tr>
+                <td colspan="2"><a href="question" class="button_1"><nobr>Связаться с нами</nobr></a></td>
+                <td><a href="calculate" class="button_1"><nobr>Рассчитать стоимость</nobr></a></td>
+                <td colspan="2"><a href="order" class="button_1"><nobr>Сделать заказ</nobr></a></td>
+            </tr>
+            <tr>
+                <td><a href="about" class="button_2"><nobr>О компании</nobr></a></td>
+                <td><a href="services" class="button_2"><nobr>Услуги и тарифы</nobr></a></td>
+                <td><a href="departments" class="button_2"><nobr>Филиалы</nobr></a></td>
+                <td><a href="online" class="button_2"><nobr>Он-лайн сервисы</nobr></a></td>
+                <td><a href="news" class="button_2"><nobr>Новости</nobr></a></td>
+            </tr></table>
+        </nav>

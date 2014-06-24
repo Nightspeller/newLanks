@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <script type="text/javascript" src="javascripts/simpleCalculate.js"></script>
+</head>
+<body>
+<a class='scrollTop' href='#header'></a>
+<div id="wrapper">
+    {{{header}}}
+    <div id="content">
+        <article>
+            <h4>Главная</h4>
+            <hr>
+            <h2>Мы рады приветствовать вас на сайте транспортно-экспедиционной компании Ланкс!</h2>
+            <section class="intro">
+                <div id="introContent">
+                    <p>ООО Ланкс - более 15 лет на Российском рынке грузоперевозок.</p>
+                    <p>Наши преимущества:</p>
+                    <ol>
+                        <li>Чёткое <strong>соблюдение сроков доставки</strong> и  прочих условий договора.</li>
+                        <li><strong>Самые низкие цены в отрасли</strong> среди компаний которым Вы можете полностью доверять</li>
+                        <li><strong>Собственный автопарк</strong> для большинства рейсов.</li>
+                        <li>Собственные <strong>складские помещения.</strong></li>
+                        <li><strong>Отслеживание груза</strong> через сайт на протяжении всей перевозки</li>
+                        <li>Возможность решения <strong>любых логистических задач</strong></li>
+                    </ol>
+                </div>
+                <aside id="phoneChooser">
+                    <label>
+                        <h4>Узнайте телефон Вашего филиала:</h4>
+                        <select class="importantSelect">
+                            <option value="">Выберите филиал: </option>
+                            {{#allDepartments}}
+                                <option value="{{mainPhone}}" >{{city}}</option>
+                            {{/allDepartments}}
+                        </select>
+                    </label>
+                    <div id="phoneNum"></div>
+                    <div>Нужного филиала нет в списке?</div>
+                    <div>К Вашим услушам <strong>бесплатный</strong> Единый номер:</div>
+                    <div class="greenText"><strong>8-800-200-46-86</strong></div>
+                    <div>Вы также можете</div>
+                    <button class="roundButton greenButton">Заказать обратный звонок</button>
+                </aside>
+            </section>
+            <section id="services">
+                <div class="serviceContainer">
+                    <h4>Сборный груз:</h4>
+                    <img src="images/services/service_sbornigruz.png"/>
+                    <hr />
+                    <h4>Преимущества: </h4>
+                    <ul>
+                        <li>Самый дешевый вариант для небольших партий груза - от 300 рублей.</li>
+                        <li>Быстрая доставка по фиксированному расписанию.</li>
+                        <li>Возможность отслеживания груза.</li>
+                        <li>Возможность бесплатного использования складов ООО Ланкс (до 10 дней)</li>
+                        <li>Возможность заказа доупаковки груза</li>
+                    </ul>
+                </div>
+                <div class="serviceContainer">
+                    <h4>Отдельные машины:</h4>
+                    <img src="images/services/service_world.png"/>
+                    <hr />
+                    <h4>Преимущества: </h4>
+                    <ul>
+                        <li>Самый быстрый вариант доставки</li>
+                        <li>Оптимален для больших партий груза</li>
+                        <li>Возможность опломбирования машины</li>
+                        <li>Заказ машины под габариты, режим и расписание заказчика</li>
+                        <li>Возможность заказа нескольких точек погрузки\разгрузки</li>
+                    </ul>
+                </div>
+                <div class="serviceContainer">
+                    <h4>Кросс-докинг: </h4>
+                    <img src="images/services/cross.png"/>
+                    <hr />
+                    <h4>Преимущества: </h4>
+                    <ul>
+                        <li>Комплексное решение, оптимизирующее затраты по доставке большой партии груза Вашим многочисленным клиентам</li>
+                        <li>Вам не нужно беспокоиться о перевозке, хранении, пересортировке и доставке груза</li>
+                        <li>Сроки доставки товара клиенту сведены к минимуму</li>
+                        <li>Возможность длительного хранения товара на складах ООО Лакнс и доставка товара по требованию</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="clients" class="align_center">
+                <h4>Убедитесь в качестве и доступности наших транспортных услуг, как это уже сделали многие наши партнеры, среди которых: </h4>
+                <div>
+                    <div class="align_center">
+                        <img src="images/index/main_oriflame.png" />
+                        <img src="images/index/main_beeline.png" />
+                        <img src="images/index/main_megafon.png" />
+                    </div>
+                </div>
+            </section>
+            <section id="additional">
+                <h4>Мы также рады Вам предложить: </h4>
+                <div class="additionalContainer">
+                    <h4>Ответсвтенное хранение:</h4>
+                    <img src="images/services/service_stock.png"/>
+                    <button class="roundButton">Подробнее</button>
+                </div>
+                <div class="additionalContainer">
+                    <h4>Мобильные пункты выдачи:</h4>
+                    <img src="images/services/mpv.png"/>
+                    <button class="roundButton">Подробнее</button>
+                </div>
+                <div class="additionalContainer">
+                    <h4>Внутригородская доставка: </h4>
+                    <img src="images/services/service_courier.png"/>
+                    <button class="roundButton">Подробнее</button>
+                </div>
+                <div class="additionalContainer">
+                    <h4>Кросс-докинг: </h4>
+                    <img src="images/services/cross.png"/>
+                    <button class="roundButton">Подробнее</button>
+                </div>
+                <div class="additionalContainer">
+                    <h4>Прочие услуги: </h4>
+                    <img src="images/services/service_sklad.png"/>
+                    <button class="roundButton">Подробнее</button>
+                </div>
+            </section>
+
+            <footer>
+                <h3>
+                    Наиболее полную информацию об услугах, ценах, сроках доставки, а также акциях и скидках можно получить по телефону: <span class="greenText">8-800-200-46-86</span> или связавшись с нами
+                    <a href="question">через интернет</a>.
+                </h3>
+                <p><strong>Надеемся на долгое, взаимовыгодное и приятное сотрудничество,<br />
+                    Ваш Ланкс!</strong></p>
+            </footer>
+        </article>
+    </div>
+</div>
+{{{footer}}}
+</body>
+</html>

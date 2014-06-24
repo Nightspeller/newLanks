@@ -1,0 +1,34 @@
+p {
+    text-indent: 2pc;
+}
+#images {
+    text-align: center;
+}
+#images img {
+    margin: 0;
+}
+#images img:hover {
+    cursor:pointer;
+}
+
+#service_content {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+    border-radius: 5px;
+	margin-bottom: 1em;
+}
+article section{
+    display: none;
+    overflow: hidden;
+}
+#default{
+    display: block;
+}
+#select_sborni_gruz_from, #select_sborni_gruz_to{
+    font-size: 2em;
+    display: block;
+    margin: 1em auto;
+}

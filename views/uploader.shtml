@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="js/jquery.damnUploader.js"></script>
+    <script type="text/javascript" src="pages/uploader/uploader.js"></script>
+    <script type="text/javascript" src="js/handlebars.js"></script>
+    <script type="text/javascript" src="dbs/newsBase_.json"></script>
+    <script type="text/javascript" src="dbs/cities.json"></script>
+    
+</head>
+<body>
+    <label for="password"></label> <input id='password' name='password' type='password' />
+    <input type="button" id='passButton' value="Отправить пароль" />
+    <form id="newsForm" style="display:none">
+        <h1>Отправка новости</h1>
+        <input type="file" name="file" id="file-field" value="Картинка"/><br />
+        <label for="newsDate">Дата публикации новости:</label><input type="date" id="newsDate" name="newsDate" /><br />
+        <label for="newsTitle">Заголовок новости:</label><input type="text" id="newsTitle" name="newsTitle" /><br />        
+        <textarea id='newstext' name="newstext" placeholder="Текст новости"></textarea> <br />
+        <input type="button" id='publishNews' value="Опубликовать новость" />
+        <h1> Все новости </h1>
+        <article>
+			<script id="news-template" type="text/x-handlebars-template">
+                {{#each .}}
+                <section>
+                    <span>{{title}} {{date}}</span>
+					<input type="button" value="Удалить новость" class="deleteNews"/>
+                </section>
+                {{/each}}
+            </script>
+        </article>
+    </form>
+    <form id="oriflameForm" style="display:none">
+        <h1>Загрузка расписания доставки Орифлейм</h1>
+        <script id="city-template" type="text/x-handlebars-template">
+				<select id='citySelect'>
+					{{#each .}}
+						<option id="{{code}}">{{city}}</option>
+					{{/each}}
+				</select>
+				<br>
+        </script>
+        <input type="file" name="file" id="fileOriflame" value="Таблица xls"/><br />
+        <input type="button" id='publishOriflame' value="Отправить файл" />
+    </form>
+</body>
+</html>
