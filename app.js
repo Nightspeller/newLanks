@@ -6,9 +6,9 @@ var app = module.exports = express();
 
 var mailer = require('express-mailer');
 
+var config = require('./bin/config');
 var MongoStore = require('connect-mongo')(session);
 
-var config = require('./bin/config');
 
 mailer.extend(app, {
     from: 'sidorov.serg@lanks.org',
