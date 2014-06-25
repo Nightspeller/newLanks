@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('form').submit(function (e) {
+   /* $('form').submit(function (e) {
         e.preventDefault();
         var formData = new FormData($(this)[0]);
         $.ajax({
@@ -22,5 +22,8 @@ $(document).ready(function() {
                 console.log('Error: ', error)
             }
         });
-    });
+    });*/
+
+
+    $("#requestPrice").on('submit',{path: '/'}, send_form_data);
 });

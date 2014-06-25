@@ -35,10 +35,33 @@
                         <li><strong>Собственный автопарк</strong> для большинства рейсов.</li>
                         <li>Собственные <strong>складские помещения.</strong></li>
                         <li><strong>Отслеживание груза</strong> через сайт на протяжении всей перевозки</li>
-                        <li>Возможность решения <strong>любых логистических задач</strong></li>
+                        <li>Возможность решения <strong>комплексных логистических задач</strong></li>
                     </ol>
                 </div>
-                <aside id="phoneChooser">
+
+                <aside>
+                    <form id="requestPrice">
+                        <h4>Запросите цену Вашей перевозки:</h4>
+                        <label>
+                            <input type="text" placeholder="Город отправления" name="cityFrom" />
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Город назначения" name="cityTo" />
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Вес груза" name="weight" />
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Объем груза" name="volume" />
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Телефон и/или E-Mail" name="contact" />
+                        </label>
+                        <button class="roundButton greenButton" type="submit">Узнать цену!</button>
+                    </form>
+                </aside>
+
+               <!-- <aside id="phoneChooser">
                     <label>
                         <h4>Узнайте телефон Вашего филиала:</h4>
                         <select class="importantSelect">
@@ -54,7 +77,7 @@
                     <div class="greenText"><strong>8-800-200-46-86</strong></div>
                     <div>Вы также можете</div>
                     <button class="roundButton greenButton">Заказать обратный звонок</button>
-                </aside>
+                </aside>-->
             </section>
             <section id="services">
                 <div class="serviceContainer">
