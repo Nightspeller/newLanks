@@ -4,7 +4,7 @@ var httpProxy = require('http-proxy');
 httpProxy.createServer({
     hostnameOnly: true,
     router: {
-        'www.my-domain.com': '127.0.0.1:3001',
-        'www.my-other-domain.de' : '127.0.0.1:3002'
+        'www.logist36.ru': '127.0.0.1:3001',
+        'www.new.lanks.net' : '127.0.0.1:3002'
     }
 }).listen(80);
