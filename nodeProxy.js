@@ -4,8 +4,11 @@ var httpProxy = require('http-proxy');
 var proxy = httpProxy.createProxy();
 
 var options = {
-    'logist36.ru': '127.0.0.1:3000',
-    'new.lanks.net': '127.0.0.1:4000'
+    'logist36.ru': 'http://127.0.0.1:3000',
+    'new.lanks.net': 'http://127.0.0.1:4000',
+    target: {
+        protocol: 'http:'
+    }
 };
 
 http.createServer(function(req, res) {
