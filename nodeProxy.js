@@ -12,6 +12,13 @@ var options = {
 };
 
 http.createServer(function(req, res) {
+    console.log(req.headers.host);
+
+    if (req.path === 'forbidden') {
+        console.log('forbidden is here!', req);
+        return res.end('nope');
+    }
+
     proxy.web(req, res, {
         target: options[req.headers.host]
     });
