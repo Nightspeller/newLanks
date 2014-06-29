@@ -4,22 +4,17 @@ var httpProxy = require('http-proxy');
 var proxy = httpProxy.createProxy();
 
 var options = {
-    'logist36.ru': 'http://127.0.0.1:3000',
     'new.lanks.net': 'http://127.0.0.1:4000',
-    target: {
-        protocol: 'http:'
-    }
+    'www.new.lanks.net': 'http://127.0.0.1:4000'
 };
 
 http.createServer(function(req, res) {
     console.log(req.headers.host);
 
-    if (req.path === 'forbidden') {
-        console.log('forbidden is here!', req);
-        return res.end('nope');
-    }
+    var target = 'http://127.0.0.1:3000';
 
+    if (options[req.headers.host]) target = options[req.headers.host];
     proxy.web(req, res, {
-        target: options[req.headers.host]
+        target: target
     });
 }).listen(80);
