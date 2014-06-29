@@ -14,6 +14,7 @@
     <script type="text/javascript" src="javascripts/script.js"></script>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/departments.css">
+    <script type="text/javascript" src="javascripts/departments.js"></script>
 </head>
 <body>
     <a class='scrollTop' href='#header'></a>
@@ -26,19 +27,25 @@
                 <h3>Выберите филиал для того чтобы посмотреть адрес, часы работы, схему проезда, стоимость услуг<br/> и прочую полезную информацию.</h3>
                 <section>
                     <article>
-                            <div id="departments_list">
-                                {{#allDepartments}}
-                                    <a href="departments?city={{cityEng}}">
-                                        <strong>{{city}}</strong>
-                                        <br/>
-                                        <img src="images/departments/{{cityEng}}.png">
-                                        <br/>
-                                        {{mainPhone}}
-                                        <br/>
-                                        <address>Подробнee..</address>
-                                    </a>
-                                {{/allDepartments}}
-                            </div>
+                        <header id="enterDepartment" >
+                            <label>
+                                Введите название города:<br/>
+                                <input type="text" placeholder="Фильтр городов"/>
+                            </label>
+                        </header>
+                        <div id="departments_list">
+                            {{#allDepartments}}
+                                <a href="departments?city={{cityEng}}">
+                                    <strong>{{city}}</strong>
+                                    <br/>
+                                    <img src="images/departments/{{cityEng}}.png">
+                                    <br/>
+                                    {{mainPhone}}
+                                    <br/>
+                                    <address>Подробнee..</address>
+                                </a>
+                            {{/allDepartments}}
+                        </div>
                         <div>
                             <h3>Не нашли нужного Вам филиала? Ничего страшного! Мы также обслуживаем много других городов!</h3>
                             <div class="align_center">Просто позвоните по Единому номеру <strong class="greenText">8-800-200-46-86</strong> для получения интересующей Вас информации - звонок бесплатный!</div>

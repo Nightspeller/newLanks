@@ -1,3 +1,13 @@
+#enterDepartment {
+  font-size: 14pt;
+}
+#enterDepartment label {
+  text-align: center;
+  display: block;
+}
+#enterDepartment input {
+  font-size: 14pt;
+}
 #departments_list a {
   color: #000;
   text-decoration: none;
