@@ -9,10 +9,7 @@ var options = {
 };
 
 http.createServer(function(req, res) {
-    console.log(req.headers.host);
-
     var target = 'http://127.0.0.1:3000';
-
     if (options[req.headers.host]) target = options[req.headers.host];
     proxy.web(req, res, {
         target: target
