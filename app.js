@@ -39,6 +39,7 @@ var news = require('./routes/news');
 var editDepartment = require('./routes/editDepartment');
 var login = require('./routes/login');
 var simpleCalculate = require('./routes/simpleCalculate');
+var admin = require('./routes/admin');
 
 
 
@@ -78,6 +79,7 @@ app.use('/news', news);
 app.use('/editDepartment', editDepartment);
 app.use('/login', login);
 app.use('/simpleCalculate', simpleCalculate);
+app.use('/admin', admin);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -43,10 +43,10 @@
                     <form id="requestPrice">
                         <h4>Запросите цену Вашей перевозки:</h4>
                         <label>
-                            <input type="text" placeholder="Город отправления" name="cityFrom" />
+                            <input type="text" placeholder="Пункт отправления" name="cityFrom" />
                         </label>
                         <label>
-                            <input type="text" placeholder="Город назначения" name="cityTo" />
+                            <input type="text" placeholder="Пункт назначения" name="cityTo" />
                         </label>
                         <label>
                             <input type="text" placeholder="Вес груза" name="weight" />
@@ -55,7 +55,7 @@
                             <input type="text" placeholder="Объем груза" name="volume" />
                         </label>
                         <label>
-                            <input type="text" placeholder="Телефон и/или E-Mail" name="contact" />
+                            <input type="text" placeholder="Телефон и/или E-Mail" name="contact" required/>
                         </label>
                         <button class="roundButton greenButton" type="submit">Узнать цену!</button>
                     </form>

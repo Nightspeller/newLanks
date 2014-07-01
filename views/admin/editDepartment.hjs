@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/departments.css">
+    <script type="text/javascript" src="javascripts/editDepartment.js"></script>
+</head>
+<body>
+    <a class='scrollTop' href='#header'></a>
+    <div id="wrapper">
+        {{{header}}}
+        <div id="content" class="editing">
+            {{#department}}
+            <h4 class="departmentHeader">Филиалы</h4><img class="cityEmblem" src=images/departments/{{cityEng}}.png />
+            <hr>
+            <section>
+                <article id="departments_content">
+                    <form>
+                        <h2 id="city"><label>Город: <input type="text" name="city" value="{{city}}" /></label></h2>
+
+                        <h3>Адрес офиса.</h3>
+                        <address>
+                            <label>Адрес Офиса: <input type="text" name="address" value="{{address}}" /></label><br />
+                            <label>E-mail: <input type="text" name="email" value="{{email}}" /></label><br />
+                            <label>Скайп: <input type="text" name="skype" value="{{skype}}" /></label><br />
+                            <label>Телефон: <input type="text" name="mainPhone" value="{{mainPhone}}" /></label><br />
+                            <label>Факс: <input type="text" name="fax" value="{{fax}}" /></label><br />
+                            <label>Дополнительные телефоны: <input type="text" name="additionalPhone" value="{{additionalPhone}}" /></label><br />
+                        </address>
+                        <h3>Адрес склада.</h3>
+                        <address>
+                            <label>Адрес Склада: <input type="text" name="stockAddress" value="{{stockAddress}}" /></label><br />
+                            <label>Координаты Склада: <input type="text" name="coordinates" value="{{coordinates}}" /></label><br />
+                        </address>
+                        <h3>Прочее.</h3>
+                        <label>ID яндекс-карты: <input type="text" name="mapID" value="{{mapID}}" /></label><br />
+                        <label>Английский идентификатор города: <input type="text" name="cityEng" value="{{cityEng}}" /></label><br />
+                        <label>Номер города: <input type="text" name="index" value="{{index}}" /></label><br />
+
+                        <label>Греб: <input type="file" multiple="multiple" name="picture" placeholder="Изображение" /></label><br/>
+                        <input type="submit" value="Обновить">
+
+
+                    </form>
+                </article>
+                <article id="departments_content">
+                    <form>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>10</td><td>50</td><td>100</td><td>300</td><td>500</td><td>750</td><td>1000</td><td>1250</td><td>1500</td><td>2000</td><td>3000</td><td>5000</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    {{#prices.price}}
+                                        <td><input type="text" name="price0" value="{{price0}}" /></td>
+                                        <td><input type="text" name="price1" value="{{price1}}" /></td>
+                                        <td><input type="text" name="price2" value="{{price2}}" /></td>
+                                        <td><input type="text" name="price3" value="{{price3}}" /></td>
+                                        <td><input type="text" name="price4" value="{{price4}}" /></td>
+                                        <td><input type="text" name="price5" value="{{price5}}" /></td>
+                                        <td><input type="text" name="price6" value="{{price6}}" /></td>
+                                        <td><input type="text" name="price7" value="{{price7}}" /></td>
+                                        <td><input type="text" name="price8" value="{{price8}}" /></td>
+                                        <td><input type="text" name="price9" value="{{price9}}" /></td>
+                                        <td><input type="text" name="price10" value="{{price10}}" /></td>
+                                        <td><input type="text" name="price11" value="{{price11}}" /></td>
+                                    {{/prices.price}}
+                                </tr>
+                                <tr>
+                                    {{#prices.pricePerKm}}
+                                        <td><input type="text" name="pricePerKm0" value="{{price0}}" /></td>
+                                        <td><input type="text" name="pricePerKm1" value="{{price1}}" /></td>
+                                        <td><input type="text" name="pricePerKm2" value="{{price2}}" /></td>
+                                        <td><input type="text" name="pricePerKm3" value="{{price3}}" /></td>
+                                        <td><input type="text" name="pricePerKm4" value="{{price4}}" /></td>
+                                        <td><input type="text" name="pricePerKm5" value="{{price5}}" /></td>
+                                        <td><input type="text" name="pricePerKm6" value="{{price6}}" /></td>
+                                        <td><input type="text" name="pricePerKm7" value="{{price7}}" /></td>
+                                        <td><input type="text" name="pricePerKm8" value="{{price8}}" /></td>
+                                        <td><input type="text" name="pricePerKm9" value="{{price9}}" /></td>
+                                        <td><input type="text" name="pricePerKm10" value="{{price10}}" /></td>
+                                        <td><input type="text" name="pricePerKm11" value="{{price11}}" /></td>
+                                    {{/prices.pricePerKm}}
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </article>
+            </section>
+            {{/department}}
+            </div>
+        </div>
+	{{{footer}}}
+</body>
+</html>

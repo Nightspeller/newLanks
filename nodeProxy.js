@@ -13,5 +13,7 @@ http.createServer(function(req, res) {
     if (options[req.headers.host]) target = options[req.headers.host];
     proxy.web(req, res, {
         target: target
+    }, function(error){
+        console.log('Error! Domain: ',req.headers.host, 'Error: ', error);
     });
 }).listen(80);
