@@ -6,8 +6,8 @@ $(document).ready(function()
 		var cargo_data = $("#select1").val()+';'+$("#select2").val()+';'+total_weight;
 		$("#output1").html("<h1>Идет расчет стоимости</h1>");
 		$.post(
-			"wsgi/.calc_script.wsgi",
-			cargo_data,
+			"calculate",
+            {data:cargo_data},
 			onAjaxCargoSuccess
 		);
 		function onAjaxCargoSuccess(data)

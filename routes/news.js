@@ -6,7 +6,6 @@ var formidable = require('formidable');
 var util = require('util');
 var fs = require('fs');
 
-
 router.get('/json', function(req, res) {
     if (req.query.newsID){
         News.find({_id: req.query.newsID}, function(err, news){
@@ -35,14 +34,12 @@ router.get('/json', function(req, res) {
 
 router.get('/', function(req, res) {
     if (req.query.newsID){
-        console.log(req.query.newsID);
         if (req.query.newsID !== '-1'){
             News.find({_id: req.query.newsID}, function(err, news){
                 if(err) throw err;
                 res.render('news', {mode: 'single', allNews: news});
             });
         } else {
-            console.log('hrer')
             res.render('news', {mode: 'single', allNews: {}});
         }
 
@@ -108,8 +105,6 @@ router.put('/', function(req, res) {
     form.keepExtensions = true;
     form.parse(req, function(err, fields, files) {
         if (err) throw err;
-
-        console.log(files.logo);
         if (files.logo.name){
             fs.rename(files.logo.path, "./public/images/news/" + fields._id + '.' + files.logo.type.split('/')[1], function(err){
                 if (err) throw err;

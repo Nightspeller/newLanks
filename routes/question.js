@@ -10,7 +10,6 @@ var Departments = require('../modelsDB/departments').Departments;
 router.get('/', function(req, res) {
     Departments.find({},'city skype mainPhone additionalPhone', function(err, departments){
         if(err) throw err;
-        console.log(departments);
         res.render('question', {allDepartments: departments});
     });
 });

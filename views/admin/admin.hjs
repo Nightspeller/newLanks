@@ -23,14 +23,22 @@
         <div id="content" class="editing">
             <h4>Филиалы</h4>
             <hr>
-            <h3>Выберите филиал для редактирования</h3>
             <section>
                 <article>
+                    <h3>Выберите филиал для редактирования</h3>
                     <div id="departments_list">
+                        <ul>
                         {{#allDepartments}}
-                            <a href="?city={{cityEng}}">{{city}}</a>
+                            <li>
+                                <a href="?city={{cityEng}}">{{city}}</a>
+                            </li>
                         {{/allDepartments}}
+                        </ul>
                     </div>
+                </article>
+                <article>
+                    <h3>Редактировать цену перевозки сборного груза из филиала в филиал.</h3>
+                    To be done
                 </article>
             </section>
         </div>
