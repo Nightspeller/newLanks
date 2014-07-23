@@ -63,11 +63,13 @@ form fieldset label{
     display: block;
     width: 18em;
     line-height: 2em;
-
 }
 form fieldset input{
     float: right;
 }
 table {
     margin: auto;
+}
+#section1 p {
+    text-indent: 0;
 }

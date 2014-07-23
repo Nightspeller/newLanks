@@ -50,6 +50,8 @@
 }
 #map_wrapper {
   float: right;
+  width: 400px;
+  height: 300px;
 }
 .editing input {
   width: 30em;

@@ -71,6 +71,7 @@
                             E-mail: {{email}} <br />
                             Телефон:{{mainPhone}}<br />
                             Факс: {{fax}}<br />
+                            Skype: {{skype}}<br />
                             Дополнительные номера: {{additionalPhone}}<br />
                         </address>
                         <h3>Адрес склада.</h3>
@@ -83,6 +84,7 @@
                         <p><a href="for_download/sbor_dostavka_prices/{{city}}.doc">Скачать прайс на сбор и доставку груза по региону.</a></p>
                         <p><a href="for_download/sborni_gruz_prices/Прайс в {{city}}.xls">Скачать прайс на покилограммную перевозку груза В этот город.</a></p>
                         <p><a href="for_download/sborni_gruz_prices/Прайс из города {{city}}.xls">Скачать прайс на покилограммную перевозку груза ИЗ этого города.</a></p>
+                        {{{additionalInfo}}}
                     </article>
                 </section>
                 {{/allDepartments}}

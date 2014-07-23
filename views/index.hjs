@@ -49,10 +49,10 @@
                             <input type="text" placeholder="Пункт назначения" name="cityTo" />
                         </label>
                         <label>
-                            <input type="text" placeholder="Вес груза" name="weight" />
+                            <input type="text" placeholder="Вес груза, кг" name="weight" />
                         </label>
                         <label>
-                            <input type="text" placeholder="Объем груза" name="volume" />
+                            <input type="text" placeholder="Объем груза, м3" name="volume" />
                         </label>
                         <label>
                             <input type="text" placeholder="Телефон и/или E-Mail" name="contact" required/>
@@ -134,27 +134,27 @@
                 <div class="additionalContainer">
                     <h4>Ответсвтенное хранение:</h4>
                     <img src="images/services/service_stock.png"/>
-                    <button class="roundButton">Подробнее</button>
+                    <a href="/services?param=5" class="roundButton">Подробнее</a>
                 </div>
                 <div class="additionalContainer">
                     <h4>Мобильные пункты выдачи:</h4>
                     <img src="images/services/mpv.png"/>
-                    <button class="roundButton">Подробнее</button>
+                    <a href="/services?param=6" class="roundButton">Подробнее</a>
                 </div>
                 <div class="additionalContainer">
                     <h4>Внутригородская доставка: </h4>
                     <img src="images/services/service_courier.png"/>
-                    <button class="roundButton">Подробнее</button>
+                    <a href="/services?param=3" class="roundButton">Подробнее</a>
                 </div>
                 <div class="additionalContainer">
                     <h4>Кросс-докинг: </h4>
                     <img src="images/services/cross.png"/>
-                    <button class="roundButton">Подробнее</button>
+                    <a href="/services?param=4" class="roundButton">Подробнее</a>
                 </div>
                 <div class="additionalContainer">
                     <h4>Прочие услуги: </h4>
                     <img src="images/services/service_sklad.png"/>
-                    <button class="roundButton">Подробнее</button>
+                    <a href="/services?param=7" class="roundButton">Подробнее</a>
                 </div>
             </section>
 
