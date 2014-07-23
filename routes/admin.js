@@ -2,7 +2,8 @@ var Departments = require('../modelsDB/departments').Departments;
 var CityCargoPrices = require('../modelsDB/cityCargoPrices').CityCargoPrices;
 var express = require('express');
 var router = express.Router();
-
+//some random comment for testing
+//another random thing for commit testing
 router
     .get('/', function(req, res) {
         if (req.query.city){
