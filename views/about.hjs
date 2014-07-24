@@ -21,7 +21,7 @@
 	{{{header}}}
     <div id="content">
         <article>
-            <a href="photo" class="button_1" id="company_gallery">Фотогалерея</a>
+            <a href="gallery" class="button_1" id="company_gallery">Фотогалерея</a>
             <h4>О компании</h4>
             <hr>
             <h2>Рады что вы заинтересовались, ведь нам есть что рассказать!</h2>

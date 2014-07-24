@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/gallery.css">
+    <script type="text/javascript" src="javascripts/gallery.js"></script>
+
+    <script src="javascripts/lightbox.js"></script>
+    <link href="stylesheets/lightbox.css" rel="stylesheet" />
+
+</head>
+<body>
+<a class='scrollTop' href='#header'></a>
+<div id="wrapper">
+    {{{header}}}
+    <div id="content">
+        <article>
+            <h4>О компании - Фотогалерея</h4>
+            <hr>
+            <section>
+                <h2>Обзорная экскурсия по компании Ланкс!</h2>
+                <p>Воронежский филиал ООО Ланкс!</p>
+                <a href="images/photo/group1_1.jpg" rel="lightbox[roadtrip]"><img src="images/photo/group1_1.jpg" height="200"/></a>
+                <a href="images/photo/group1_2.jpg" rel="lightbox[roadtrip]"><img src="images/photo/group1_2.jpg" height="200"/></a>
+                <a href="images/photo/group1_3.jpg" rel="lightbox[roadtrip]"><img src="images/photo/group1_3.jpg" height="200"/></a>
+				<a href="images/photo/group1_4.jpg" rel="lightbox[roadtrip]"><img src="images/photo/group1_4.jpg" height="200"/></a>
+                <a href="images/photo/group1_5.jpg" rel="lightbox[roadtrip]"><img src="images/photo/group1_5.jpg" height="200"/></a>
+                <a href="images/photo/group1_6.jpg" rel="lightbox[roadtrip]"><img src="images/photo/group1_6.jpg" height="200"/></a>
+                <a href="images/photo/group1_7.jpg" rel="lightbox[roadtrip]"><img src="images/photo/group1_7.jpg" height="200"/></a>
+                <p>2-ой Российский информационный семинар 2012 Воронеж</p>
+                <a href="images/photo/group2_1.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group2_1.jpg" height="200"/></a>
+                <a href="images/photo/group2_2.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group2_2.jpg" height="200"/></a>
+                <a href="images/photo/group2_3.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group2_3.jpg" height="200"/></a>
+                <a href="images/photo/group2_4.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group2_4.jpg" height="200"/></a>
+                <a href="images/photo/group2_5.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group2_5.jpg" height="200"/></a>
+                <a href="images/photo/group2_6.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group2_6.jpg" height="200"/></a>
+                <a href="images/photo/group2_7.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group2_7.jpg" height="200"/></a>
+                <a href="images/photo/group2_8.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group2_8.jpg" height="200"/></a>
+                <p>Transrussia 2012</p>
+                <a href="images/photo/group3_1.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group3_1.jpg" height="200"/></a>
+                <a href="images/photo/group3_2.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group3_2.jpg" height="200"/></a>
+                <a href="images/photo/group3_3.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group3_3.jpg" height="200"/></a>
+                <a href="images/photo/group3_4.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group3_4.jpg" height="200"/></a>            
+                <p>ЛАНКС и VI Воронежский промышленный Форум</p>
+                <a href="images/photo/group4_1.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group4_1.jpg" height="200"/></a>
+                <a href="images/photo/group4_2.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group4_2.jpg" height="200"/></a>
+                <a href="images/photo/group4_3.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group4_3.jpg" height="200"/></a>
+                <p>ТрансРоссия 2013</p>
+                <a href="images/photo/group6_1.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group6_1.jpg" height="200"/></a>
+                <a href="images/photo/group6_2.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group6_2.jpg" height="200"/></a>
+                <a href="images/photo/group6_3.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group6_3.jpg" height="200"/></a>
+                <a href="images/photo/group6_4.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group6_4.jpg" height="200"/></a>
+                <a href="images/photo/group6_5.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group6_5.jpg" height="200"/></a>
+                <a href="images/photo/group6_6.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group6_6.jpg" height="200"/></a>
+                <a href="images/photo/group6_7.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group6_7.jpg" height="200"/></a>
+                <a href="images/photo/group6_8.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group6_8.jpg" height="200"/></a>
+                <p>РИС 2013</p>
+                <a href="images/photo/group7_1.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group7_1.jpg" height="200"/></a>
+                <a href="images/photo/group7_2.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group7_2.jpg" height="200"/></a>
+                <a href="images/photo/group7_3.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group7_3.jpg" height="200"/></a>
+                <a href="images/photo/group7_4.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group7_4.jpg" height="200"/></a>
+                <a href="images/photo/group7_5.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group7_5.jpg" height="200"/></a>
+                <a href="images/photo/group7_6.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group7_6.jpg" height="200"/></a>
+                <a href="images/photo/group7_7.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group7_7.jpg" height="200"/></a>
+                <a href="images/photo/group7_8.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group7_8.jpg" height="200"/></a>
+                <p>Новый склад в Воронеже</p>
+                <a href="images/photo/group8_1.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group8_1.jpg" height="200"/></a>
+                <a href="images/photo/group8_2.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group8_2.jpg" height="200"/></a>
+                <p>Празднование 15-летия Ланкс!</p>
+                <a href="images/photo/group9_1.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group9_1.jpg" height="200"/></a>
+                <a href="images/photo/group9_2.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group9_2.jpg" height="200"/></a>
+                <a href="images/photo/group9_3.jpg" rel="lightbox[roadtrip1]"><img src="images/photo/group9_3.jpg" height="200"/></a>
+            </section>
+        </article>
+    </div>
+</div>
+	{{{footer}}}
+</body>
+</html>

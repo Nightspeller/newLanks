@@ -19,5 +19,6 @@ router.use('/editDepartment', require('./editDepartment'));
 router.use('/login', require('./login'));
 router.use('/simpleCalculate', require('./simpleCalculate'));
 router.use('/admin', require('./admin'));
+router.use('/gallery', require('./gallery'));
 
 module.exports = router;
