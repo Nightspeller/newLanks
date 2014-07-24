@@ -2,14 +2,12 @@ var Departments = require('../modelsDB/departments').Departments;
 var CityCargoPrices = require('../modelsDB/cityCargoPrices').CityCargoPrices;
 var express = require('express');
 var router = express.Router();
-//some random comment for testing
-//another random thing for commit testing
+
 router
     .get('/', function(req, res) {
         if (req.query.city){
             Departments.findOne({cityEng: req.query.city}, function(err, department){
                 if(err) throw err;
-                console.log(req.params.city);
                 CityCargoPrices.findOne({city: req.query.city}, function(err, prices){
                     if(err) throw err;
                     var pricesObj = {};
@@ -23,7 +21,6 @@ router
                     res.render('admin/editDepartment', {department: department, prices: pricesObj});
                 });
             });
-
         } else {
             Departments.find({}, function(err, departments){
                 if(err) throw err;
