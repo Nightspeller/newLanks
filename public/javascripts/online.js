@@ -21,35 +21,48 @@ $(document).ready(function() {
 	$("#track_orif_button").click(function(){
         var id = $("#track_orif_id").val();
         $("#track_orif_button").prop("disabled", true).prop("value", "Идет поиск");
-        $.post(
-            "wsgi/.new_oriflame_script.wsgi",
-            {
-                "id": id
-            },
-            function (data)
-            {
+
+        $.ajax({
+            url: '/online/oriflame?invoice='+id,
+            type: 'GET',
+            success: function (data) {
+                console.log(data);
                 $("#track_orif_button").prop("disabled", false).prop("value", "Проверить");
                 // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
-                if (data != "") {
-                    var split_data = data.split("&");
+                if (data.length === 1) {
                     $("#section6 div").remove();
-                    for (var i=0; i < split_data.length-1;i++) {
-                        split_data[i] = split_data[i].replace(':','&');
-                        $("#section6").append('<div><strong>'+(split_data[i].split("&"))[0]+': </strong>'+(split_data[i].split("&"))[1]+'</div>');
-                    }
+                    $("#section6").append('<div><strong>ФИО: </strong>'+data[0].name+'<br />' +
+                        '<strong>Адрес доставки: </strong>'+data[0].address+'<br />' +
+                        '<strong>Короб. (б/м): </strong>'+data[0].boxes+'<br />' +
+                        '<strong>Сумма чека: </strong>'+data[0].checkAmount+'<br />' +
+                        '<strong>Тип клиента: </strong>'+data[0].clientType+'<br />' +
+                        '<strong>Пункт сбора: </strong>'+data[0].collectionPoint+'<br />' +
+                        '<strong>Номер кон-та: </strong>'+data[0].contractNumber+'<br />' +
+                        '<strong>Дата доставки: </strong>'+data[0].deliveryDate+'<br />' +
+                        '<strong>Время доставки: </strong>'+data[0].deliveryTime+'<br />' +
+                        '<strong>Сумма накладной: </strong>'+data[0].invoiceAmount+'<br />' +
+                        '<strong>Номер накладной: </strong>'+data[0].invoiceNumber+'<br />' +
+                        '<strong>Дата заказа: </strong>'+data[0].orderDate+'<br />' +
+                        '<strong>Оплата: </strong>'+data[0].payment+'<br />' +
+                        '<strong>Контакт. телефон: </strong>'+data[0].phone+'<br />' +
+                        '<strong>Статус: </strong>'+data[0].status+'<br />' +
+                        '<strong>Вес: </strong>'+data[0].weight+'<br />' +
+                        '</div>');
                 } else {
                     $("#section6 div").remove();
                     $("#section6").append('<div><strong>Заказа с таким номером не найдено.</div>');
-                    $("#section6").append('<div><strong>Пожалуйста, проверьте номер заказа или свяжитесь c оператором.</div>');
+                    $("#section6").append('<div><strong>Пожалуйста, проверьте номер заказа или <a href="/question">свяжитесь c оператором</a>.</div>');
                 }
+            },
+            error: function (error) {
+                alert('К сожалению произошла ошибка. Повторите попытку или обратитесь к администратору.');
+                console.log('Error: ', error)
             }
-        );
-
+        });
     });
 
     if (current_id != "") {
         $("#track_orif_id").val(current_id);
         $("#track_orif_button").click();
-
     }
 });
