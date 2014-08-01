@@ -15,8 +15,6 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/oriflameUploader.css">
     <script type="text/javascript" src="javascripts/oriflameUploader.js"></script>
-
-    <script lang="javascript" src="javascripts/xlsx.core.min.js"></script>
 </head>
 <body>
     <a class='scrollTop' href='#header'></a>
