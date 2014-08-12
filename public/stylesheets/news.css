@@ -5,6 +5,11 @@ ul {
 li,
 .singleNews {
   overflow: hidden;
+  border: 1px #6495ed solid;
+  border-radius: 10px;
+  padding: 0 1em 1em 1em;
+  background: #f0f8ff;
+  margin-bottom: 1em;
 }
 li a,
 .singleNews a {
@@ -27,7 +32,7 @@ li small,
 li img,
 .singleNews img {
   float: left;
-  margin: 0 1em 1em 0;
+  margin: 0 1em 0 0;
   border-radius: 0.5em;
   width: 190px;
   height: 160px;

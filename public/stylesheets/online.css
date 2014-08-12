@@ -18,17 +18,11 @@ p {
 }
 article section{
     display: none;
-    border-color: blue;
-    border-width: 2px;
-    border-style: solid;
+    border: 1px #6495ed solid;
     border-radius: 5px;
     margin-bottom: 10px;
-    padding-left: 10px;
-
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12pt;
-    color: #222222;
-    text-align: justify;
+    padding: 0 0 10px 0;
+    background: #f0f8ff;
 }
 #section4{
     text-align: center;

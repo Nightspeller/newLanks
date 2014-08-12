@@ -12,13 +12,11 @@ p {
 }
 
 #service_content {
-    padding-right: 10px;
-    padding-left: 10px;
-    border-style: solid;
-    border-color: blue;
-    border-width: 2px;
+    border: 1px #6495ed solid;
     border-radius: 5px;
-	margin-bottom: 1em;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background: #f0f8ff;
 }
 article section{
     display: none;
