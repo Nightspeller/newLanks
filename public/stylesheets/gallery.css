@@ -1,8 +1,18 @@
-section {
-	margin: auto;
-    text-align: center;
-	width: 800px;
+#content .albumCaption {
+  display: inline-block;
+  vertical-align: top;
+  width: 190px;
+  text-align: center;
 }
-body p {
-    text-align: center;
+#content .albumCaption img,
+#content .albumCaption p {
+  cursor: pointer;
+}
+#content .albumCaption p {
+  text-indent: 0;
+  text-align: center;
+}
+#content .albumContent {
+  text-align: center;
+  display: none;
 }
