@@ -1,0 +1,4 @@
+node_modules/
+addNewUserToDB.js
+config.json
+bin/www
