@@ -66,13 +66,15 @@ router.get('/', function(req, res) {
 router.post('/', function(req, res) {
     var form = new formidable.IncomingForm();
     form.encoding = 'utf-8';
-    form.uploadDir = "./temp";
+    form.uploadDir = "temp";
     form.keepExtensions = true;
     form.parse(req, function(err, fields, files) {
         if (err) throw err;
 
+        console.log( files.logo.name.split('.')[0]+ Date.now());
         if (files.logo.name){
-            fs.rename(files.logo.path, "./public/images/news/" + fields._id + '.' + files.logo.type.split('/')[1], function(err){
+            var newFileName = files.logo.name.split('.')[0] + Date.now() + '.' + files.logo.type.split('/')[1];
+            fs.rename(files.logo.path, "../public/images/news/" + newFileName, function(err){
                 if (err) throw err;
             });
         } else {
@@ -82,7 +84,7 @@ router.post('/', function(req, res) {
         }
 
         var news = new News ({ title:  fields.title,
-            logo: fields._id + '.' + files.logo.type.split('/')[1],
+            logo: newFileName ? newFileName : 'placeholder.png',
             shortDescription:  fields.shortDescription,
             description:  fields.description,
             fullText: fields.fullText,
@@ -101,12 +103,13 @@ router.post('/', function(req, res) {
 router.put('/', function(req, res) {
     var form = new formidable.IncomingForm();
     form.encoding = 'utf-8';
-    form.uploadDir = "./temp";
+    form.uploadDir = "temp";
     form.keepExtensions = true;
     form.parse(req, function(err, fields, files) {
         if (err) throw err;
         if (files.logo.name){
-            fs.rename(files.logo.path, "./public/images/news/" + fields._id + '.' + files.logo.type.split('/')[1], function(err){
+            var newFileName = files.logo.name.split('.')[0] + Date.now() + '.' + files.logo.type.split('/')[1];
+            fs.rename(files.logo.path, "../public/images/news/" + newFileName, function(err){
                 if (err) throw err;
             });
         } else {
@@ -117,7 +120,7 @@ router.put('/', function(req, res) {
         News.findById(fields._id, function(err, news){
             if(err) throw err;
             if (news) {
-                news.logo = fields._id + '.' + files.logo.type.split('/')[1];
+                news.logo = newFileName ? newFileName : news.logo;
                 for (var i in fields){
                     news[i] = fields[i];
                 }
@@ -139,6 +142,9 @@ router.delete('/', function(req, res) {
             res.statusCode = 404;
             res.send({ error: 'Not found' });
         } else {
+            fs.unlink("../public/images/news/" + news.logo, function(err){
+                if (err) throw err;
+            });
             news.remove(function (err) {
                 if (!err) {
                     res.send({ status: 'OK' });

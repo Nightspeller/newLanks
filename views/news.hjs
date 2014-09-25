@@ -41,7 +41,7 @@
                             {{{description}}}
                         </p>
                         <a href="?newsID={{_id}}" class="blueLink">
-                            <p>Подробнее</p>
+                            Подробнее
                         </a>
                     </li>
                     {{#user._id}}
@@ -59,7 +59,7 @@
                         <img src="images/news/{{logo}}">
                         <label>Изображение (190 на 160 пикселей): <input type="file" multiple="multiple" name="logo" placeholder="Изображение" /></label><br/>
                         <p>
-                            <label>Краткое описание новости (для анонса на главной - 250 символов включая пробелы максимум): <textarea name="shortDescription">{{{shortDescription}}}</textarea></label>
+                            <label>Краткое описание новости (для анонса на главной - 250 символов включая пробелы максимум - В ДАННЫЙ МОМЕНТ НЕ ИСПОЛЬЗУЕТСЯ): <textarea name="shortDescription">{{{shortDescription}}}</textarea></label>
                         </p>
                         <p>
                             <label>Описание новости (будет в списке всех новостей): <textarea name="description">{{{description}}}</textarea></label>

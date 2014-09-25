@@ -20,12 +20,13 @@ $(document).ready(function() {
             }
         });
     });
-    $('.deleteButton').on('click', function(){
+    $('.deleteButton').on('click', function(event){
         $.ajax({
             url: '/news',
             data: {id: $(this).data('id')},
             type: 'DELETE',
             success: function (data) {
+                $(event.target).hide().prev().hide();
                 alert('Удалено');
                 console.log('Success: ', data)
             },
