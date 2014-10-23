@@ -21,5 +21,6 @@ router.use('/simpleCalculate', require('./simpleCalculate'));
 router.use('/admin', require('./admin'));
 router.use('/gallery', require('./gallery'));
 router.use('/oriflameUploader', require('./oriflameUploader'));
+router.use('/postOriflameData', require('./postOriflameData'));
 
 module.exports = router;
