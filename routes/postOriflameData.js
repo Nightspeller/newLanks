@@ -1,7 +1,6 @@
 var express = require('express');
 var OriflameOrders = require('../modelsDB/oriflameOrders').OriflameOrders;
 
-var qs = require('querystring');
 var util = require('util');
 var fs = require('fs');
 
