@@ -25,7 +25,6 @@
     <article>
         <h4>Новости</h4><hr>
         {{^mode}}
-            <h2>Новости ООО Ланкс</h2>
             {{#user._id}} <a href="?newsID=-1">Добавить новость</a>{{/user._id}}
             <ul id="mainNewsList">
                 {{#allNews}}
@@ -65,7 +64,7 @@
                             <label>Описание новости (будет в списке всех новостей): <textarea name="description">{{{description}}}</textarea></label>
                         </p>
                         <p>
-                            <label>Полный текст новости: <textarea name="fulltext">{{{fullText}}}</textarea></label>
+                            <label>Полный текст новости: <textarea name="fullText">{{{fullText}}}</textarea></label>
                         </p>
                         <p>
                             <small>({{date}})</small> <label>Дата публикации новости: <input type="date" name="date" value="{{date}}" /></label>
