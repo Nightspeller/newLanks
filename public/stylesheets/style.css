@@ -10,6 +10,7 @@ body img {
 body p {
   text-align: justify;
   text-indent: 2pc;
+  padding-right: 20px;
 }
 body h2,
 body h3 {
@@ -58,7 +59,10 @@ body #wrapper #header address {
   font-size: 1.2em;
   font-style: normal;
 }
-body #wrapper #header address strong:first-of-type {
+body #wrapper #header address strong.green {
+  color: #008000;
+}
+body #wrapper #header address strong.green a {
   color: #008000;
 }
 body #footer {

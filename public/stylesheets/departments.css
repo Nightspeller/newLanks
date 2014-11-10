@@ -1,3 +1,11 @@
+#modeSwitcher {
+  float: right;
+  margin-top: -0.6em;
+}
+#modeSwitcher.button_1 {
+  width: auto;
+  cursor: pointer;
+}
 #enterDepartment {
   font-size: 14pt;
 }
@@ -8,34 +16,52 @@
 #enterDepartment input {
   font-size: 14pt;
 }
-#departments_list a {
+#departments_list .departmentInfo {
+  overflow: hidden;
+  margin: 6pt 0;
+  display: inline-block;
+}
+#departments_list .departmentInfo a {
   color: #000;
   text-decoration: none;
   display: inline-block;
   border: 1px solid #000;
   padding-top: 6pt;
-  margin: 8pt;
+  margin: 0 8pt;
   text-align: center;
   width: 168px;
   height: 200px;
   background: #80b8dd;
   border-radius: 10pt;
 }
-#departments_list a strong {
+#departments_list .departmentInfo a strong {
   font-size: 11pt;
 }
-#departments_list a img {
+#departments_list .departmentInfo a img {
   display: block;
   margin: 5pt auto;
   height: 100px;
   max-width: 100px;
 }
-#departments_list a address {
+#departments_list .departmentInfo a address {
   text-decoration: underline;
   color: #00f;
 }
-#departments_list a:hover {
+#departments_list .departmentInfo a:hover {
   background: #36aeda;
+}
+#departments_list .departmentInfo .departmentSatellites {
+  display: none;
+  font-size: 10pt;
+}
+#departments_list .displayBlock {
+  display: block;
+}
+#departments_list .displayInlineBlock {
+  display: inline-block;
+}
+#departments_list .hiddenDepartment {
+  display: none;
 }
 .greenText {
   color: #00f;

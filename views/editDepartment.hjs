@@ -30,15 +30,17 @@
                     <article>
                             <div id="departments_list">
                                 {{#allDepartments}}
-                                    <a href="editDepartment?city={{cityEng}}">
-                                        <strong>{{city}}</strong>
-                                        <br/>
-                                        <img src="images/departments/{{cityEng}}.png">
-                                        <br/>
-                                        {{mainPhone}}
-                                        <br/>
-                                        <address>Редактировать..</address>
-                                    </a>
+                                    <div class="departmentInfo">
+                                        <a href="editDepartment?city={{cityEng}}">
+                                            <strong>{{city}}</strong>
+                                            <br/>
+                                            <img src="images/departments/{{cityEng}}.png">
+                                            <br/>
+                                            {{mainPhone}}
+                                            <br/>
+                                            <address>Редактировать..</address>
+                                        </a>
+                                    </div>
                                 {{/allDepartments}}
                             </div>
                         <div>
@@ -72,6 +74,8 @@
                                 <label>Адрес Склада: <input type="text" name="stockAddress" value="{{stockAddress}}" /></label><br />
                                 <label>Координаты Склада: <input type="text" name="coordinates" value="{{coordinates}}" /></label><br />
                             </address>
+                            <h3>Филиал также обслуживает города:</h3>
+                            <label>Города: <textarea style="width: 1000px; height: 100px" name="satellites">{{satellites}}</textarea></label><br />
                             <h3>Прочее.</h3>
                             <label>ID яндекс-карты: <input type="text" name="mapID" value="{{mapID}}" /></label><br />
                             <label>Английский идентификатор города: <input type="text" name="cityEng" value="{{cityEng}}" /></label><br />
