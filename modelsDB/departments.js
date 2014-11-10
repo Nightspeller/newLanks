@@ -13,7 +13,8 @@ var schema = new Schema({ index:  String,
     skype: String,
     stockAddress:  String,
     coordinates: String,
-    mapID: String
+    mapID: String,
+    satellites: Array
 });
 
 exports.Departments = mongoose.model('department', schema);

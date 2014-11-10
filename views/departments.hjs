@@ -23,9 +23,9 @@
         {{{header}}}
         <div id="content">
             {{^mode}}
-                <h4>Филиалы</h4>
+                <h4>Филиалы <button id="modeSwitcher" class="button_1">Показывать все города</button></h4>
                 <hr>
-                <h3>Выберите филиал для того чтобы посмотреть адрес, часы работы, схему проезда, стоимость услуг<br/> и прочую полезную информацию.</h3>
+                <h3>Выберите филиал для того чтобы посмотреть адрес, часы работы, схему проезда, стоимость услуг и<br/> прочую полезную информацию.</h3>
                 <section>
                     <article>
                         <header id="enterDepartment" >
@@ -36,15 +36,18 @@
                         </header>
                         <div id="departments_list">
                             {{#allDepartments}}
-                                <a href="departments?city={{cityEng}}">
-                                    <strong>{{city}}</strong>
-                                    <br/>
-                                    <img src="images/departments/{{cityEng}}.png">
-                                    <br/>
-                                    {{mainPhone}}
-                                    <br/>
-                                    <address>Подробнee..</address>
-                                </a>
+                                <div class="departmentInfo">
+                                    <a href="departments?city={{cityEng}}">
+                                        <strong>{{city}}</strong>
+                                        <br/>
+                                        <img src="images/departments/{{cityEng}}.png">
+                                        <br/>
+                                        {{mainPhone}}
+                                        <br/>
+                                        <address>Подробнee..</address>
+                                    </a>
+                                    <div class="departmentSatellites"><strong>Обслуживаемые города: </strong>{{satellites}}</div>
+                                </div>
                             {{/allDepartments}}
                         </div>
                         <div>
@@ -86,6 +89,8 @@
                         <p><a href="for_download/sborni_gruz_prices/Прайс в {{city}}.xls">Скачать прайс на покилограммную перевозку груза В этот город.</a></p>
                         <p><a href="for_download/sborni_gruz_prices/Прайс из города {{city}}.xls">Скачать прайс на покилограммную перевозку груза ИЗ этого города.</a></p>
                         {{{additionalInfo}}}
+                        <h3>Филиал также обслуживает города:</h3>
+                        <p>{{satellites}}</p>
                     </article>
                 </section>
                 {{/allDepartments}}

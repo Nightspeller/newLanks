@@ -13,9 +13,11 @@ router.get('/', function(req, res) {
                     res.render('../views/include/'+req.query.city, function(err, additionalInfo){
                         if (err) throw err;
                         req.additionalInfo = res.locals.additionalInfo = additionalInfo;
+                        departments.satellites = departments.satellites.join(', ');
                         res.render('departments', {mode: 'single',allDepartments: departments});
                     });
                 } else {
+                    departments.satellites = departments.satellites.join(', ');
                     res.render('departments', {mode: 'single',allDepartments: departments});
                 }
             });
@@ -23,6 +25,16 @@ router.get('/', function(req, res) {
     } else {
         Departments.find({}, function(err, departments){
             if(err) throw err;
+            for (var i=0; i < departments.length; i++){
+                departments[i].satellites = departments[i].satellites.join(', ');
+            }
+            departments.sort(function(a,b){
+                if (a.city > b.city) {
+                    return 1
+                } else {
+                    return -1
+                }
+            });
             res.render('departments', {allDepartments: departments});
         });
     }
