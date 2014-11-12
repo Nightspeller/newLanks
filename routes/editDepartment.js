@@ -41,6 +41,7 @@ router.post('/', function(req, res) {
             if(err) throw err;
             if (department) {
                 for (var i in fields){
+                    if (i == 'satellites') fields[i] = fields[i].split(',');
                     department[i] = fields[i];
                 }
                 department.save(function(err){
