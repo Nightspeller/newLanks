@@ -22,5 +22,6 @@ router.use('/admin', require('./admin'));
 router.use('/gallery', require('./gallery'));
 router.use('/oriflameUploader', require('./oriflameUploader'));
 router.use('/postOriflameData', require('./postOriflameData'));
+router.use('/api', require('./api'));
 
 module.exports = router;
