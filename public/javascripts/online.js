@@ -32,20 +32,20 @@ $(document).ready(function() {
                 if (data.length === 1) {
                     $("#section6 div").remove();
                     $("#section6").append('<div><strong>ФИО: </strong>'+data[0].name+'<br />' +
+                        '<strong>Номер накладной: </strong>'+data[0].invoiceNumber+'<br />' +
+                        '<strong>Номер консультанта: </strong>'+data[0].contractNumber+'<br />' +
                         '<strong>Адрес доставки: </strong>'+data[0].address+'<br />' +
+                        '<strong>Контакт. телефон: </strong>'+data[0].phone+'<br />' +
                         '<strong>Количество коробок: </strong>'+data[0].boxes+'<br />' +
-                        '<strong>Сумма чека: </strong>'+data[0].checkAmount+'<br />' +
-                      //  '<strong>Тип клиента: </strong>'+data[0].clientType+'<br />' +
-                      //  '<strong>Пункт сбора: </strong>'+data[0].collectionPoint+'<br />' +
-                        '<strong>Номер контрактата: </strong>'+data[0].contractNumber+'<br />' +
                         '<strong>Дата доставки: </strong>'+data[0].deliveryDate+'<br />' +
                         '<strong>Время доставки: </strong>'+data[0].deliveryTime+'<br />' +
                         '<strong>Водитель: </strong>'+data[0].driver+'<br />' +
                         '<strong>Сумма накладной: </strong>'+data[0].invoiceAmount+'<br />' +
-                        '<strong>Номер накладной: </strong>'+data[0].invoiceNumber+'<br />' +
+                        '<strong>Сумма чека: </strong>'+data[0].checkAmount+'<br />' +
+                      //  '<strong>Тип клиента: </strong>'+data[0].clientType+'<br />' +
+                      //  '<strong>Пункт сбора: </strong>'+data[0].collectionPoint+'<br />' +
                         '<strong>Дата заказа: </strong>'+data[0].orderDate+'<br />' +
                         '<strong>Оплата: </strong>'+data[0].payment+'<br />' +
-                        '<strong>Контакт. телефон: </strong>'+data[0].phone+'<br />' +
                         '<strong>Статус: </strong>'+data[0].status+'<br />' +
                       //  '<strong>Вес: </strong>'+data[0].weight+'<br />' +
                         '</div>');
