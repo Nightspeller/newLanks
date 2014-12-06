@@ -41,4 +41,6 @@ article section{
 }
 #section6 div{
     font-size: 1.5em;
+    text-align: left;
+    padding-left: 3em;
 }
