@@ -58,7 +58,7 @@
                     <label for="cargo_weight">Вес,кг: <input id="cargo_weight" name="cargo_weight" type="number" placeholder="500" /></label>
                     <label for="cargo_volume">Объем, м куб: <input id="cargo_volume" name="cargo_volume" type="number" placeholder="3" /></label>
                     <label for="cargo_quantity">Количество мест: <input id="cargo_quantity" name="cargo_quantity" type="number" placeholder="15" /></label>
-                    <label for="cargo_description">Описание груза: <input id="cargo_description" name="cargo_description" type="text" placeholder="Квадратные свиньи"  /></label>
+                    <label for="cargo_description">Описание груза: <input id="cargo_description" name="cargo_description" type="text" placeholder="Промтовары"  /></label>
                     <label for="cargo_sender">Я отправитель<input id="cargo_sender" type="radio" name="cargo_sender" value="Отправитель"></label>
                     <label for="cargo_recipient">Я получатель<input id="cargo_recipient" type="radio" name="cargo_recipient" value="Получатель"></label>
                 </fieldset>
