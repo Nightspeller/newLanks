@@ -77,7 +77,7 @@ function param(Name)
 
     $.fn.snow = function(options){
 
-        var $flake 			= $('<div id="flake" />').css({'position': 'absolute', 'top': '-50px', 'z-index': '100'}).html('&#10052;'),
+        var $flake 			= $('<div class="flake" />').css({'position': 'absolute', 'top': '-50px', 'z-index': '100'}).html('&#10052;'),
             documentHeight 	= $(document).height(),
             documentWidth	= $(document).width(),
             defaults		= {
@@ -89,37 +89,83 @@ function param(Name)
             options			= $.extend({}, defaults, options);
 
 
-        var interval		= setInterval( function(){
-            var startPositionLeft 	= Math.random() * documentWidth - 100,
-                startOpacity		= 0.5 + Math.random(),
-                sizeFlake			= options.minSize + Math.random() * options.maxSize,
-                endPositionTop		= documentHeight - 100,
-                endPositionLeft		= startPositionLeft - 100 + Math.random() * 200,
-                durationFall		= documentHeight * 10 + Math.random() * 5000;
-            $flake
-                .clone()
-                .appendTo('body')
-                .css(
-                {
-                    left: startPositionLeft,
-                    opacity: startOpacity,
-                    'font-size': sizeFlake,
-                    color: options.flakeColor
-                }
-            )
-                .animate(
-                {
-                    top: endPositionTop,
-                    left: endPositionLeft,
-                    opacity: 0.2
-                },
-                durationFall,
-                'linear',
-                function() {
-                    $(this).remove()
-                }
-            );
-        }, options.newOn);
+        var interval;
+
+        $('#snowSwitch').on('click', function (){
+            if (localStorage.getItem('snowState') === 'on') {
+                clearInterval(interval);
+                $('.flake').remove();
+                localStorage.setItem('snowState','off');
+            } else {
+                localStorage.setItem('snowState','on');
+                interval = setInterval( function(){
+                    var startPositionLeft 	= Math.random() * documentWidth - 100,
+                        startOpacity		= 0.5 + Math.random(),
+                        sizeFlake			= options.minSize + Math.random() * options.maxSize,
+                        endPositionTop		= documentHeight - 100,
+                        endPositionLeft		= startPositionLeft - 100 + Math.random() * 200,
+                        durationFall		= documentHeight * 10 + Math.random() * 5000;
+                    $flake
+                        .clone()
+                        .appendTo('body')
+                        .css(
+                        {
+                            left: startPositionLeft,
+                            opacity: startOpacity,
+                            'font-size': sizeFlake,
+                            color: options.flakeColor
+                        }
+                    )
+                        .animate(
+                        {
+                            top: endPositionTop,
+                            left: endPositionLeft,
+                            opacity: 0.2
+                        },
+                        durationFall,
+                        'linear',
+                        function() {
+                            $(this).remove()
+                        }
+                    );
+                }, options.newOn);
+            }
+        });
+
+        if (localStorage.getItem('snowState') !== 'off') {
+            localStorage.setItem('snowState','on');
+            interval = setInterval( function(){
+                var startPositionLeft 	= Math.random() * documentWidth - 100,
+                    startOpacity		= 0.5 + Math.random(),
+                    sizeFlake			= options.minSize + Math.random() * options.maxSize,
+                    endPositionTop		= documentHeight - 100,
+                    endPositionLeft		= startPositionLeft - 100 + Math.random() * 200,
+                    durationFall		= documentHeight * 10 + Math.random() * 5000;
+                $flake
+                    .clone()
+                    .appendTo('body')
+                    .css(
+                    {
+                        left: startPositionLeft,
+                        opacity: startOpacity,
+                        'font-size': sizeFlake,
+                        color: options.flakeColor
+                    }
+                )
+                    .animate(
+                    {
+                        top: endPositionTop,
+                        left: endPositionLeft,
+                        opacity: 0.2
+                    },
+                    durationFall,
+                    'linear',
+                    function() {
+                        $(this).remove()
+                    }
+                );
+            }, options.newOn);
+        }
 
     };
 
