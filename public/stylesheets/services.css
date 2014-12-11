@@ -1,32 +1,42 @@
 p {
-    text-indent: 2pc;
+  text-indent: 2pc;
 }
 #images {
-    text-align: center;
+  text-align: center;
+}
+#images div {
+  display: inline-block;
+  height: 130px;
+  width: 160px;
+}
+#images div .description {
+  display: block;
+  color: #009635;
+  font-weight: bold;
 }
 #images img {
-    margin: 0;
+  margin: 0;
 }
 #images img:hover {
-    cursor:pointer;
+  cursor: pointer;
 }
-
 #service_content {
-    border: 1px #6495ed solid;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    background: #f0f8ff;
+  border: 1px #6495ed solid;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  background: #f0f8ff;
 }
-article section{
-    display: none;
-    overflow: hidden;
+article section {
+  display: none;
+  overflow: hidden;
 }
-#default{
-    display: block;
+#default {
+  display: block;
 }
-#select_sborni_gruz_from, #select_sborni_gruz_to{
-    font-size: 2em;
-    display: block;
-    margin: 1em auto;
+#select_sborni_gruz_from,
+#select_sborni_gruz_to {
+  font-size: 2em;
+  display: block;
+  margin: 1em auto;
 }
