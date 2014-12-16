@@ -15,7 +15,8 @@ router.post('/',function(req, res){
             req.connection.destroy();
     });
     req.on('end', function () {
-        fs.appendFile("postOriLog.txt", body+'\n', function(err) {
+        var date = new Date();
+        fs.appendFile("postOriLog.txt", date + '  ' + body + '\n', function(err) {
             if(err) throw err;
         });
 
