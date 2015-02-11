@@ -24,7 +24,7 @@
     <div id="content">
         <h4>Связаться с нами</h4>
         <hr>
-        <h2>Здесь Вы можете легко связаться с нами, а так же оставить Ваши замечания, предложения и отзывы!</h2>
+        <h2>Здесь Вы можете легко связаться с нами, а также оставить Ваши замечания, предложения и отзывы!</h2>
         <section id="images">
             <img src="images/question/question_form.png" id="4"/>
             <img src="images/question/question_skype.png" id="2"/>
