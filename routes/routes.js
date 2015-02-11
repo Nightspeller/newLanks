@@ -23,5 +23,6 @@ router.use('/gallery', require('./gallery'));
 router.use('/oriflameUploader', require('./oriflameUploader'));
 router.use('/postOriflameData', require('./postOriflameData'));
 router.use('/api', require('./api'));
+router.use('/vrn-tambov', require('./vrn-tambov'));
 
 module.exports = router;
