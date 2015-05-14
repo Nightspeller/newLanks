@@ -30,8 +30,8 @@ $(document).ready(function() {
                 $("#track_orif_button").prop("disabled", false).prop("value", "Проверить");
                 // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
                 if (data.length === 1) {
-                    $("#section6 div").remove();
-                    $("#section6").append('<div><strong>ФИО: </strong>'+data[0].name+'<br />' +
+                    $(".orderInfo").remove();
+                    $("#section6").append('<div class="orderInfo"><strong>ФИО: </strong>'+data[0].name+'<br />' +
                         '<strong>Номер накладной: </strong>'+data[0].invoiceNumber+'<br />' +
                         '<strong>Номер консультанта: </strong>'+data[0].contractNumber+'<br />' +
                         '<strong>Адрес доставки: </strong>'+data[0].address+'<br />' +
@@ -51,9 +51,9 @@ $(document).ready(function() {
                         '</div>');
                     $('.clientWarning').show();
                 } else {
-                    $("#section6 div").remove();
-                    $("#section6").append('<div><strong>Заказа с таким номером не найдено.</div>');
-                    $("#section6").append('<div><strong>Пожалуйста, проверьте номер заказа или <a href="/question">свяжитесь c оператором</a>.</div>');
+                    $(".orderInfo").remove();
+                    $("#section6").append('<div class="orderInfo"><strong>Заказа с таким номером не найдено.</div>');
+                    $("#section6").append('<div class="orderInfo"><strong>Пожалуйста, проверьте номер заказа или <a href="/question">свяжитесь c оператором</a>.</div>');
                 }
             },
             error: function (error) {

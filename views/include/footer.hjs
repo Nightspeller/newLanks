@@ -5,8 +5,3 @@
     <a href="http://www.facebook.com/pages/ООО-ланкс/551231688245030" target="_blank"><img src="images/template/facebook.png" height="48"/></a><br />
     OOO Ланкс, 2014. Все права защищены.
 </footer>
-<script>
-    $(document).ready(function() {
-        $.fn.snow();
-    });
-</script>
