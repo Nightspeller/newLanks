@@ -60,6 +60,22 @@
             <h4>Чтобы узнать предположительное время доставки введите номер заказа.</h4>
             <input id="track_orif_id" type="text" maxlength=16 size=16><br>
             <input type="button" id="track_orif_button" value="Проверить">
+            <div class="clientWarning">
+                <div class='clientWarning-overlay'></div>
+                <div class='clientWarning-dialog'>
+                    <div class='clientWarning-content'>
+                        <h1>Уважаемые консультанты Орифлэйм!</h1>
+                        <p>Напоминаем вам,  что при оплате заказа домашней доставки,  курьер  обязан вам   выдать
+                        кассовый чек на передаваемую ему сумму наличных денег.</p>
+                        <p>Требуйте кассовый чек у водителя в обязательном порядке и сохраняйте его до момента
+                        зачисления денег на ваш  номер в Орифлэйм.</p>
+                        <p>Без предъявления кассового чека претензии по оплате заказа, к сожалению, приниматься не
+                        будут.</p>
+                        <p>Компания Ланкс</p>
+                        <button class="clientWarningButton">Закрыть</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </article>
         </div>

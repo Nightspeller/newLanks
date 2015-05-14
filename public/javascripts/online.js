@@ -49,6 +49,7 @@ $(document).ready(function() {
                         '<strong>Статус: </strong>'+data[0].status+'<br />' +
                       //  '<strong>Вес: </strong>'+data[0].weight+'<br />' +
                         '</div>');
+                    $('.clientWarning').show();
                 } else {
                     $("#section6 div").remove();
                     $("#section6").append('<div><strong>Заказа с таким номером не найдено.</div>');
@@ -60,6 +61,10 @@ $(document).ready(function() {
                 console.log('Error: ', error)
             }
         });
+    });
+
+    $('.clientWarning-overlay, .clientWarningButton').on('click', function () {
+        $('.clientWarning').hide();
     });
 
     if (current_id != "") {
