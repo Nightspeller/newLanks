@@ -64,7 +64,7 @@
                 <div class='clientWarning-overlay'></div>
                 <div class='clientWarning-dialog'>
                     <div class='clientWarning-content'>
-                        <h1>Уважаемый консультант <span class="clientWarning-name"></span>! </h1>
+                        <h1>Уважаемый консультант<br/> <span class="clientWarning-name"></span>! </h1>
                         <p>Напоминаем Вам,  что при оплате заказа домашней доставки,  курьер  обязан Вам выдать
                         кассовый чек на передаваемую ему сумму наличных денег.</p>
                         <p>Требуйте кассовый чек у водителя в обязательном порядке и сохраняйте его до момента
