@@ -49,6 +49,7 @@ $(document).ready(function() {
                         '<strong>Статус: </strong>'+data[0].status+'<br />' +
                       //  '<strong>Вес: </strong>'+data[0].weight+'<br />' +
                         '</div>');
+                    $('.clientWarning-name').html(data[0].name);
                     $('.clientWarning').show();
                 } else {
                     $(".orderInfo").remove();
