@@ -40,4 +40,18 @@ router.get('/', function(req, res) {
     }
 });
 
+router.get('/json', function(req, res) {
+    if (req.query.city){
+        Departments.findOne({cityEng: req.query.city}, function(err, departments){
+            if(err) throw err;
+            res.send(departments);
+        });
+    } else {
+        Departments.find({}, function(err, departments){
+            if(err) throw err;
+            res.send(departments);
+        });
+    }
+});
+
 module.exports = router;
