@@ -41,6 +41,8 @@ router.get('/', function(req, res) {
 });
 
 router.get('/json', function(req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     if (req.query.city){
         Departments.findOne({cityEng: req.query.city}, function(err, departments){
             if(err) throw err;
