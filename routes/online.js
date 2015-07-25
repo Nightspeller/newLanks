@@ -9,6 +9,8 @@ router.get('/', function(req, res) {
 });
 
 router.get('/oriflame', function(req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     if (req.query.invoice){
         OriflameOrders.find({invoiceNumber: req.query.invoice}, function(err, order){
             if(err) throw err;
