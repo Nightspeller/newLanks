@@ -1,93 +1,37 @@
-h2, h3 {
-    text-align: center;
+iframe {
+    display: block;
+    margin: auto;
 }
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12pt;
-    color: #222222;
-    text-align: justify;
+.hover1 {
+    position: absolute;
+    top: 70px;
+    left: 374px;
+    width: 450px;
+    height: 92px;
+    background: #efefef;
 }
-.table {display:table; margin: auto;}
-.table div {display:table-row}
-.table div div {display:table-cell; padding: 0 5px;}
 
-#calculator_image {
-    position: relative;
-    height: 430px;
-}
-#umbrella {
-    position: absolute;
-    top: 10px;
-    left: 400px;
-    display: none;
-}
-#road {
-    position: absolute;
-    top: 150px;
-    left: 300px;
-}
-#truck {
-    position: absolute;
-    top: 120px;
-    left: 450px;
-}
-#warehouse_left {
-    position: absolute;
-    top: 120px;
-    left: 190px;
-}
-#warehouse_right {
-    position: absolute;
-    top: 120px;
-    left: 810px;
-}
-#city_from {
-    position: absolute;
-    top: 180px;
-    left: 130px;
-}
-#city_to {
-    position: absolute;
-    top: 180px;
-    left: 900px;
-}
-#client_from {
-    position: absolute;
-    top: 280px;
-    left: 50px;
-    border-style: solid;
-}
-#client_to {
-    position: absolute;
-    top: 280px;
-    left: 980px;
-    border-style: solid;
-}
-#arrow_from {
-    position: absolute;
-    top: 175px;
-    left: 90px;
-}
-#arrow_to {
-    position: absolute;
-    top: 180px;
-    left: 990px;
-}
-#output1 {
-    position: absolute;
-    margin-left: 43%;
-    margin-top: 250px;
-}
-#calculator_controls {
+.hover1 div {
     text-align: center;
-    margin-bottom: 10px;
+    padding-top: 0.6em;
+    font-size: 2em;
 }
-.right {
-    float: left;
+
+.hover2 {
+    position: absolute;
+    top: 320px;
+    left: 374px;
+    width: 450px;
+    height: 50px;
+    background: #f7df34;
 }
-.left {
-    float: right;
-}
-#insurance_sum, label[for="insurance_sum"] {
-    display: none;
+
+.hover3 {
+    position: absolute;
+    top: 520px;
+    left: 374px;
+    width: 450px;
+    height: 50px;
+    background: #efefef;
+    text-align: center;
 }
