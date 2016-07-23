@@ -59,10 +59,6 @@
                 $('.phone_head_section').css('height', '0px');
                 $('.phone_head').css('display', 'block');
             });
-
-            $('.mdl-button.blue.btn_all_fil').click(function(){
-                $('.mdl-cell.bg_brown.for_services').css('display', 'block');
-            });
         });
     </script>
 </head>
@@ -79,8 +75,8 @@
         <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
                 <a class="mdl-navigation__link" href="/about">О компании</a>
-                <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
-                <a class="mdl-navigation__link is-active" href="/departments">Филиалы</a>
+                <a class="mdl-navigation__link is-active" href="/services">Услуги и тарифы</a>
+                <a class="mdl-navigation__link" href="/departments">Филиалы</a>
                 <a class="mdl-navigation__link" href="/">on-line сервисы</a>
                 <a class="mdl-navigation__link" href="/news">Новости</a>
             </nav>
@@ -89,8 +85,8 @@
     <div class="mdl-layout__drawer mdl-layout--small-screen-only">
         <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
             <a class="mdl-navigation__link" href="/about">О компании</a>
-            <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
-            <a class="mdl-navigation__link is-active" href="/departments">Филиалы</a>
+            <a class="mdl-navigation__link is-active" href="/services">Услуги и тарифы</a>
+            <a class="mdl-navigation__link" href="/departments">Филиалы</a>
             <a class="mdl-navigation__link" href="/">on-line сервисы</a>
             <a class="mdl-navigation__link" href="/news">Новости</a>
         </nav>
@@ -107,7 +103,7 @@
                         <span class="visuallyhidden">Add</span>
                         <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
                     </div>
-                    <div class="title_container"><h2>Стоимость перевозки</h2></div>
+                    <div class="title_container"><h2>Услуги</h2></div>
                 </div>
                 <div class="mdl-grid portfolio-copy h_k">
                     <div class="phone_head_section">
@@ -145,72 +141,57 @@
                             </div>
                         </div>
                     </div>
-
-
-
-                </div>
-                <div class="mdl-cell mdl-cell--12-col tit_t">Введите название интересующего Вас города:</div>
-
-                <div class="mdl-grid portfolio-max-width portfolio-contact in_city">
-                    <div class="mdl-card__supporting-text">
-                        <form action="#" class="">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="Email">
-                                <label class="mdl-textfield__label" for="Email">Название города</label>
-                            </div>
-                            <p>
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" type="submit">
-                                    найти филиал
-                                </button>
-                            </p>
-                        </form>
+                    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline title_h with_icon">
+                        <div class="icon"><i class="material-icons">business_center</i></div>
+                        Складские услуги
+                    </h3>
+                    <div class="mdl-card__actions mdl-card--border line_ots"></div>
+                    <div class="mdl-cell mdl-cell--9-col mdl-card__supporting-text no-padding ">
+                        <p>Включают в себя все типы работ, обеспечивающих сохранность, обработку, отгрузку
+                            и сопровождение грузов. Следуя пожеланиям наших клиентов, мы предоставляем
+                            бесплатное хранение первые семь дней с момента уведомления о приходе груза.</p>
+                        <p><b>Все наши складские помещения оснащены современным техническим оборудованием
+                            и обслуживаются квалифицированными сотрудниками. Мы предлагаем полный комплекс
+                            складских услуг, среди которых можно выделить:</b>
+                        <ul>
+                            <li>Погрузочно-разгрузочные работы;</li>
+                            <li>Обработку грузов (маркировка, прием по местам, взвешивание, измерение объема грузов);</li>
+                            <li>Организацию ответственного хранения;</li>
+                            <li>Постоянный контроль за размещенными на складе грузами;</li>
+                        </ul>
+                        </p>
+                        <p><b>По заказу клиента мы делаем дополнительную упаковку грузов:</b>
+                        <ul>
+                            <li>паллетирование и стрейчевание;</li>
+                            <li>жесткую упаковку (обрешетка груза);</li>
+                            <li>пломбирование груза/машины.</li>
+                        </ul>
+                        </p>
+                        <p><b>Жесткая упаковка:</b> оплачивается из расчета 1м3 – 500 руб.<br>
+                            (хрупкие грузы, например, стекло из расчета 1м3 – 1000 руб.)<br>
+                            Минимальная стоимость упаковки – 150 руб.</p>
+                        <p><b>Пломбировка груза:</b> цена 1 пломбы – 20 руб.</p>
+                        <p>При необходимости наши клиенты могут заказать сбор, доставку хранящегося у нас груза,
+                            а также сортировку груза на мелкие партии.</p>
+                        <p><b>Наши преимущества в складских услугах:</b>
+                        <ul>
+                            <li>Умеренные цены на обслуживание;</li>
+                            <li>Возможность краткосрочного и долгосрочного хранения;</li>
+                            <li>Оперативные и качественные погрузочно-разгрузочные работы;</li>
+                            <li>Компьютеризированная система ведения складской логистики;</li>
+                            <li>Контроль соответствия груза заявленным параметрам (вес, габариты, маркировка);</li>
+                            <li>Удобное расположение складов для подъезда легкового и грузового транспорта, просторные стоянки;</li>
+                            <li>Строгая пропускная система (КПП);</li>
+                            <li>Высококвалифицированный персонал складского обслуживания.</li>
+                        </ul>
+                        </p>
+                        <p><a href="/" class="price">Скачать прайс</a> на услуги ответственного хранения по всем городам!</p>
                     </div>
                 </div>
 
-                <div class="mdl-card__actions mdl-card--border">
-                    <div class="mdl-grid portfolio-copy"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent blue btn_all_fil">показать все филиалы</a></div>
-                </div>
             </div>
 
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp bg_brown for_services">
-                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
 
-                    <h4 class="mdl-cell mdl-cell--12-col title_h b_ot">Воронеж</h4>
-                    <h3 class="mdl-cell mdl-cell--12-col title_adress">Адрес офиса</h4>
-                        <div class="mdl-card__actions mdl-card--border line_ots small"></div>
-
-                        <p class="mdl-cell mdl-cell--12-col black_p">Адрес</p>
-                        <p class="mdl-cell mdl-cell--12-col">394063, г. Воронеж, ул. 25 Января, д.14 a, оф. 8</p>
-                        <p class="mdl-cell mdl-cell--12-col black_p">E-mail</p>
-                        <p class="mdl-cell mdl-cell--12-col">andreev@lanks.org, sidorov@lanks.org, lanks@vmail.ru</p>
-                        <p class="mdl-cell mdl-cell--12-col black_p">Телефон</p>
-                        <p class="mdl-cell mdl-cell--12-col">+7 (473) 261-22-11</p>
-                        <p class="mdl-cell mdl-cell--12-col black_p">Факс</p>
-                        <p class="mdl-cell mdl-cell--12-col">+7 (473) 261-22-11</p>
-                        <p class="mdl-cell mdl-cell--12-col black_p">Skype</p>
-                        <p class="mdl-cell mdl-cell--12-col">inessa-lanks-vrn</p>
-                        <p class="mdl-cell mdl-cell--12-col black_p">Дополнительные номера</p>
-                        <p class="mdl-cell mdl-cell--12-col">+7 (473) 261-22-86, +7 (473) 261-21-87</p>
-
-
-                        <h3 class="mdl-cell mdl-cell--12-col title_adress">Адрес склада</h4>
-                            <div class="mdl-card__actions mdl-card--border line_ots small"></div>
-                            <p class="mdl-cell mdl-cell--12-col black_p">Адрес</p>
-                            <p class="mdl-cell mdl-cell--12-col">г. Воронеж, ул.Витрука, д. 10</p>
-                            <p class="mdl-cell mdl-cell--12-col black_p">Координаты</p>
-                            <p class="mdl-cell mdl-cell--12-col">51.71376279, 39.28360550</p>
-                            <p class="mdl-cell mdl-cell--12-col">
-                            <div id="map"><img src="images/template/map.jpg" /></div>
-                            </p>
-                            <h3 class="mdl-cell mdl-cell--12-col title_adress">Цены</h4>
-                                <div class="mdl-card__actions mdl-card--border line_ots small"></div>
-                                <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на курьерские услуги.</p>
-                                <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на сбор и доставку груза по региону.</p>
-                                <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза В этот город.</p>
-                                <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза ИЗ этого города.</p>
-
-                </div>
-            </div>
 
 
 
