@@ -1,43 +1,202 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
-    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
-    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
-    <link rel='shortcut icon' type='image/png' href='/favicon.png' />
-    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
-    <script type="text/javascript" src="javascripts/script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>MDL-Static Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-blue.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.btn_blue.ras .mdl-button.zapr').click(function(){
+                $('.form_contact_section').css('height', '520px');
+                $('.form_contact_section').addClass('openf');
+                $(this).css('display', 'none');
+                $('.close_form_contact_section').css('display', 'block');
+            });
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/calculate.css">
-    <script type="text/javascript" src="javascripts/calculate.js"></script>
+            $('.close_form_contact_section').click(function(){
+                $('.form_contact_section').css('height', '0px');
+                $('.btn_blue.ras .mdl-button').css('display', 'block');
+                $(this).css('display', 'none');
+                $('.form_contact_section').removeClass('openf');
+            });
+
+            $('.mdl-button.open_contact').click(function(){
+                $('.phone_head').css('display', 'none');
+                $('.phone_head_section').css('height', 'auto');
+            });
+
+            $('.phone_head .list_btn').click(function(){
+                $('.phone_head').css('display', 'none');
+                $('.phone_head_section').css('height', 'auto');
+            });
+
+            $('.close_phone_head_section').click(function(){
+                $('.phone_head_section').css('height', '0px');
+                $('.phone_head').css('display', 'block');
+            });
+        });
+    </script>
 </head>
+
 <body>
-<a class='scrollTop' href='#header'></a>
-<div id="wrapper">
-    {{{header}}}
-    <div id="content">
-        <h4>Рассчитать стоимость перевозки</h4>
-        <hr>
-        <div class="hover1"><div>Рассчитать стоимость</div></div>
-        <div class="hover2"></div>
-        <div class="hover3">
-            <a href="order">Сделать заказ онлайн</a><br>
-            или<br>
-            <a href="departments">Связаться с оператором</a>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+        <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <a href="/"><div class="portfolio-logo"></div></a>
+                    <span class="mdl-layout__title"></span>
+                </span>
         </div>
-        <iframe src="http://dostavkagruzov.com/devapi/iframe/"
-                hspace="0" vspace="0" marginHeight = "0" marginWidth = "0"
-                scrolling= "no" frameBorder="0" allowtransparency="true" width=450px height=500px scrolling=no>
-        </iframe>
-        <br>
+        <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link" href="/about">О компании</a>
+                <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
+                <a class="mdl-navigation__link is-active" href="/price">Филиалы</a>
+                <a class="mdl-navigation__link" href="/">on-line сервисы</a>
+                <a class="mdl-navigation__link" href="/news">Новости</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <a class="mdl-navigation__link" href="/about">О компании</a>
+            <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
+            <a class="mdl-navigation__link is-active" href="/price">Филиалы</a>
+            <a class="mdl-navigation__link" href="/">on-line сервисы</a>
+            <a class="mdl-navigation__link" href="/news">Новости</a>
+        </nav>
     </div>
+    <main class="mdl-layout__content">
+        <div class="mdl-grid portfolio-max-width">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media text_head">
+                    <div class="phone_head">
+                        <div class="list_btn"><i class="material-icons">keyboard_arrow_down</i></div>
+                        8 (800) 200-46-86
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
+                            <i class="material-icons" role="presentation">phone</i></button>
+                        <span class="visuallyhidden">Add</span>
+                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
+                    </div>
+                    <div class="title_container"><h2>Стоимость перевозки</h2></div>
+                </div>
+                <div class="mdl-grid portfolio-copy h_k">
+                    <div class="phone_head_section">
+                        <div class="close_phone_head_section"><i class="material-icons">clear</i></div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-card with_bg">
+                            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                    <i class="material-icons call">call</i>
+                                </div>
+                                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                    <div class="title">Единый номер</div>
+                                    <div class="phone">8 (800) 200-46-86</div>
+                                    <div class="all_text">
+                                        <div class="mdl-card__actions mdl-card--border line_ots">
+                                            <div class="mdl-grid portfolio-max-width no-padding">
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Москва</div>
+                                                    <div class="phone_city">(495) 591-71-48</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Санкт-Петербург</div>
+                                                    <div class="phone_city">(812) 384-24-73</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Воронеж</div>
+                                                    <div class="phone_city">(473) 261-22-11</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent filials" type="submit">Другие Филиалы</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="mdl-cell mdl-cell--12-col tit_t">Введите данные, чтобы рассчитать стоимость Вашей первозки:</div>
+                <div class="mdl-cell mdl-cell--12-col big_section">
+                    <div class="mdl-grid portfolio-max-width no-padding">
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="form_price_order">
+                                <iframe src="http://dostavkagruzov.com/devapi/iframe/"
+                                        hspace="0" vspace="0" marginHeight = "0" marginWidth = "0"
+                                        scrolling= "no" frameBorder="0" allowtransparency="true" width=450px height=500px scrolling=no>
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col call_op_block">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light call_op" type="submit">связаться с оператором</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-card__actions mdl-card--border border_about">
+                    <div class="mdl-cell mdl-cell--12-col"><div class="btn_make_order">сделать заказ он-лайн</div></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        <footer class="mdl-mini-footer pad">
+            <div class="footer_c">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light zapros" type="submit">
+                    запросить стоимость перевозки
+                </button>
+                <div class="mdl-grid portfolio-max-width no-padding">
+                    <div class="mdl-cell mdl-cell--4-col adress">
+                        <span class="adres">OOO Ланкс, 2016. Все права защищены.<br><span>Дизайн сайта от студии</span></span>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col social">
+                        <ul>
+                            <li class="vk"><a href="/"></a></li>
+                            <li class="b"><a href="/"></a></li>
+                            <li class="ok"><a href="/"></a></li>
+                            <li class="f"><a href="/"></a></li>
+                        </ul>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col link"><a href="/">Связаться с нами</a></div>
+                </div>
+            </div>
+        </footer>
+    </main>
 </div>
-{{{footer}}}
 </body>
+
 </html>

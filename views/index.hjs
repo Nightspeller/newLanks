@@ -1,175 +1,338 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
-    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
-    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
-    <link rel='shortcut icon' type='image/png' href='/favicon.png' />
-    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
-    <script type="text/javascript" src="javascripts/script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>MDL-Static Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-blue.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.btn_blue.ras .mdl-button.zapr').click(function(){
+                $('.form_contact_section').css('height', '520px');
+                $('.form_contact_section').addClass('openf');
+                $(this).css('display', 'none');
+                $('.close_form_contact_section').css('display', 'block');
+            });
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-    <script type="text/javascript" src="javascripts/simpleCalculate.js"></script>
+            $('.close_form_contact_section').click(function(){
+                $('.form_contact_section').css('height', '0px');
+                $('.btn_blue.ras .mdl-button').css('display', 'block');
+                $(this).css('display', 'none');
+                $('.form_contact_section').removeClass('openf');
+            });
+
+            $('.mdl-button.open_contact').click(function(){
+                $('.phone_head').css('display', 'none');
+                $('.phone_head_section').css('height', 'auto');
+            });
+
+            $('.phone_head .list_btn').click(function(){
+                $('.phone_head').css('display', 'none');
+                $('.phone_head_section').css('height', 'auto');
+            });
+
+            $('.close_phone_head_section').click(function(){
+                $('.phone_head_section').css('height', '0px');
+                $('.phone_head').css('display', 'block');
+            });
+        });
+    </script>
 </head>
+
 <body>
-<a class='scrollTop' href='#header'></a>
-<div id="wrapper">
-    {{{header}}}
-    <div id="content">
-        <article>
-            <h4>Главная</h4>
-            <hr>
-            <h2>Мы рады приветствовать Вас на сайте транспортно-логистической компании «Ланкс»!</h2>
-            <section class="intro">
-                <div id="introContent">
-                    <p>ООО «Ланкс» - более 16 лет на Российском рынке грузоперевозок.</p>
-                    <p>Наши преимущества:</p>
-                    <ol>
-                        <li>Чёткое <strong>соблюдение сроков доставки</strong> и прочих условий договора;</li>
-                        <li><strong>Самые низкие цены в отрасли</strong> среди компаний, которым Вы можете полностью доверять;</li>
-                        <li><strong>Собственный автопарк</strong> для большинства рейсов;</li>
-                        <li>Собственные <strong>складские помещения;</strong></li>
-                        <li><strong>Отслеживание местоположения груза</strong> через сайт на протяжении всей перевозки;</li>
-                        <li>Возможность решения <strong>комплексных логистических задач.</strong></li>
-                    </ol>
-                </div>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+        <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <a href="/"><div class="portfolio-logo"></div></a>
+                    <span class="mdl-layout__title"></span>
+                </span>
+        </div>
+        <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link" href="/about">О компании</a>
+                <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
+                <a class="mdl-navigation__link" href="/departments">Филиалы</a>
+                <a class="mdl-navigation__link" href="/servicesonline">on-line сервисы</a>
+                <a class="mdl-navigation__link" href="/news">Новости</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <a class="mdl-navigation__link" href="/about">О компании</a>
+            <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
+            <a class="mdl-navigation__link" href="/departments">Филиалы</a>
+            <a class="mdl-navigation__link" href="/">on-line сервисы</a>
+            <a class="mdl-navigation__link" href="/news">Новости</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="mdl-grid portfolio-max-width">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media text_head">
 
-                <aside>
-                    <form id="requestPrice">
-                        <h4>Запросите цену Вашей перевозки:</h4>
-                        <label>
-                            <input type="text" placeholder="Пункт отправления" name="cityFrom" />
-                        </label>
-                        <label>
-                            <input type="text" placeholder="Пункт назначения" name="cityTo" />
-                        </label>
-                        <label>
-                            <input type="text" placeholder="Вес груза, кг" name="weight" />
-                        </label>
-                        <label>
-                            <input type="text" placeholder="Объем груза, м3" name="volume" />
-                        </label>
-                        <label>
-                            <input type="text" placeholder="Телефон и/или E-Mail" name="contact" required/>
-                        </label>
-                        <button class="roundButton greenButton" type="submit">Узнать цену!</button>
-                    </form>
-                </aside>
+                    <div class="text_header">
+                        <div class="mdl-grid portfolio-copy">
+                            <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text text_h">
+                                <span>ООО «Ланкс»</span><br>Более 16 лет<br>на Российском рынке<br>грузоперевозок
+                            </div>
+                        </div>
+                    </div>
 
-               <!-- <aside id="phoneChooser">
-                    <label>
-                        <h4>Узнайте телефон Вашего филиала:</h4>
-                        <select class="importantSelect">
-                            <option value="">Выберите филиал: </option>
-                            {{#allDepartments}}
-                                <option value="{{mainPhone}}" >{{city}}</option>
-                            {{/allDepartments}}
-                        </select>
-                    </label>
-                    <div id="phoneNum"></div>
-                    <div>Нужного филиала нет в списке?</div>
-                    <div>К Вашим услушам <strong>бесплатный</strong> Единый номер:</div>
-                    <div class="greenText"><strong>8-800-200-46-86</strong></div>
-                    <div>Вы также можете</div>
-                    <button class="roundButton greenButton">Заказать обратный звонок</button>
-                </aside>-->
-            </section>
-            <section id="services">
-                <div class="serviceContainer">
-                    <h4>Сборный груз:</h4>
-                    <img src="images/services/service_sbornigruz.png"/>
-                    <hr />
-                    <h4>Преимущества:</h4>
-                    <ul>
-                        <li>Самый выгодный вариант для небольших партий груза - от 300 рублей;</li>
-                        <li>Быстрая доставка по фиксированному графику;</li>
-                        <li>Возможность контроля местоположения груза;</li>
-                        <li>Возможность бесплатного использования складов ООО "Ланкс" (до 7 дней);</li>
-                        <li>Возможность заказа доупаковки груза.</li>
-                    </ul>
+                    <div class="phone_head">
+                        <div class="list_btn"><i class="material-icons">keyboard_arrow_down</i></div>
+                        8 (800) 200-46-86
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
+                            <i class="material-icons" role="presentation">phone</i></button>
+                        <span class="visuallyhidden">Add</span>
+                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
+                    </div>
+
+                    <img class="article-image" src="images/template/about-header.jpg" border="0" alt="">
+
+
+
                 </div>
-                <div class="serviceContainer">
-                    <h4>Отдельные машины:</h4>
-                    <img src="images/services/service_world.png"/>
-                    <hr />
-                    <h4>Преимущества: </h4>
-                    <ul>
-                        <li>Самый оперативный вариант доставки;</li>
-                        <li>Оптимален для больших партий груза;</li>
-                        <li>Возможность опломбирования машины;</li>
-                        <li>Заказ машины под габариты груза и режим работы заказчика;</li>
-                        <li>Возможность заказа дополнительных пунктов погрузки\разгрузки.</li>
-                    </ul>
-                </div>
-                <div class="serviceContainer">
-                    <h4>Кросс-докинг:</h4>
-                    <img src="images/services/cross.png"/>
-                    <hr />
-                    <h4>Преимущества: </h4>
-                    <ul>
-                        <li>Комплексное  решение,  оптимизирующее  затраты  по  перевозке  большой партии груза с последующей доставкой  его в несколько адресных точек;</li>
-                        <li>Вам  не  нужно  беспокоиться  о  перевозке,  хранении,  комплектовании  и доставке груза;</li>
-                        <li>Сроки доставки товара конечному потребителю сведены к минимуму;</li>
-                        <li>Возможность длительного хранения товара на складах ООО «Ланкс» и его доставка по требованию;</li>
-                    </ul>
-                </div>
-            </section>
-            <section id="clients" class="align_center">
-                <h4>Убедитесь в качестве и доступности наших транспортных услуг, как это уже сделали многие наши партнеры, среди которых: </h4>
-                <div>
-                    <div class="align_center">
-                        <img src="images/index/main_oriflame.png" />
-                        <img src="images/index/main_beeline.png" />
-                        <img src="images/index/main_megafon.png" />
+                <div class="mdl-grid portfolio-copy h_k">
+                    <div class="phone_head_section">
+                        <div class="close_phone_head_section"><i class="material-icons">clear</i></div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-card with_bg">
+                            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                    <i class="material-icons call">call</i>
+                                </div>
+                                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                    <div class="title">Единый номер</div>
+                                    <div class="phone">8 (800) 200-46-86</div>
+                                    <div class="all_text">
+                                        <div class="mdl-card__actions mdl-card--border line_ots">
+                                            <div class="mdl-grid portfolio-max-width no-padding">
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Москва</div>
+                                                    <div class="phone_city">(495) 591-71-48</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Санкт-Петербург</div>
+                                                    <div class="phone_city">(812) 384-24-73</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Воронеж</div>
+                                                    <div class="phone_city">(473) 261-22-11</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent filials" type="submit">Другие Филиалы</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline preim">Наши преимущества</h3>
+                    <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                        <p>
+                        <ul>
+                            <li>Чёткое соблюдение сроков доставки и прочих условий договора;</li>
+                            <li>Самые низкие цены в отрасли среди компаний, которым Вы можете полностью доверять;</li>
+                            <li>Собственный автопарк для большинства рейсов;</li>
+                            <li>Собственные складские помещения;</li>
+                            <li>Отслеживание местоположения груза через сайт на протяжении всей перевозки;</li>
+                            <li>Возможность решения комплексных логистических задач.</li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
-            </section>
-            <section id="additional">
-                <h4>Мы также рады Вам предложить:</h4>
-                <div class="additionalContainer">
-                    <h4>Ответственное хранение:</h4>
-                    <img src="images/services/service_stock.png"/>
-                    <a href="/services?param=5" class="roundButton">Подробнее</a>
-                </div>
-                <div class="additionalContainer">
-                    <h4>Мобильные пункты выдачи:</h4>
-                    <img src="images/services/mpv.png"/>
-                    <a href="/services?param=6" class="roundButton">Подробнее</a>
-                </div>
-                <div class="additionalContainer">
-                    <h4>Внутригородская доставка:</h4>
-                    <img src="images/services/service_courier.png"/>
-                    <a href="/services?param=3" class="roundButton">Подробнее</a>
-                </div>
-                <div class="additionalContainer">
-                    <h4>Кросс-докинг:</h4>
-                    <img src="images/services/cross.png"/>
-                    <a href="/services?param=4" class="roundButton">Подробнее</a>
-                </div>
-                <div class="additionalContainer">
-                    <h4>Прочие услуги:</h4>
-                    <img src="images/services/service_sklad.png"/>
-                    <a href="/services?param=7" class="roundButton">Подробнее</a>
-                </div>
-            </section>
+                <div class="mdl-card__actions mdl-card--border btn_blue ras">
+                    <div class="mdl-grid portfolio-copy"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent zapr">Запросить стоимость перевозки</a></div>
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <div class="form_contact_section">
+                            <div class="close_form_contact_section"><i class="material-icons">clear</i></div>
+                            <div class="mdl-grid portfolio-max-width portfolio-contact">
 
-            <footer>
-                <h3>
-                    Наиболее полную информацию об услугах, ценах, сроках доставки, а также акциях и скидках можно получить по телефону: <span class="greenText">8-800-200-46-86</span> или связавшись с нами
-                    <a href="question">через интернет</a>.
-                </h3>
-                <p><strong>Надеемся на долгое, взаимовыгодное и приятное сотрудничество,<br />
-                Ваш «Ланкс»!</strong></p>
-            </footer>
-        </article>
-    </div>
+                                <div class="mdl-card__supporting-text">
+                                    <h4 class="mdl-cell mdl-cell--12-col title_h">Заполните соответствующие поля информацией о Вашей перевозке</h4>
+                                    <form action="#" class="">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                                            <label class="mdl-textfield__label" for="Name">Пункт отправления…</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="Email">
+                                            <label class="mdl-textfield__label" for="Email">г. Москва, ул. Большая Улочная, стр. 12 к-2</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="Email">
+                                            <label class="mdl-textfield__label" for="Email">Вес груза (кг)…</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="Email">
+                                            <label class="mdl-textfield__label" for="Email">Объём груза (м3)…</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="Email">
+                                            <label class="mdl-textfield__label" for="Email">Телефон и/или e-mail…</label>
+                                        </div>
+                                        <p>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" type="submit">
+                                                Рассчитать
+                                            </button>
+                                        </p>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp bg_brown">
+
+                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                    <h4 class="mdl-cell mdl-cell--12-col title_h">Сборный груз</h4>
+                    <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                        <ul>
+                            <li>Самый выгодный вариант для небольших партий груза от 300 рублей;</li>
+                            <li>Быстрая доставка по фиксированному графику;</li>
+                            <li>Возможность контроля местоположения груза;</li>
+                            <li>Возможность бесплатного использования складов ООО "Ланкс" (до 7 дней);</li>
+                            <li>Возможность заказа доупаковки груза.</li>
+                        </ul>
+                    </div>
+                    <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                        <i class="material-icons">dashboard</i>
+                    </div>
+
+                    <div class="mdl-card__actions mdl-card--border line_ots"></div>
+                    <h4 class="mdl-cell mdl-cell--12-col title_h">Отдельные машины</h4>
+                    <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                        <ul>
+                            <li>Самый оперативный вариант доставки;</li>
+                            <li>Оптимален для больших партий груза;</li>
+                            <li>Возможность опломбирования машины;</li>
+                            <li>Заказ машины под габариты груза и режим работы заказчика;</li>
+                            <li>Возможность заказа дополнительных пунктов погрузки/разгрузки.</li>
+                        </ul>
+                    </div>
+                    <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                        `	<i class="material-icons">local_shipping</i>
+                    </div>
+
+                    <div class="mdl-card__actions mdl-card--border line_ots"></div>
+                    <h4 class="mdl-cell mdl-cell--12-col title_h">Кросс-докинг</h4>
+                    <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                        <ul>
+                            <li>Комплексное решение, оптимизирующее затраты по перевозке большой партии
+                                груза с последующей доставкой его в несколько адресных точек;</li>
+                            <li>Вам не нужно беспокоиться о перевозке, хранении, комплектовании и доставке груза;</li>
+                            <li>Сроки доставки товара конечному потребителю сведены к минимуму;</li>
+                            <li>Возможность длительного хранения товара на складах ООО «Ланкс»
+                                и его доставка по требованию.</li>
+                        </ul>
+                    </div>
+                    <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                        <i class="material-icons">store</i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-card__title padding_b">
+                    <h2 class="mdl-card__title-text">С нами сотрудничают</h2>
+                </div>
+                <div class="mdl-card__media">
+                    <img class="article-image" src=" images/template/example-work02.jpg" border="0" alt="">
+                </div>
+                <div class="mdl-card__actions mdl-card--border small_t">
+                    Убедитесь в качестве наших услуг на примере некоторых наших партнёров.
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-card__title padding_b">
+                    <h2 class="mdl-card__title-text">Наши филиалы</h2>
+                </div>
+                <div class="mdl-card__media">
+                    <img class="article-image" src=" images/template/example-work01.jpg" border="0" alt="">
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Статус груза</h2>
+                </div>
+                <div class="mdl-card__actions mdl-card--border kod_g">
+                    Введите код Вашего груза, чтобы проверить его статус:
+                    <div class="mdl-card__supporting-text pad_top">
+                        <form action="#" class="">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                                <label class="mdl-textfield__label" for="Name">Код груза…</label>
+                            </div>
+                            <p>
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light" type="submit">
+                                    Проверить
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <footer class="mdl-mini-footer pad">
+            <div class="footer_c">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light zapros" type="submit">
+                    запросить стоимость перевозки
+                </button>
+                <div class="mdl-grid portfolio-max-width no-padding">
+                    <div class="mdl-cell mdl-cell--4-col adress">
+                        <span class="adres">OOO Ланкс, 2016. Все права защищены.<br><span>Дизайн сайта от студии</span></span>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col social">
+                        <ul>
+                            <li class="vk"><a href="/"></a></li>
+                            <li class="b"><a href="/"></a></li>
+                            <li class="ok"><a href="/"></a></li>
+                            <li class="f"><a href="/"></a></li>
+                        </ul>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col link"><a href="/">Связаться с нами</a></div>
+                </div>
+            </div>
+        </footer>
+    </main>
 </div>
-{{{footer}}}
 </body>
 </html>

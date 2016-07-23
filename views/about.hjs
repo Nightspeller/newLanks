@@ -1,72 +1,253 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
-    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
-    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
-    <link rel='shortcut icon' type='image/png' href='/favicon.png' />
-    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
-    <script type="text/javascript" src="javascripts/script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>MDL-Static Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-blue.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.btn_blue.ras .mdl-button.zapr').click(function(){
+                $('.form_contact_section').css('height', '520px');
+                $('.form_contact_section').addClass('openf');
+                $(this).css('display', 'none');
+                $('.close_form_contact_section').css('display', 'block');
+            });
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/about.css">
+            $('.close_form_contact_section').click(function(){
+                $('.form_contact_section').css('height', '0px');
+                $('.btn_blue.ras .mdl-button').css('display', 'block');
+                $(this).css('display', 'none');
+                $('.form_contact_section').removeClass('openf');
+            });
+
+            $('.mdl-button.open_contact').click(function(){
+                $('.phone_head').css('display', 'none');
+                $('.phone_head_section').css('height', 'auto');
+            });
+
+            $('.phone_head .list_btn').click(function(){
+                $('.phone_head').css('display', 'none');
+                $('.phone_head_section').css('height', 'auto');
+            });
+
+            $('.close_phone_head_section').click(function(){
+                $('.phone_head_section').css('height', '0px');
+                $('.phone_head').css('display', 'block');
+            });
+        });
+    </script>
 </head>
+
 <body>
-<a class='scrollTop' href='#header'></a>
-<div id="wrapper">
-	{{{header}}}
-    <div id="content">
-        <article>
-            <a href="gallery" class="button_1" id="company_gallery">Фотогалерея</a>
-            <h4>О компании</h4>
-            <hr>
-            <h2>Рады, что Вы заинтересовались, ведь нам есть что рассказать!</h2>
-            <section>
-                <img src="images/about/about2.jpg" class="right"/>
-                <p>ООО "ЛАНКС" – международная транспортно - логистическая компания, более 16 лет успешно работающая на Российском рынке грузоперевозок. Мы оказываем <a href="services">широкий спектр услуг по доставке и хранению грузов</a> при неизменно высоком уровне сервиса и соблюдении индивидуального подхода к каждому клиенту.</p>
-                <ul>
-                    Наша миссия:
-                    <li>Обеспечивать предоставление качественных логистических услуг;</li>
-                    <li>Осуществлять деятельность, направленную на построение долгосрочного сотрудничества с клиентами;</li>
-                    <li>Помогать нашим партнерам в развитие их бизнеса;</li>
-                    <li>Создавать условия для повышения эффективности работы компании.</li>
-                </ul>
-                <p>С 2004 года началось активное развитие филиальной сети компании, которая сейчас насчитывает более 20 филиалов и представительств. Полный список филиалов можно посмотреть <a href="departments">здесь.</a> С 2012 г. осуществляется грузовое сообщение с Республикой Беларусь, с 2014 г. - с Республикой Крым.</p>
-                <p>Мы предоставляем широкий спектр транспортных, экспедиционных, логистических и сопутствующих услуг.
-                    В их числе: <a href="services?param=1">Сборный груз</a>,
-                    <a href="services?param=2"> Междугородняя грузовая перевозка</a>,
-                    <a href="services?param=3"> Курьерская доставка</a>,
-                    <a href="services?param=4"> Кросс-Докинг</a>,
-                    <a href="services?param=5"> Складские услуги</a>,
-                    <a href="services?param=6"> МПВ</a>,
-                    <a href="services?param=7"> Сопутствующие услуги</a>.
-                </p>
-                <img src="images/about/about1.jpg" class="left"/>
-                <p class="align_center">Наши правила работы:</p>
-                <p class="align_left"><strong>Легко заказать</strong></p>
-                <p class="align_center"><strong>Вовремя доставить</strong></p>
-                <p class="align_right"><strong>Удобно получить</strong></p>
-                <p>ООО "Ланкс" имеет полис страхования ОАО СК "Альянс" (бывшее ОАО «Росно») по риску "ответственность грузоперевозчика" с лимитом ответственности на один страховой случай 6500000 рублей. По желанию грузовладельцев, как дополнительная услуга, производится индивидуальное страхование грузов в СОАО «ВСК» или увеличение страховой суммы нашей ответственности.</p>
-                <p>Мы располагаем средствами и опытом работы, необходимыми для выполнения поставленных задач любого уровня сложности - от организации курьерской доставки до комплексной реализации крупных логистических схем с использованием <a href="gallery">собственного и арендованного подвижного состава</a> и <a href="gallery">складских помещений во всех регионах</a>.</p>
-                <p>Клиент хочет, чтобы его обслужили оперативно и качественно. Мы в силах это осуществить!</p>
-                <p>Наши транспортные услуги – помощь в решении задач Вашего бизнеса.</p>
-                <p>ООО «Ланкс» осуществляет персональный подход к каждому клиенту, в том числе и в вопросах ценовой политики. Мы готовы предложить для Вас индивидуальный вариант доставки, подходящий именно Вам. <a href="question">Свяжитесь с нами и убедитесь в этом сами!</a></p>
-                <img src="images/about/about3.jpg" class="right"/>
-                <p>Наш приоритет - долгосрочное сотрудничество!</p>
-                <p class="align_left"><span class="lanks_letters">Л</span>  - логистика</p>
-                <p style="margin-left: 15%;"><span class="lanks_letters">А</span> - аккуратность</p>
-                <p class="align_center"><span class="lanks_letters">Н</span> - надежность</p>
-                <p style="margin-left: 50%;"><span class="lanks_letters">К</span> – качество</p>
-                <p class="align_right"><span class="lanks_letters">С</span> - своевременность</p>
-            </section>
-        </article>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+        <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <a href="/"><div class="portfolio-logo"></div></a>
+                    <span class="mdl-layout__title"></span>
+                </span>
+        </div>
+        <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="/about">О компании</a>
+                <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
+                <a class="mdl-navigation__link" href="/departments">Филиалы</a>
+                <a class="mdl-navigation__link" href="/">on-line сервисы</a>
+                <a class="mdl-navigation__link" href="/news">Новости</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <a class="mdl-navigation__link is-active" href="/about">О компании</a>
+            <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
+            <a class="mdl-navigation__link" href="/departments">Филиалы</a>
+            <a class="mdl-navigation__link" href="/">on-line сервисы</a>
+            <a class="mdl-navigation__link" href="/news">Новости</a>
+        </nav>
     </div>
+    <main class="mdl-layout__content">
+        <div class="mdl-grid portfolio-max-width">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media text_head">
+                    <div class="phone_head">
+                        <div class="list_btn"><i class="material-icons">keyboard_arrow_down</i></div>
+                        8 (800) 200-46-86
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
+                            <i class="material-icons" role="presentation">phone</i></button>
+                        <span class="visuallyhidden">Add</span>
+                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
+                    </div>
+                    <div class="title_container"><h2>О компании</h2></div>
+                </div>
+                <div class="mdl-grid portfolio-copy h_k">
+                    <div class="phone_head_section">
+                        <div class="close_phone_head_section"><i class="material-icons">clear</i></div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-card with_bg">
+                            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                    <i class="material-icons call">call</i>
+                                </div>
+                                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                    <div class="title">Единый номер</div>
+                                    <div class="phone">8 (800) 200-46-86</div>
+                                    <div class="all_text">
+                                        <div class="mdl-card__actions mdl-card--border line_ots">
+                                            <div class="mdl-grid portfolio-max-width no-padding">
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Москва</div>
+                                                    <div class="phone_city">(495) 591-71-48</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Санкт-Петербург</div>
+                                                    <div class="phone_city">(812) 384-24-73</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Воронеж</div>
+                                                    <div class="phone_city">(473) 261-22-11</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent filials" type="submit">Другие Филиалы</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline title_h_b">
+                        Нам есть что рассказать!
+                    </h3>
+                    <h4 class="mdl-cell mdl-cell--12-col tit_about">О нас</h4>
+                    <div class="mdl-card__actions mdl-card--border border_about"></div>
+                    <div class="mdl-cell mdl-cell--11-col mdl-card__supporting-text no-padding ">
+                        <p>ООО "ЛАНКС" – международная транспортно-логистическая компания, более 16 лет успешно работающая на Российском рынке
+                            грузоперевозок. Мы оказываем широкий спектр услуг по доставке и хранению грузов при неизменно высоком уровне сервиса
+                            и соблюдении индивидуального подхода к каждому клиенту.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <div class="mdl-grid portfolio-max-width no-padding">
+                            <div class="mdl-cell mdl-cell--4-col"><img class="article-image" src=" images/template/about_1.jpg" border="0" alt=""></div>
+                            <div class="mdl-cell mdl-cell--4-col"><img class="article-image" src=" images/template/about_2.jpg" border="0" alt=""></div>
+                            <div class="mdl-cell mdl-cell--4-col"><img class="article-image" src=" images/template/about_3.jpg" border="0" alt=""></div>
+                        </div>
+                    </div>
+                    <h4 class="mdl-cell mdl-cell--12-col tit_about">Наша миссия</h4>
+                    <div class="mdl-card__actions mdl-card--border border_about"></div>
+                    <div class="mdl-cell mdl-cell--11-col mdl-card__supporting-text no-padding ">
+                        <p>
+                        <ul>
+                            <li>Обеспечивать предоставление качественных логистических услуг;</li>
+                            <li>Осуществлять деятельность, направленную на построение долгосрочного сотрудничества с клиентами;</li>
+                            <li>Помогать нашим партнерам в развитие их бизнеса;</li>
+                            <li>Создавать условия для повышения эффективности работы компании.</li>
+                        </ul>
+                        </p>
+                        <p>С 2004 года началось активное развитие филиальной сети компании, которая сейчас насчитывает более 20 филиалов и предста-
+                            вительств. Полный список филиалов можно <a href="/" class="light_bl">посмотреть здесь</a>. С 2012 г. осуществляется грузовое сообщение с Республикой
+                            Беларусь, с 2014 г. - с Республикой Крым.</p>
+                    </div>
+                    <h4 class="mdl-cell mdl-cell--12-col tit_about">Спектр услуг</h4>
+                    <div class="mdl-card__actions mdl-card--border border_about"></div>
+                    <div class="mdl-cell mdl-cell--11-col mdl-card__supporting-text no-padding ">
+                        <p>Мы предоставляем широкий спектр транспортных, экспедиционных, логистических и сопутствующих услуг.В их числе:</p>
+                        <p>
+                        <ul class="light_bl">
+                            <li>Сборный груз</li>
+                            <li>Междугородняя грузовая перевозка</li>
+                            <li>Курьерская доставка, Кросс-Докинг</li>
+                            <li>Складские услуги</li>
+                            <li>МПВ</li>
+                            <li>Сопутствующие услуги</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <h4 class="mdl-cell mdl-cell--12-col tit_about">Правила работы</h4>
+                    <div class="mdl-card__actions mdl-card--border border_about"></div>
+                    <div class="mdl-cell mdl-cell--11-col mdl-card__supporting-text no-padding ">
+                        <p>
+                        <ul>
+                            <li>Легко заказать</li>
+                            <li>Вовремя доставить</li>
+                            <li>Удобно получить</li>
+                        </ul>
+                        </p>
+                        <p>ООО "Ланкс" имеет полис страхования ОАО СК "Альянс" (бывшее ОАО «Росно») по риску "ответственность грузоперевозчика"
+                            с лимитом ответственности на один страховой случай 6500000 рублей. По желанию грузовладельцев, как дополнительная услуга,
+                            производится индивидуальное страхование грузов в СОАО «ВСК» или увеличение страховой суммы нашей ответственности.</p>
+                    </div>
+                    <h4 class="mdl-cell mdl-cell--12-col tit_about">Уровень обслуживания</h4>
+                    <div class="mdl-card__actions mdl-card--border border_about"></div>
+                    <div class="mdl-cell mdl-cell--11-col mdl-card__supporting-text no-padding ">
+                        <p>Мы располагаем средствами и опытом работы, необходимыми для выполнения поставленных задач любого уровня сложности –
+                            от организации курьерской доставки до комплексной реализации крупных логистических схем с использованием <span class="light_bl">собственного и арендованного подвижного состава и складских помещений во всех регионах.</span></p>
+                        <p>Клиент хочет, чтобы его обслужили оперативно и качественно. Мы в силах это осуществить!</p>
+                        <p>Наши транспортные услуги – помощь в решении задач Вашего бизнеса.</p>
+                        <p>ООО «Ланкс» осуществляет персональный подход к каждому клиенту, в том числе и в вопросах ценовой политики. Мы готовы
+                            предложить для Вас индивидуальный вариант доставки, подходящий именно Вам. <a href="/" class="light_bl">Свяжитесь с нами и убедитесь в этом сами!</a></p>
+                        <p>Наш приоритет - долгосрочное сотрудничество!</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        <footer class="mdl-mini-footer pad">
+            <div class="footer_c">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light zapros" type="submit">
+                    запросить стоимость перевозки
+                </button>
+                <div class="mdl-grid portfolio-max-width no-padding">
+                    <div class="mdl-cell mdl-cell--4-col adress">
+                        <span class="adres">OOO Ланкс, 2016. Все права защищены.<br><span>Дизайн сайта от студии</span></span>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col social">
+                        <ul>
+                            <li class="vk"><a href="/"></a></li>
+                            <li class="b"><a href="/"></a></li>
+                            <li class="ok"><a href="/"></a></li>
+                            <li class="f"><a href="/"></a></li>
+                        </ul>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col link"><a href="/">Связаться с нами</a></div>
+                </div>
+            </div>
+        </footer>
+    </main>
 </div>
-{{{footer}}}
 </body>
+
 </html>
