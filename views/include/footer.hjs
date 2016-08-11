@@ -1,7 +1,52 @@
-<footer id="footer">
-    <a href="http://vk.com/lanks" target="_blank"><img src="images/template/vk.png" height="48"/></a>
-    <a href="http://lanksorg.blogspot.ru" target="_blank"><img src="images/template/blogspot.png" height="48"/></a>
-    <a href="http://www.odnoklassniki.ru/lankstrans" target="_blank"><img src="images/template/odnoklassniki_logo.png" height="48"/></a>
-    <a href="http://www.facebook.com/pages/ООО-ланкс/551231688245030" target="_blank"><img src="images/template/facebook.png" height="48"/></a><br />
-    OOO Ланкс, 2016. Все права защищены.
+<footer class="mdl-mini-footer pad">
+    <div class="footer_c">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light zapros" type="submit">
+            запросить стоимость перевозки
+        </button>
+        <div class="mdl-grid portfolio-max-width no-padding">
+            <div class="mdl-cell mdl-cell--4-col adress">
+                <span class="adres">OOO Ланкс, 2016. Все права защищены.<br><span>Дизайн сайта от студии</span></span>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col social">
+                <ul>
+                    <li class="vk"><a href="https://new.vk.com/lanks"></a></li>
+                    <li class="b"><a href="http://lanksorg.blogspot.ru/"></a></li>
+                    <li class="ok"><a href="https://ok.ru/lankstrans"></a></li>
+                    <li class="f"><a href="//www.facebook.com/pages/ООО-ланкс/551231688245030"></a></li>
+                </ul>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col link"><a id="show-dialog" class="mdl-button">Связаться с нами</a></div>
+        </div>
+    </div>
 </footer>
+
+<dialog class="mdl-dialog ticket">
+    <h4 class="mdl-dialog__title">Обратная связь</h4>
+    <div class="mdl-dialog__content">
+        <p>Оставьте Ваши данные, и мы свяжемся с Вами</p>
+    </div>
+    <div class="mdl-dialog__content_my">
+        <div class="form_contact_section">
+            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                <form action="#" class="">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                        <label class="mdl-textfield__label" for="Name">Имя</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="Email">
+                        <label class="mdl-textfield__label" for="Email">E-mail</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="Email">
+                        <label class="mdl-textfield__label" for="Email">Сообщение</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="mdl-button close">Послать</button>
+    </div>
+    <div class="m_close"><i class="material-icons">clear</i></div>
+</dialog>

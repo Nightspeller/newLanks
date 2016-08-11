@@ -1,85 +1,183 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
-    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
-    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
-    <link rel='shortcut icon' type='image/png' href='/favicon.png' />
-    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
-    <script type="text/javascript" src="javascripts/script.js"></script>
-    <script type="text/javascript" src="javascripts/handlebars.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>MDL-Static Website</title>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/online.css">
-    <script type="text/javascript" src="javascripts/online.js"></script>
+    <!--template-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-blue.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <!--vendor-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="scripts/vendor/jquery.tagcanvas.min.js"></script>
+
+    <!--ours: general and page-specific-->
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="scripts/script.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/pages/online.css" />
+    <script src="scripts/pages/online.js"></script>
 </head>
+
 <body>
-<a class='scrollTop' href='#header'></a>
-<div id="wrapper">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     {{{header}}}
-    <div id="content">
-        <h4>Он-лайн сервисы</h4>
-        <hr>
-        <h2>На данный момент мы рады предложить Вам следующие сервисы Он-лайн:</h2>
-        <section id="images">
-            <a href="order"><img src="images/online/order.png"/></a>
-            <a href="calculate"><img src="images/online/calculate.png"/></a>
-            <img src="images/online/documents.png" id="3"/>
-            <img src="images/online/track.png" id="4"/>
-            <img src="images/online/track_ori.png" id="6"/>
-            <a href="question?param=4"><img src="images/online/call.png"/></a>
-        </section>
-        <article>
-        <section id="section1">
-        </section>
-        <section id="section2">
-        </section>
-        <section id="section3">
-            <ol>
-                <li><a href="for_download/documents/Общие правила перевозки грузов.zip">Общие правила перевозок грузов автомобильным транспортом</a></li>
-                <li><a href="for_download/documents/Dogovor_TEO.zip">Типовой договор</a></li>
-                <li><a href="for_download/documents/Акт о повреждении груза.zip">Приложение акт о повреждении груза в пути (образец)</a></li>
-                <li><a href="for_download/documents/Zayavka.zip">Заявка на забор/доставку груза</a></li>
-                <li><a href="for_download/documents/Форма_претензии.zip">Форма претензии</a></li>
-                <li><a href="for_download/documents/eco.zip">Экологическая политика компании</a></li>
-            </ol>
-        </section>
-        <section id="section4">
-            <h4>Чтобы узнать текущее состояние грузоперевозки, введите код груза.</h4>
-            <input id="track_id" type="text" maxlength=16 size=16><br>
-            <input type="button" id="track_button" value="Проверить">
-        </section>
-        <section id="section5">
-        </section>
-        <section id="section6">
-            <h4>Чтобы узнать предположительное время доставки введите номер заказа.</h4>
-            <input id="track_orif_id" type="text" maxlength=16 size=16><br>
-            <input type="button" id="track_orif_button" value="Проверить">
-            <div class="clientWarning">
-                <div class='clientWarning-overlay'></div>
-                <div class='clientWarning-dialog'>
-                    <div class='clientWarning-content'>
-                        <h1>Уважаемый консультант<br/> <span class="clientWarning-name"></span>! </h1>
-                        <p>Напоминаем Вам,  что при оплате заказа домашней доставки,  курьер  обязан Вам выдать
-                        кассовый чек на передаваемую ему сумму наличных денег.</p>
-                        <p>Требуйте кассовый чек у водителя в обязательном порядке и сохраняйте его до момента
-                        зачисления денег на Ваш  номер в Орифлэйм.</p>
-                        <p>Без предъявления кассового чека претензии по оплате заказа, к сожалению, приниматься не
-                        будут.</p>
-                        <p>Компания Ланкс</p>
-                        <button class="clientWarningButton">Закрыть</button>
+    <main class="mdl-layout__content">
+        <div class="mdl-grid portfolio-max-width">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media text_head">
+                    <div class="phone_head">
+                        <div class="list_btn"><i class="material-icons">keyboard_arrow_down</i></div>
+                        8 (800) 200-46-86
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
+                            <i class="material-icons" role="presentation">phone</i></button>
+                        <span class="visuallyhidden">Add</span>
+                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
+                    </div>
+                    <div class="title_container"><h2>On-line сервисы</h2></div>
+                </div>
+                <div class="mdl-grid portfolio-copy h_k">
+                    <div class="phone_head_section">
+                        <div class="close_phone_head_section"><i class="material-icons">clear</i></div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-card with_bg">
+                            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                    <i class="material-icons call">call</i>
+                                </div>
+                                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                    <div class="title">Единый номер</div>
+                                    <div class="phone">8 (800) 200-46-86</div>
+                                    <div class="all_text">
+                                        <div class="mdl-card__actions mdl-card--border line_ots">
+                                            <div class="mdl-grid portfolio-max-width no-padding">
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Москва</div>
+                                                    <div class="phone_city">(495) 591-71-48</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Санкт-Петербург</div>
+                                                    <div class="phone_city">(812) 384-24-73</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <div class="title_city">Воронеж</div>
+                                                    <div class="phone_city">(473) 261-22-11</div>
+                                                </div>
+                                                <div class="mdl-cell mdl-cell--3-col w_p">
+                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent filials" type="submit">Другие Филиалы</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--12-col without_p">
+
+                    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
+                        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                            <h4 class="mdl-cell mdl-cell--12-col tile_s">Скачать документацию</h4>
+                            <p>
+                            <ul>
+                                <li><span class="light_bl">Общие правила</span> перевозок грузов автомобильным транспортом.</li>
+                                <li><span class="light_bl">Типовой договор.</span></li>
+                                <li><span class="light_bl">Приложение</span> акт о повреждении груза в пути (образец).</li>
+                                <li><span class="light_bl">Заявка</span> на забор/доставку груза.</li>
+                                <li><span class="light_bl">Форма</span> претензии.</li>
+                                <li><span class="light_bl">Экологическая политика</span> компании.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                            <i class="material-icons">insert_drive_file</i>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border line_ots"></div>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
+                        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                            <h4 class="mdl-cell mdl-cell--12-col tile_s">Статус груза</h4>
+                            <p class="mdl-cell mdl-cell--12-col">Введите код Вашего груза, чтобы проверить статус:</p>
+                            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                                <div class="mdl-card__supporting-text">
+                                    <form action="#" class="">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="Email">
+                                            <label class="mdl-textfield__label" for="Email">Код груза</label>
+                                        </div>
+                                        <p>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" type="submit">
+                                                проверить
+                                            </button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                            <i class="material-icons">assignment_turned_in</i>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border line_ots"></div>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
+                        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                            <h4 class="mdl-cell mdl-cell--12-col tile_s">Связаться с нами</h4>
+                            <p class="mdl-cell mdl-cell--12-col">Заполните форму обратной связи соответствующей информацией:</p>
+                            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                                <div class="mdl-card__supporting-text">
+                                    <form action="#" class="">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="Email">
+                                            <label class="mdl-textfield__label" for="Email">ФИО...</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="Email">
+                                            <label class="mdl-textfield__label" for="Email">E-mail…</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="Email">
+                                            <label class="mdl-textfield__label" for="Email">Телефон…</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="Email">
+                                            <label class="mdl-textfield__label" for="Email">Сообщение (информация, которую считаете необходимой)…</label>
+                                        </div>
+                                        <span class="mdl-list__item-secondary-action ser_ol">
+										<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+										<input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" />
+										Перезвонить мне
+										</label>
+									</span>
+                                        <p>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" type="submit">
+                                                Отправить
+                                            </button>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent gray" type="submit">
+                                                Очистить
+                                            </button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                            <i class="material-icons">textsms</i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </article>
         </div>
-        </div>
-        {{{footer}}}
+    {{{footer}}}
+    </main>
+</div>
 </body>
+
 </html>
