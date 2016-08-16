@@ -10,7 +10,7 @@
             <a class="mdl-navigation__link" href="/about">О компании</a>
             <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
             <a class="mdl-navigation__link" href="/departments">Филиалы</a>
-            <a class="mdl-navigation__link" href="/online">on-line сервисы</a>
+            <a class="mdl-navigation__link" href="/online">On-line сервисы</a>
             <a class="mdl-navigation__link" href="/news">Новости</a>
         </nav>
     </div>
@@ -20,7 +20,7 @@
         <a class="mdl-navigation__link" href="/about">О компании</a>
         <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
         <a class="mdl-navigation__link" href="/departments">Филиалы</a>
-        <a class="mdl-navigation__link" href="/online">on-line сервисы</a>
+        <a class="mdl-navigation__link" href="/online">On-line сервисы</a>
         <a class="mdl-navigation__link" href="/news">Новости</a>
     </nav>
 </div>

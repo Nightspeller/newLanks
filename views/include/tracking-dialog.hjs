@@ -1,0 +1,8 @@
+<dialog class="mdl-dialog ticket" id="tracking-dialog">
+    <h4 class="mdl-dialog__title">Статус груза</h4>
+
+    <div class="mdl-dialog__actions">
+        <button type="button" class="mdl-button close">Закрыть</button>
+    </div>
+    <div class="m_close"><i class="material-icons">clear</i></div>
+</dialog>

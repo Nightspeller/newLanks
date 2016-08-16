@@ -108,10 +108,10 @@
                             <p class="mdl-cell mdl-cell--12-col">Введите код Вашего груза, чтобы проверить статус:</p>
                             <div class="mdl-grid portfolio-max-width portfolio-contact">
                                 <div class="mdl-card__supporting-text">
-                                    <form action="#" class="">
+                                    <form id="tracking-form">
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="Email">
-                                            <label class="mdl-textfield__label" for="Email">Код груза</label>
+                                            <input class="mdl-textfield__input" type="text" id="code">
+                                            <label class="mdl-textfield__label" for="code">Код груза</label>
                                         </div>
                                         <p>
                                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" type="submit">
@@ -175,7 +175,8 @@
                 </div>
             </div>
         </div>
-    {{{footer}}}
+        {{{footer}}}
+        {{{tracking-dialog}}}
     </main>
 </div>
 </body>

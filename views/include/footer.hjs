@@ -15,12 +15,12 @@
                     <li class="f"><a href="//www.facebook.com/pages/ООО-ланкс/551231688245030"></a></li>
                 </ul>
             </div>
-            <div class="mdl-cell mdl-cell--4-col link"><a id="show-dialog" class="mdl-button">Связаться с нами</a></div>
+            <div class="mdl-cell mdl-cell--4-col link"><a id="show-contact-dialog" class="mdl-button">Связаться с нами</a></div>
         </div>
     </div>
 </footer>
 
-<dialog class="mdl-dialog ticket">
+<dialog class="mdl-dialog ticket" id="contact-dialog">
     <h4 class="mdl-dialog__title">Обратная связь</h4>
     <div class="mdl-dialog__content">
         <p>Оставьте Ваши данные, и мы свяжемся с Вами</p>

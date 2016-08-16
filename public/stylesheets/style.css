@@ -582,13 +582,13 @@ h4.tit_about {
 .mdl-cell.big_section {
   min-height: 700px;
 }
-@media only screen and (max-width: 839px) {
+@media only screen and (max-width 839px) {
   .mdl-cell.call_op_block .mdl-button.call_op {
     margin-top: 0px;
     margin-left: 10%;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width 479px) {
   .mdl-cell.call_op_block {
     text-align: center;
   }
@@ -816,17 +816,17 @@ h3.title_adress {
   width: 100%;
 }
 /******************************** services-online ********************************************/
-@media only screen and (max-width: 1365px) {
+@media only screen and (max-width 1365px) {
   .footer_c .mdl-button.zapros {
     display: none;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width 850px) {
   .mdl-cell.mdl-card__supporting-text.text_h {
     display: none;
   }
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width 580px) {
   .phone_head {
     width: 0px !important;
   }
@@ -840,18 +840,18 @@ h3.title_adress {
     width: 300px;
   }
 }
-@media only screen and (max-width: 865px) {
+@media only screen and (max-width 865px) {
   .mdl-grid.portfolio-copy.h_k .phone_head_section {
     left: 0px;
     width: 100%;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width 640px) {
   .mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .mdl-button.filials {
     font-size: 10px;
   }
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width 440px) {
   .form_contact_section.openf {
     height: 560px !important;
   }
