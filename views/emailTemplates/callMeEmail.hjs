@@ -4,5 +4,4 @@
     E-mail {{email}}<br />
     Телефон {{phone}}<br />
     Сообщение {{message}}<br />
-    Перезвонить мне {{callMe}}<br />
 {{/mailData}}

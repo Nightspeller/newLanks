@@ -59,7 +59,9 @@ function initializeContactDialog(){
     dialog.querySelector('.m_close').addEventListener('click', function() {
         dialog.close();
     });
-};
+
+    $("#contact-dialog-form").on('submit',{path: '/question?type=callMe'}, send_form_data);
+}
 
 function initializeTracking() {
     $('#tracking-form').on('submit', function (event) {
@@ -123,7 +125,7 @@ function initializeTracking() {
 
 function send_form_data(event){
     event.preventDefault();
-    alert("Спасибо! Ваше сообщение отправляется!");
+    alert("Спасибо! Ваше сообщение отправляется, оператор скоро свяжется с Вами.");
     var formData = new FormData($(this)[0]);
     $.ajax({
         url: event.data.path,

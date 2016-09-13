@@ -48,7 +48,7 @@
                         <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
                             <i class="material-icons" role="presentation">phone</i></button>
                         <span class="visuallyhidden">Add</span>
-                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
+                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span>
                     </div>
 
                     <img class="article-image" src="images/index/about-header.jpg" border="0" alt="">
@@ -111,30 +111,30 @@
 
                                 <div class="mdl-card__supporting-text">
                                     <h4 class="mdl-cell mdl-cell--12-col title_h">Заполните соответствующие поля информацией о Вашей перевозке</h4>
-                                    <form action="#" class="">
+                                    <form id="price-request-form">
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
-                                            <label class="mdl-textfield__label" for="Name">Пункт отправления…</label>
+                                            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="cityFrom" name="cityFrom">
+                                            <label class="mdl-textfield__label" for="cityFrom">Пункт отправления…</label>
                                         </div>
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="Email">
-                                            <label class="mdl-textfield__label" for="Email">г. Москва, ул. Большая Улочная, стр. 12 к-2</label>
+                                            <input class="mdl-textfield__input" type="text" id="cityTo" name="cityTo">
+                                            <label class="mdl-textfield__label" for="cityTo">Пункт назначения…</label>
                                         </div>
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="Email">
-                                            <label class="mdl-textfield__label" for="Email">Вес груза (кг)…</label>
+                                            <input class="mdl-textfield__input" type="text" id="weight" name="weight">
+                                            <label class="mdl-textfield__label" for="weight">Вес груза (кг)…</label>
                                         </div>
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="Email">
-                                            <label class="mdl-textfield__label" for="Email">Объём груза (м3)…</label>
+                                            <input class="mdl-textfield__input" type="text" id="volume" name="volume">
+                                            <label class="mdl-textfield__label" for="volume">Объём груза (м3)…</label>
                                         </div>
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="Email">
-                                            <label class="mdl-textfield__label" for="Email">Телефон и/или e-mail…</label>
+                                            <input class="mdl-textfield__input" type="text" id="contact" name="contact">
+                                            <label class="mdl-textfield__label" for="contact">Телефон и/или e-mail…</label>
                                         </div>
                                         <p>
                                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" type="submit">
-                                                Рассчитать
+                                                Запросить стоимость
                                             </button>
                                         </p>
                                     </form>
@@ -214,15 +214,9 @@
                 <div class="mdl-card__media clouds_tag">
                     <canvas width="auto" height="auto" id="myCanvas">
                         <ul>
-                            <li><a href="#" target="_blank">Санкт-Петербург</a></li>
-                            <li><a href="#">Москва</a></li>
-                            <li><a href="#">Казань</a></li>
-                            <li><a href="#">Ростов-на-Дону</a></li>
-                            <li><a href="#">Пермь</a></li>
-                            <li><a href="#">Новгород</a></li>
-                            <li><a href="#">Новосибирск</a></li>
-                            <li><a href="#">Минск</a></li>
-                            <li><a href="#">Самара</a></li>
+                            {{#allDepartments}}
+                            <li><a href="departments?city={{cityEng}}" target="_blank">{{city}}</a></li>
+                            {{/allDepartments}}
                         </ul>
                     </canvas>
                 </div>

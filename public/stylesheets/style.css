@@ -29,7 +29,7 @@
   min-height: 200px;
 }
 .is-compact .portfolio-logo-row {
-  min-height: auto;
+  min-height: inherit;
 }
 .portfolio-logo {
   background: url("../images/template/logo.png") 50% no-repeat;
@@ -74,7 +74,6 @@
   display: block;
   position: absolute;
   bottom: 0;
-  left: 0;
   background-color: #40c4ff;
   left: 15%;
 }
@@ -152,10 +151,10 @@ img.article-image {
 .mdl-grid.portfolio-copy.h_k .phone_head_section {
   position: absolute;
   z-index: 100;
-  top: 0px;
+  top: 0;
   left: -34px;
   width: calc(100% + 68px);
-  height: 0px;
+  height: 0;
   box-sizing: border-box;
   background: #40c4ff;
   overflow: hidden;
@@ -218,7 +217,7 @@ img.article-image {
   margin-bottom: 35px;
 }
 .mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .material-icons.call {
-  top: 0px;
+  top: 0;
   margin-top: 50px;
 }
 .mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .title_city {
@@ -235,19 +234,19 @@ img.article-image {
   margin-top: 5px;
 }
 .mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .mdl-cell.w_p {
-  margin: 0px;
+  margin: 0;
   margin-top: 8px;
 }
 .mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .mdl-button.filials {
   background-color: #607d8b;
   font-size: 11px;
   width: 100% !important;
-  padding: 0px 8px;
+  padding: 0 8px;
 }
 .mdl-card__media.text_head .phone_head {
   position: absolute;
   bottom: -31px;
-  right: 0px;
+  right: 0;
   width: 250px;
   height: 62px;
   line-height: 62px;
@@ -264,12 +263,11 @@ img.article-image {
 }
 .pager_section ul li {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
   float: left;
   height: 16px;
   line-height: 16px;
-  margin: 0px 15px;
+  margin: 0 15px;
   font-size: 16px;
   color: #000;
   cursor: pointer;
@@ -325,8 +323,8 @@ img.article-image {
   margin-bottom: 10px;
 }
 .mdl-card__actions.line_ots.small {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 p.black_p {
   color: #000;
@@ -347,13 +345,16 @@ a.sk.blue {
   max-width: 100%;
   height: auto;
 }
+.mdl-card__media {
+  background-color: inherit;
+}
 .mdl-card__media.text_head .phone_head .mdl-buttonhover {
   background: #5ccdff !important;
 }
 .mdl-card__media.text_head .text_header {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -363,7 +364,7 @@ a.sk.blue {
   text-transform: uppercase;
   line-height: 1.4em;
   margin-top: 25px;
-  padding: 10px 0px;
+  padding: 10px 0;
   font-family: Roboto;
 }
 .mdl-card__supporting-text.text_h span {
@@ -379,9 +380,9 @@ a.sk.blue {
 .mdl-cell.bg_brown {
   background: #f1f1f1;
   margin-top: -6px;
-  padding: 50px 0px;
+  padding: 50px 0;
 }
-.mdl-cell.bg_brown.for_services {
+.mdl-cell.bg_brown.full-list {
   display: none;
 }
 .section__circle-container.mdl-cell.mdl-cell--2-col.mdl-cell--1-col-phone {
@@ -399,8 +400,8 @@ a.sk.blue {
 }
 .mdl-card__supporting-text.mdl-grid.mdl-grid--no-spacing.services_s {
   width: 100%;
-  margin: 0px 0px;
-  padding: 20px 0px;
+  margin: 0 0;
+  padding: 20px 0;
 }
 .mdl-card__supporting-text.mdl-grid.mdl-grid--no-spacing.services_shover {
   background: #f1f1f1;
@@ -408,7 +409,7 @@ a.sk.blue {
 }
 .mdl-cell.mdl-cell--12-col.title_hh {
   width: 100%;
-  margin: 0px;
+  margin: 0;
   font-size: 18px;
   color: #000;
   margin-bottom: 10px;
@@ -422,7 +423,7 @@ p.small_p {
   color: #57cbff !important;
 }
 .mdl-cell.mdl-cell--12-col.without_p {
-  margin: 0px;
+  margin: 0;
   width: 100%;
 }
 .mdl-cell.preim {
@@ -439,7 +440,7 @@ p.small_p {
   position: relative;
   float: left;
   width: 100%;
-  height: 0px;
+  height: 0;
   transition-property: height;
   transition-duration: 0.5s;
   transition-timing-function: ease;
@@ -455,7 +456,7 @@ p.small_p {
 }
 .form_contact_section .close_form_contact_section {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 20px;
   width: 10px;
   height: 10px;
@@ -504,8 +505,8 @@ footer {
   text-align: center;
 }
 .mdl-cell.social ul {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 .mdl-cell.social ul li {
   display: inline-block;
@@ -517,16 +518,16 @@ footer {
   background-repeat: no-repeat;
 }
 .mdl-cell.social ul li.vk {
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 .mdl-cell.social ul li.b {
-  background-position: -30px 0px;
+  background-position: -30px 0;
 }
 .mdl-cell.social ul li.ok {
-  background-position: -60px 0px;
+  background-position: -60px 0;
 }
 .mdl-cell.social ul li.f {
-  background-position: -90px 0px;
+  background-position: -90px 0;
 }
 .mdl-cell.social ul li a {
   display: block;
@@ -552,7 +553,7 @@ footer {
 }
 h4.tit_about {
   font-size: 18px;
-  margin: 0px;
+  margin: 0;
   margin-top: 20px;
 }
 .light_bl {
@@ -582,19 +583,19 @@ h4.tit_about {
 .mdl-cell.big_section {
   min-height: 700px;
 }
-@media only screen and (max-width 839px) {
+@media only screen and (max-width: 839px) {
   .mdl-cell.call_op_block .mdl-button.call_op {
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 10%;
   }
 }
-@media only screen and (max-width 479px) {
+@media only screen and (max-width: 479px) {
   .mdl-cell.call_op_block {
     text-align: center;
   }
   .mdl-cell.call_op_block .mdl-button.call_op {
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 .form_price_order {
@@ -608,10 +609,10 @@ h4.tit_about {
   height: auto;
 }
 .mdl-card--border.border_about {
-  padding: 0px;
+  padding: 0;
 }
 .mdl-card__actions.mdl-card--border.kod_g .mdl-card__supporting-text {
-  padding: 0px 16px;
+  padding: 0 16px;
 }
 .mdl-button.light {
   background-color: #40c4ff !important;
@@ -643,8 +644,8 @@ h4.tit_about {
   float: left;
   height: 64px;
   line-height: 64px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   color: #fff;
   font-size: 20px;
   margin-left: 50px;
@@ -663,7 +664,7 @@ h4.tit_about {
 }
 .mdl-cell.title_h.with_icon .icon {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -5px;
   width: 32px;
   height: 32px;
@@ -684,10 +685,7 @@ h4.tit_about {
   color: #40c4ff;
 }
 .mdl-grid.portfolio-copy.h_k.we_o {
-  padding: 0px !important;
-}
-.mdl-grid.portfolio-max-width.portfolio-contact.in_city {
-  width: 100%;
+  padding: 0 !important;
 }
 .mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent.blue {
   color: #40c4ff !important;
@@ -709,21 +707,21 @@ h3.title_adress {
   width: 16px;
   min-width: 16px;
   height: 16px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
 }
 .mdl-dialog.ticket .m_close .material-icons {
   color: #cacaca;
   font-size: 16px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 .mdl-dialog__content_my {
   float: left;
   width: 100%;
   box-sizing: border-box;
-  padding: 0px 16px;
+  padding: 0 16px;
 }
 .mdl-dialog__content_my .form_contact_section {
   height: auto;
@@ -740,11 +738,12 @@ h3.title_adress {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding: 0;
 }
 .mdl-dialog.ticket .mdl-dialog__actions .mdl-button {
   background: none;
   color: #40c4ff;
-  padding-left: 0px;
+  padding-left: 0;
 }
 .mdl-grid.portfolio-copy.h_k.news {
   padding-top: 40px;
@@ -757,8 +756,8 @@ h3.title_adress {
 }
 #myCanvas {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(255,255,255,0);
@@ -772,12 +771,12 @@ h3.title_adress {
 .my_google_more_best {
   float: left;
   width: 100%;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 .my_google_more_best .my_google_more_best_small {
   float: left;
   width: 30%;
-  padding: 8px 0px;
+  padding: 8px 0;
   box-sizing: border-box;
 }
 .my_google_more_best .my_google_more_best_big {
@@ -816,19 +815,19 @@ h3.title_adress {
   width: 100%;
 }
 /******************************** services-online ********************************************/
-@media only screen and (max-width 1365px) {
+@media only screen and (max-width: 1365px) {
   .footer_c .mdl-button.zapros {
     display: none;
   }
 }
-@media only screen and (max-width 850px) {
+@media only screen and (max-width: 850px) {
   .mdl-cell.mdl-card__supporting-text.text_h {
     display: none;
   }
 }
-@media only screen and (max-width 580px) {
+@media only screen and (max-width: 580px) {
   .phone_head {
-    width: 0px !important;
+    width: 0 !important;
   }
   .phone_head .list_btn {
     display: none;
@@ -840,18 +839,18 @@ h3.title_adress {
     width: 300px;
   }
 }
-@media only screen and (max-width 865px) {
+@media only screen and (max-width: 865px) {
   .mdl-grid.portfolio-copy.h_k .phone_head_section {
-    left: 0px;
+    left: 0;
     width: 100%;
   }
 }
-@media only screen and (max-width 640px) {
+@media only screen and (max-width: 640px) {
   .mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .mdl-button.filials {
     font-size: 10px;
   }
 }
-@media only screen and (max-width 440px) {
+@media only screen and (max-width: 440px) {
   .form_contact_section.openf {
     height: 560px !important;
   }

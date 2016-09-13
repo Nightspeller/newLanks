@@ -28,25 +28,29 @@
     <div class="mdl-dialog__content_my">
         <div class="form_contact_section">
             <div class="mdl-grid portfolio-max-width portfolio-contact">
-                <form action="#" class="">
+                <form id="contact-dialog-form">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
-                        <label class="mdl-textfield__label" for="Name">Имя</label>
+                        <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="name" name="name">
+                        <label class="mdl-textfield__label" for="name">Имя</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="Email">
-                        <label class="mdl-textfield__label" for="Email">E-mail</label>
+                        <input class="mdl-textfield__input" type="text" id="phone" name="phone">
+                        <label class="mdl-textfield__label" for="phone">Телефон</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="Email">
-                        <label class="mdl-textfield__label" for="Email">Сообщение</label>
+                        <input class="mdl-textfield__input" type="text" id="email" name="email">
+                        <label class="mdl-textfield__label" for="email">E-mail</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="message" name="message">
+                        <label class="mdl-textfield__label" for="message">Сообщение</label>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="submit" class="mdl-button close">Послать</button>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
-    <div class="mdl-dialog__actions">
-        <button type="button" class="mdl-button close">Послать</button>
     </div>
     <div class="m_close"><i class="material-icons">clear</i></div>
 </dialog>

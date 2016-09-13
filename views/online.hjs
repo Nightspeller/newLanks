@@ -39,7 +39,7 @@
                         <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
                             <i class="material-icons" role="presentation">phone</i></button>
                         <span class="visuallyhidden">Add</span>
-                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
+                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span>
                     </div>
                     <div class="title_container"><h2>On-line сервисы</h2></div>
                 </div>
@@ -82,26 +82,6 @@
                 </div>
 
                 <div class="mdl-cell mdl-cell--12-col without_p">
-
-                    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
-                        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                            <h4 class="mdl-cell mdl-cell--12-col tile_s">Скачать документацию</h4>
-                            <p>
-                            <ul>
-                                <li><span class="light_bl">Общие правила</span> перевозок грузов автомобильным транспортом.</li>
-                                <li><span class="light_bl">Типовой договор.</span></li>
-                                <li><span class="light_bl">Приложение</span> акт о повреждении груза в пути (образец).</li>
-                                <li><span class="light_bl">Заявка</span> на забор/доставку груза.</li>
-                                <li><span class="light_bl">Форма</span> претензии.</li>
-                                <li><span class="light_bl">Экологическая политика</span> компании.</li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                            <i class="material-icons">insert_drive_file</i>
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border line_ots"></div>
-                    </div>
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Статус груза</h4>
@@ -170,6 +150,26 @@
                         </div>
                         <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                             <i class="material-icons">textsms</i>
+                        </div>
+
+                        <div class="mdl-card__actions mdl-card--border line_ots"></div>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
+                        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                            <h4 class="mdl-cell mdl-cell--12-col tile_s">Скачать документацию</h4>
+                            <p>
+                            <ul>
+                                <li><span class="light_bl">Общие правила</span> перевозок грузов автомобильным транспортом.</li>
+                                <li><span class="light_bl">Типовой договор.</span></li>
+                                <li><span class="light_bl">Приложение</span> акт о повреждении груза в пути (образец).</li>
+                                <li><span class="light_bl">Заявка</span> на забор/доставку груза.</li>
+                                <li><span class="light_bl">Форма</span> претензии.</li>
+                                <li><span class="light_bl">Экологическая политика</span> компании.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                            <i class="material-icons">insert_drive_file</i>
                         </div>
                     </div>
                 </div>

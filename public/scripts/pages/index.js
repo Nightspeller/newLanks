@@ -5,5 +5,7 @@ $(document).ready(function() {
         maxSpeed : 0.03, // Максимальная скорость
         depth : 0.9, // Глубина. От 0 до 1
         outlineColour: '#40c4ff'
-    })
+    });
+
+    $("#price-request-form").on('submit',{path: '/'}, send_form_data);
 });

@@ -17,8 +17,6 @@
     <!--vendor-->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="scripts/vendor/jquery.tagcanvas.min.js"></script>
-    <script src="scripts/vendor/awesomplete.js"></script>
-    <link rel="stylesheet" href="stylesheets/vendor/awesomplete.css" />
 
     <!--ours: general and page-specific-->
     <link rel="stylesheet" href="stylesheets/style.css" />
@@ -31,6 +29,7 @@
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     {{{header}}}
+    {{#department}}
     <main class="mdl-layout__content">
         <div class="mdl-grid portfolio-max-width">
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
@@ -43,7 +42,7 @@
                         <span class="visuallyhidden">Add</span>
                         <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
                     </div>
-                    <div class="title_container"><h2>Филиалы</h2></div>
+                    <div class="title_container"><h2>Филиал в городе {{city}}</h2></div>
                 </div>
 
                 <div class="mdl-grid portfolio-copy h_k">
@@ -84,55 +83,51 @@
                     </div>
                 </div>
 
-                <div class="mdl-cell mdl-cell&#45;&#45;12-col tit_t">Выберите филиал. Если вашего города нет в списке, позвоните нам чтобы узнать какой филиал его обслуживает.</div>
+                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
 
-                <div class="mdl-cell mdl-cell--12-col mdl-card">
-                    {{#allDepartments}}
-                    <span>{{city}}</span> ({{#satellites}}{{.}}, {{/satellites}})
-                    {{/allDepartments}}
-                </div>
+                    <h4 class="mdl-cell mdl-cell--12-col title_h b_ot">{{city}}</h4>
+                    <h3 class="mdl-cell mdl-cell--12-col title_adress">Офис</h3>
+                    <div class="mdl-card__actions mdl-card--border line_ots small"></div>
 
-               <!-- <div class="mdl-cell mdl-cell&#45;&#45;12-col tit_t">Введите название интересующего Вас города:</div>
+                    <p class="mdl-cell mdl-cell--12-col black_p">Адрес</p>
+                    <p class="mdl-cell mdl-cell--12-col">{{address}}</p>
+                    <p class="mdl-cell mdl-cell--12-col black_p">E-mail</p>
+                    <p class="mdl-cell mdl-cell--12-col">{{email}}</p>
+                    <p class="mdl-cell mdl-cell--12-col black_p">Телефон</p>
+                    <p class="mdl-cell mdl-cell--12-col">{{mainPhone}}</p>
+                    <p class="mdl-cell mdl-cell--12-col black_p">Факс</p>
+                    <p class="mdl-cell mdl-cell--12-col">{{fax}}</p>
+                    <p class="mdl-cell mdl-cell--12-col black_p">Skype</p>
+                    <p class="mdl-cell mdl-cell--12-col">{{skype}}</p>
+                    <p class="mdl-cell mdl-cell--12-col black_p">Дополнительные номера</p>
+                    <p class="mdl-cell mdl-cell--12-col">{{additionalPhone}}</p>
 
-                <div class="mdl-grid portfolio-max-width portfolio-contact in_city">
-                    <div class="mdl-card__supporting-text">
-                        <form action="#" class="">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">
-                                <input class="mdl-textfield__input awesomplete" type="text" id="cityFilter" list="satellites"  data-maxitems="5">
-                                <label class="mdl-textfield__label" for="cityFilter">Название города</label>
-                                <datalist id="satellites">
-                                    {{#allDepartments}}
-                                    {{#satellites}}
-                                        <option data-department="{{cityEng}}">{{.}} ({{city}})</option>
-                                    {{/satellites}}
-                                    {{/allDepartments}}
-                                </datalist>
-                            </div>
-                            <p>
-                                <button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent light ras" type="submit">
-                                    найти филиал
-                                </button>
-                            </p>
-                        </form>
+
+                    <h3 class="mdl-cell mdl-cell--12-col title_adress">Склад</h3>
+                    <div class="mdl-card__actions mdl-card--border line_ots small"></div>
+                    <p class="mdl-cell mdl-cell--12-col black_p">Адрес</p>
+                    <p class="mdl-cell mdl-cell--12-col">{{stockAddress}}</p>
+                    <p class="mdl-cell mdl-cell--12-col black_p">Координаты</p>
+                    <p class="mdl-cell mdl-cell--12-col">{{coordinates}}</p>
+                    <p class="mdl-cell mdl-cell--12-col">
+                    <div id="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=CGhi3rOB9CjJ5RnWlgnI7_nE0hKwnIZb&width=400&height=300"></script>
                     </div>
-                </div>-->
+                    </p>
+                    <h3 class="mdl-cell mdl-cell--12-col title_adress">Цены</h3>
+                    <div class="mdl-card__actions mdl-card--border line_ots small"></div>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на курьерские услуги.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на сбор и доставку груза по региону.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза В этот город.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза ИЗ этого города.</p>
 
-                <div class="mdl-card__actions mdl-card--border">
-                    <div class="mdl-grid portfolio-copy"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent blue btn_all_fil">показать все филиалы</a></div>
                 </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp bg_brown full-list">
-                {{#allDepartments}}
-                <strong>Филиал в городе <em>{{city}}</em> обслуживает города:</strong>
-                <br>
-                <small>{{satellites}}</small>
-                <br>
-                {{/allDepartments}}
             </div>
         </div>
+        {{/department}}
     {{{footer}}}
     </main>
+
 </div>
 </body>
 
