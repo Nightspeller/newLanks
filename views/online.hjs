@@ -110,41 +110,12 @@
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Связаться с нами</h4>
-                            <p class="mdl-cell mdl-cell--12-col">Заполните форму обратной связи соответствующей информацией:</p>
+                            <p class="mdl-cell mdl-cell--12-col">Используйте электронную форму обратной связи чтобы связаться с нами или запросить обратный звонок:</p>
                             <div class="mdl-grid portfolio-max-width portfolio-contact">
                                 <div class="mdl-card__supporting-text">
-                                    <form action="#" class="">
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="Email">
-                                            <label class="mdl-textfield__label" for="Email">ФИО...</label>
-                                        </div>
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="Email">
-                                            <label class="mdl-textfield__label" for="Email">E-mail…</label>
-                                        </div>
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="Email">
-                                            <label class="mdl-textfield__label" for="Email">Телефон…</label>
-                                        </div>
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="Email">
-                                            <label class="mdl-textfield__label" for="Email">Сообщение (информация, которую считаете необходимой)…</label>
-                                        </div>
-                                        <span class="mdl-list__item-secondary-action ser_ol">
-										<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
-										<input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" />
-										Перезвонить мне
-										</label>
-									</span>
-                                        <p>
-                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" type="submit">
-                                                Отправить
-                                            </button>
-                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent gray" type="submit">
-                                                Очистить
-                                            </button>
-                                        </p>
-                                    </form>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras show-contact-dialog" type="submit">
+                                        Связаться
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -159,12 +130,12 @@
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Скачать документацию</h4>
                             <p>
                             <ul>
-                                <li><span class="light_bl">Общие правила</span> перевозок грузов автомобильным транспортом.</li>
-                                <li><span class="light_bl">Типовой договор.</span></li>
-                                <li><span class="light_bl">Приложение</span> акт о повреждении груза в пути (образец).</li>
-                                <li><span class="light_bl">Заявка</span> на забор/доставку груза.</li>
-                                <li><span class="light_bl">Форма</span> претензии.</li>
-                                <li><span class="light_bl">Экологическая политика</span> компании.</li>
+                                <li><a class="light_bl" href="for_download/documents/Общие правила перевозки грузов.zip">Общие правила</a> перевозок грузов автомобильным транспортом.</li>
+                                <li><a class="light_bl" href="for_download/documents/Dogovor_TEO.zip">Типовой договор.</a></li>
+                                <li><a class="light_bl" href="for_download/documents/Акт о повреждении груза.zip">Приложение</a> акт о повреждении груза в пути (образец).</li>
+                                <li><a class="light_bl" href="for_download/documents/Zayavka.zip">Заявка</a> на забор/доставку груза.</li>
+                                <li><a class="light_bl" href="for_download/documents/Форма_претензии.zip">Форма</a> претензии.</li>
+                                <li><a class="light_bl" href="for_download/documents/eco.zip">Экологическая политика</a> компании.</li>
                             </ul>
                             </p>
                         </div>

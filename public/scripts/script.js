@@ -45,13 +45,17 @@ $(function(){
 
 function initializeContactDialog(){
     var dialog = document.querySelector('#contact-dialog');
-    var showDialogButton = document.querySelector('#show-contact-dialog');
+    var showDialogButton = document.getElementsByClassName('show-contact-dialog');
     if (! dialog.showModal) {
         dialogPolyfill.registerDialog(dialog);
     }
-    showDialogButton.addEventListener('click', function() {
-        dialog.showModal();
-    });
+    console.log(showDialogButton);
+    for (var i = 0; i < showDialogButton.length; i++) {
+        showDialogButton[i].addEventListener('click', function() {
+            dialog.showModal();
+        });
+    }
+
     dialog.querySelector('.close').addEventListener('click', function() {
         dialog.close();
     });

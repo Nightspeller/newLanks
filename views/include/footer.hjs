@@ -15,7 +15,7 @@
                     <li class="f"><a href="//www.facebook.com/pages/ООО-ланкс/551231688245030"></a></li>
                 </ul>
             </div>
-            <div class="mdl-cell mdl-cell--4-col link"><a id="show-contact-dialog" class="mdl-button">Связаться с нами</a></div>
+            <div class="mdl-cell mdl-cell--4-col link"><a class="mdl-button show-contact-dialog">Связаться с нами</a></div>
         </div>
     </div>
 </footer>

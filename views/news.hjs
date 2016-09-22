@@ -84,142 +84,23 @@
 
 
                     <div class="mdl-grid portfolio-max-width">
-
-                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                            <div class="mdl-card__media">
-                                <img class="article-image" src="images/news/news_01.jpg" border="0" alt="">
+                        {{#allNews}}
+                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                                <div class="mdl-card__media">
+                                    <img class="article-image" src="images/news/{{logo}}" border="0" alt="">
+                                </div>
+                                <div class="mdl-card__title">
+                                    <h2 class="mdl-card__title-text">{{title}}</h2>
+                                </div>
+                                <div class="mdl-card__title data_line">{{date}}</div>
+                                <div class="mdl-card__supporting-text">
+                                    {{shortDescription}}
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
+                                </div>
                             </div>
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">Ограничение движения</h2>
-                            </div>
-                            <div class="mdl-card__title data_line">2016.05.27</div>
-                            <div class="mdl-card__supporting-text">
-                                В Воронеже из-за Велоночи закроют движение по 5 улицам.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
-                            </div>
-                        </div>
-                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                            <div class="mdl-card__media">
-                                <img class="article-image" src="images/news/news_02.jpg" border="0" alt="">
-                            </div>
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">Новый законопроект</h2>
-                            </div>
-                            <div class="mdl-card__title data_line">2016.05.18</div>
-                            <div class="mdl-card__supporting-text">
-                                На рассмотрение в Госдуму внесен законопроект об отмене транспортного налога.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
-                            </div>
-                        </div>
-                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                            <div class="mdl-card__media">
-                                <img class="article-image" src="images/news/news_03.jpg" border="0" alt="">
-                            </div>
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">С Днем Победы!</h2>
-                            </div>
-                            <div class="mdl-card__title data_line">2016.05.08</div>
-                            <div class="mdl-card__supporting-text">
-                                Поздравляем с Днем Победы!
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
-                            </div>
-                        </div>
-                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                            <div class="mdl-card__media">
-                                <img class="article-image" src="images/news/news_04.jpg" border="0" alt="">
-                            </div>
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">Ограничение движения</h2>
-                            </div>
-                            <div class="mdl-card__title data_line">2016.05.05</div>
-                            <div class="mdl-card__supporting-text">
-                                В центре Воронежа с 7 по 10 мая ограничат движение и парковку.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
-                            </div>
-                        </div>
-                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                            <div class="mdl-card__media">
-                                <img class="article-image" src="images/news/news_05.jpg" border="0" alt="">
-                            </div>
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">Участие в выставке</h2>
-                            </div>
-                            <div class="mdl-card__title data_line">2016.04.25</div>
-                            <div class="mdl-card__supporting-text">
-                                Компания «Ланкс»  приняла участие в Международной выставке «TransRussia 2016».
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
-                            </div>
-                        </div>
-                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                            <div class="mdl-card__media">
-                                <img class="article-image" src="images/news/news_06.jpg" border="0" alt="">
-                            </div>
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">«TransRussia 2016»</h2>
-                            </div>
-                            <div class="mdl-card__title data_line">2016.04.18</div>
-                            <div class="mdl-card__supporting-text">
-                                Компания «Ланкс»  принмет участие в выставке «TransRussia 2016».
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
-                            </div>
-                        </div>
-                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                            <div class="mdl-card__media">
-                                <img class="article-image" src="images/news/news_07.jpg" border="0" alt="">
-                            </div>
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">Штраф за тонировку</h2>
-                            </div>
-                            <div class="mdl-card__title data_line">2016.04.12</div>
-                            <div class="mdl-card__supporting-text">
-                                В апреле Госдума рассмотрит в первом чтении поправки, ужесточающие наказание за неправильную тонировку.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
-                            </div>
-                        </div>
-                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                            <div class="mdl-card__media">
-                                <img class="article-image" src="images/news/news_01.jpg" border="0" alt="">
-                            </div>
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">Ограничение движения</h2>
-                            </div>
-                            <div class="mdl-card__title data_line">2016.04.10</div>
-                            <div class="mdl-card__supporting-text">
-                                В Воронеже перекроют две полосы движения на участке Московского проспекта в районе Памятника Славы.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
-                            </div>
-                        </div>
-                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                            <div class="mdl-card__media">
-                                <img class="article-image" src="images/news/news_09.jpg" border="0" alt="">
-                            </div>
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">Подорожание топлива</h2>
-                            </div>
-                            <div class="mdl-card__title data_line">2016.04.01</div>
-                            <div class="mdl-card__supporting-text">
-                                С 1 апреля ожидается новое повышение цен на топливо.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">подробнее</a>
-                            </div>
-                        </div>
+                        {{/allNews}}
                     </div>
                     <div class="mdl-cell mdl-cell--12-col">
                         <div class="pager_section">

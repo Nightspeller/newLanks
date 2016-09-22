@@ -84,12 +84,22 @@
                     </div>
                 </div>
 
-                <div class="mdl-cell mdl-cell&#45;&#45;12-col tit_t">Выберите филиал. Если вашего города нет в списке, позвоните нам чтобы узнать какой филиал его обслуживает.</div>
+                <div class="mdl-cell mdl-cell&#45;&#45;12-col tit_t">Выберите филиал. Каждый филиал также обслуживает близлежащие города.</div>
 
                 <div class="mdl-cell mdl-cell--12-col mdl-card">
-                    {{#allDepartments}}
-                    <span>{{city}}</span> ({{#satellites}}{{.}}, {{/satellites}})
-                    {{/allDepartments}}
+                    <div class="mdl-list">
+                        {{#allDepartments}}
+                        <a class="city-navigation-link" href="departments?city={{cityEng}}">
+                            <div class="mdl-list__item mdl-list__item--two-line">
+                                    <span class="mdl-list__item-primary-content">
+                                        <i class="material-icons mdl-list__item-avatar">business</i>
+                                        <span>{{city}}</span>
+                                        <span class="mdl-list__item-sub-title">{{satellites.length}} городов обслуживания</span>
+                                    </span>
+                            </div>
+                        </a>
+                        {{/allDepartments}}
+                    </div>
                 </div>
 
                <!-- <div class="mdl-cell mdl-cell&#45;&#45;12-col tit_t">Введите название интересующего Вас города:</div>
@@ -117,9 +127,9 @@
                     </div>
                 </div>-->
 
-                <div class="mdl-card__actions mdl-card--border">
-                    <div class="mdl-grid portfolio-copy"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent blue btn_all_fil">показать все филиалы</a></div>
-                </div>
+               <!-- <div class="mdl-card__actions mdl-card&#45;&#45;border">
+                    <div class="mdl-grid portfolio-copy"><a class="mdl-button mdl-button&#45;&#45;colored mdl-js-button mdl-js-ripple-effect mdl-button&#45;&#45;accent blue btn_all_fil">показать все филиалы</a></div>
+                </div>-->
             </div>
 
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp bg_brown full-list">
