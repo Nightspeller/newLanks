@@ -2,6 +2,5 @@ node_modules/
 addNewUserToDB.js
 config.json
 bin/www
-*.jpeg
 bin/postOriLog.txt
 .idea/
