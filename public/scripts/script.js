@@ -74,7 +74,7 @@ function initializeTracking() {
         var id = $('#code').val();
 
         $.ajax({
-            url: 'http://lanks.net/online/oriflame?invoice='+id,
+            url: 'online/oriflame?invoice='+id,
             type: 'GET',
             success: function (data) {
                 console.log(data);
