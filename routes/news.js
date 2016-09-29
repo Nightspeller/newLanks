@@ -37,10 +37,11 @@ router.get('/', function(req, res) {
         if (req.query.newsID !== '-1'){
             News.find({_id: req.query.newsID}, function(err, news){
                 if(err) throw err;
-                res.render('news', {mode: 'single', allNews: news});
+
+                res.render('news-single', {news: news});
             });
         } else {
-            res.render('news', {mode: 'single', allNews: {}});
+            res.render('news', {mode: 'single', news: {}});
         }
 
     } else {
@@ -58,7 +59,7 @@ router.get('/', function(req, res) {
                     }
                 }
             });
-            res.render('news', {allNews: news});
+            res.render('news', {allNews: news.slice(0,9)});
         });
     }
 });

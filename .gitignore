@@ -4,5 +4,4 @@ config.json
 bin/www
 *.jpeg
 bin/postOriLog.txt
-public/images/news
 .idea/

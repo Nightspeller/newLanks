@@ -111,15 +111,15 @@
                     <p class="mdl-cell mdl-cell--12-col">{{coordinates}}</p>
                     <p class="mdl-cell mdl-cell--12-col">
                     <div id="map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=CGhi3rOB9CjJ5RnWlgnI7_nE0hKwnIZb&width=400&height=300"></script>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid={{mapID}}&width=400&height=300"></script>
                     </div>
                     </p>
                     <h3 class="mdl-cell mdl-cell--12-col title_adress">Цены</h3>
                     <div class="mdl-card__actions mdl-card--border line_ots small"></div>
-                    <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на курьерские услуги.</p>
-                    <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на сбор и доставку груза по региону.</p>
-                    <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза В этот город.</p>
-                    <p class="mdl-cell mdl-cell--12-col"><a href="/" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза ИЗ этого города.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/courier_prices/{{city}}.pdf" class="sk blue">Скачать прайс</a> на курьерские услуги.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sbor_dostavka_prices/{{city}}.doc" class="sk blue">Скачать прайс</a> на сбор и доставку груза по региону.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sborni_gruz_prices/Прайс в {{city}}.xls" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза В этот город.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sborni_gruz_prices/Прайс из города {{city}}.xls" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза ИЗ этого города.</p>
 
                 </div>
             </div>

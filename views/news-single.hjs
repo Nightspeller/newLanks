@@ -84,35 +84,26 @@
 
 
                     <div class="mdl-grid portfolio-max-width">
-                        {{#allNews}}
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src="images/news/{{logo}}" border="0" alt="">
+                        {{#news}}
+                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+                            <div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
+                                <img class="article-image" src="images/news/{{logo}}" border="0" alt="">
+                            </div>
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <h2 class="mdl-card__title-text">{{title}}</h2>
+                                <div class="mdl-card__supporting-text padding-top">
+                                    <span>({{date}})</span>
+                                    <div class="mdl-tooltip" for="tt1" data-upgraded=",MaterialTooltip">
+                                        Share via social media
+                                    </div>
                                 </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">{{title}}</h2>
-                                </div>
-                                <div class="mdl-card__title data_line">{{date}}</div>
-                                <div class="mdl-card__supporting-text">
-                                    {{shortDescription}}
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="news?newsID={{_id}}">подробнее</a>
+                                <div class="mdl-card__supporting-text no-left-padding">
+                                    <p>{{{fullText}}}</p>
                                 </div>
                             </div>
-                        {{/allNews}}
-                    </div>
-                    <!--<div class="mdl-cell mdl-cell&#45;&#45;12-col">
-                        <div class="pager_section">
-                            <ul>
-                                <li class="prev"><i class="material-icons">keyboard_arrow_left</i></li>
-                                <li>1</li>
-                                <li class="active">2</li>
-                                <li>3</li>
-                                <li class="next"><i class="material-icons">keyboard_arrow_right</i></li>
-                            </ul>
                         </div>
-                    </div>-->
+                        {{/news}}
+                    </div>
                 </div>
             </div>
         </div>
