@@ -84,7 +84,7 @@
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Статус груза</h4>
-                            <p class="mdl-cell mdl-cell--12-col">Введите код Вашего груза, чтобы проверить статус:</p>
+                            <p class="mdl-cell mdl-cell--12-col">Введите код Вашего груза или номер заказа Орифлейм, чтобы проверить статус:</p>
                             <div class="mdl-grid portfolio-max-width portfolio-contact">
                                 <div class="mdl-card__supporting-text">
                                     <form id="tracking-form">
