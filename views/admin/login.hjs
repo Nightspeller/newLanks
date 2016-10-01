@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/css/mdb.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-dark primary-color-dark">
+
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="container">
+
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                    <!--Navbar Brand-->
+                    <a class="navbar-brand waves-effect waves-light" href="/">ООО Ланкс</a>
+                </div>
+                <!--/.Collapse content-->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+    </header>
+    <main>
+        <!--Main layout-->
+        <div class="container">
+            <br>
+            <!--Page heading-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h1-responsive">{{^user}}Вход на сайт{{/user}}{{#user}}Вы в системе{{/user}}</h1>
+                </div>
+            </div>
+            <!--/.Page heading-->
+            <hr>
+            <!--Form with header-->
+            <div class="card">
+                <div class="card-block">
+
+                    <!--Header-->
+                    <div class="form-header  purple darken-4">
+                        <h3><i class="fa fa-lock"></i> Login:</h3>
+                    </div>
+
+                    <!--Body-->
+                    {{^user}}
+                    <form id="loginForm">
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix"></i>
+                            <input type="text" id="form2" name="login"  class="form-control">
+                            <label for="form2">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix"></i>
+                            <input type="password" name="password" id="form4" class="form-control">
+                            <label for="form4">Your password</label>
+                        </div>
+
+                        <div class="text-xs-center">
+                            <button class="btn btn-deep-purple" type="submit">Login</button>
+                        </div>
+                    </form>
+                    {{/user}}
+                    {{#user}}
+                    <h4 class="text-xs-center">Вы вошли в систему как <br />"{{user.username}}"</h4>
+                    <div class="text-xs-center">
+                        <button class="btn btn-deep-purple" id="logoutButton">Выйти</button>
+                        <a class="btn btn-deep-purple" href="/admin">Администрирование</a>
+                    </div>
+                    {{/user}}
+
+                </div>
+
+            </div>
+            <!--/Form with header-->
+        </div>
+        <!--/.Main layout-->
+    </main>
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only primary-color-dark">
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="containter-fluid">
+                © 2016 Copyright: ООО Ланкс
+            </div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="vendor/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="vendor/js/tether.min.js"></script>
+    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="js/admin/login.js"></script>
+</body>
+</html>

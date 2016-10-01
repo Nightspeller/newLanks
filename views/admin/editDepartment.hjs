@@ -1,109 +1,159 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
     <meta charset="utf-8">
-    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
-    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
-    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
-    <link rel='shortcut icon' type='image/png' href='/favicon.png' />
-    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <script type="text/javascript" src="javascripts/jquery-1.8.1.js"></script>
-    <script type="text/javascript" src="javascripts/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/departments.css">
-    <script type="text/javascript" src="javascripts/editDepartment.js"></script>
+    <title>Material Design Bootstrap</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/css/mdb.min.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <a class='scrollTop' href='#header'></a>
-    <div id="wrapper">
-        {{{header}}}
-        <div id="content" class="editing">
-            {{#department}}
-            <h4 class="departmentHeader">Филиалы</h4><img class="cityEmblem" src=images/departments/{{cityEng}}.png />
-            <hr>
-            <section>
-                <article id="departments_content">
-                    <form>
-                        <h2 id="city"><label>Город: <input type="text" name="city" value="{{city}}" /></label></h2>
+<header>
+    <!--Navbar-->
+    <nav class="navbar navbar-dark primary-color-dark">
 
-                        <h3>Адрес офиса.</h3>
-                        <address>
-                            <label>Адрес Офиса: <input type="text" name="address" value="{{address}}" /></label><br />
-                            <label>E-mail: <input type="text" name="email" value="{{email}}" /></label><br />
-                            <label>Скайп: <input type="text" name="skype" value="{{skype}}" /></label><br />
-                            <label>Телефон: <input type="text" name="mainPhone" value="{{mainPhone}}" /></label><br />
-                            <label>Факс: <input type="text" name="fax" value="{{fax}}" /></label><br />
-                            <label>Дополнительные телефоны: <input type="text" name="additionalPhone" value="{{additionalPhone}}" /></label><br />
-                        </address>
-                        <h3>Адрес склада.</h3>
-                        <address>
-                            <label>Адрес Склада: <input type="text" name="stockAddress" value="{{stockAddress}}" /></label><br />
-                            <label>Координаты Склада: <input type="text" name="coordinates" value="{{coordinates}}" /></label><br />
-                        </address>
-                        <h3>Прочее.</h3>
-                        <label>ID яндекс-карты: <input type="text" name="mapID" value="{{mapID}}" /></label><br />
-                        <label>Английский идентификатор города: <input type="text" name="cityEng" value="{{cityEng}}" /></label><br />
-                        <label>Номер города: <input type="text" name="index" value="{{index}}" /></label><br />
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
 
-                        <label>Греб: <input type="file" multiple="multiple" name="picture" placeholder="Изображение" /></label><br/>
-                        <input type="submit" value="Обновить">
+        <div class="container">
 
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <!--Navbar Brand-->
+                <a class="navbar-brand waves-effect waves-light" href="/">ООО Ланкс</a>
 
-                    </form>
-                </article>
-                <article id="departments_content">
-                    <form>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td>10</td><td>50</td><td>100</td><td>300</td><td>500</td><td>750</td><td>1000</td><td>1250</td><td>1500</td><td>2000</td><td>3000</td><td>5000</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    {{#prices.price}}
-                                        <td><input type="text" name="price0" value="{{price0}}" /></td>
-                                        <td><input type="text" name="price1" value="{{price1}}" /></td>
-                                        <td><input type="text" name="price2" value="{{price2}}" /></td>
-                                        <td><input type="text" name="price3" value="{{price3}}" /></td>
-                                        <td><input type="text" name="price4" value="{{price4}}" /></td>
-                                        <td><input type="text" name="price5" value="{{price5}}" /></td>
-                                        <td><input type="text" name="price6" value="{{price6}}" /></td>
-                                        <td><input type="text" name="price7" value="{{price7}}" /></td>
-                                        <td><input type="text" name="price8" value="{{price8}}" /></td>
-                                        <td><input type="text" name="price9" value="{{price9}}" /></td>
-                                        <td><input type="text" name="price10" value="{{price10}}" /></td>
-                                        <td><input type="text" name="price11" value="{{price11}}" /></td>
-                                    {{/prices.price}}
-                                </tr>
-                                <tr>
-                                    {{#prices.pricePerKm}}
-                                        <td><input type="text" name="pricePerKm0" value="{{price0}}" /></td>
-                                        <td><input type="text" name="pricePerKm1" value="{{price1}}" /></td>
-                                        <td><input type="text" name="pricePerKm2" value="{{price2}}" /></td>
-                                        <td><input type="text" name="pricePerKm3" value="{{price3}}" /></td>
-                                        <td><input type="text" name="pricePerKm4" value="{{price4}}" /></td>
-                                        <td><input type="text" name="pricePerKm5" value="{{price5}}" /></td>
-                                        <td><input type="text" name="pricePerKm6" value="{{price6}}" /></td>
-                                        <td><input type="text" name="pricePerKm7" value="{{price7}}" /></td>
-                                        <td><input type="text" name="pricePerKm8" value="{{price8}}" /></td>
-                                        <td><input type="text" name="pricePerKm9" value="{{price9}}" /></td>
-                                        <td><input type="text" name="pricePerKm10" value="{{price10}}" /></td>
-                                        <td><input type="text" name="pricePerKm11" value="{{price11}}" /></td>
-                                    {{/prices.pricePerKm}}
-                                </tr>
-                            </tbody>
-                        </table>
-                    </form>
-                </article>
-            </section>
-            {{/department}}
+                <a class="navbar-brand waves-effect waves-light" style="float: right" href="login">Выйдти</a>
+            </div>
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+</header>
+<main>
+    <!--Main layout-->
+
+    {{#department}}
+    <div class="container">
+        <br>
+        <br>
+        <!--Form with header-->
+        <div class="card">
+            <div class="card-block">
+
+                <!--Header-->
+                <div class="form-header  purple darken-4">
+                    <h3>Редактирование филиала в г. {{city}}</h3>
+                </div>
+
+                <!--Body-->
+                <form>
+                    <div class="md-form">
+                        <input type="text" id="city" class="form-control" name="city" value="{{city}}">
+                        <label for="city">Город</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="address" class="form-control" name="address" value="{{address}}">
+                        <label for="address">Адрес Офиса</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="email" class="form-control" name="email" value="{{email}}">
+                        <label for="email">E-mail</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="skype" class="form-control" name="skype" value="{{skype}}">
+                        <label for="skype">Skype</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="mainPhone" name="mainPhone" value="{{mainPhone}}">
+                        <label for="mainPhone">Телефон</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="fax" class="form-control" name="fax" value="{{fax}}">
+                        <label for="fax">Факс</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="additionalPhone" class="form-control" name="additionalPhone" value="{{additionalPhone}}">
+                        <label for="additionalPhone">Дополнительные телефоны</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="stockAddress" class="form-control" name="stockAddress" value="{{stockAddress}}">
+                        <label for="stockAddress">Адрес Склада</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="coordinates" class="form-control" name="coordinates" value="{{coordinates}}">
+                        <label for="coordinates">Координаты</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="mapID" class="form-control" name="mapID" value="{{mapID}}">
+                        <label for="mapID">ID яндекс-карты</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="cityEng" class="form-control" name="cityEng" value="{{cityEng}}">
+                        <label for="cityEng">Английский идентификатор города</label>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="index" class="form-control" name="index" value="{{index}}">
+                        <label for="index">Порядковый номер города</label>
+                    </div>
+
+                    <div class="md-form">
+                        <img src="images/departments/{{cityEng}}.png">
+                        <input id="picture" class="form-control" type="file" multiple="multiple" name="picture" placeholder="Изображение">
+                    </div>
+
+                    <div class="text-xs-center">
+                        <button class="btn btn-deep-purple" type="submit">Отправить</button>
+                    </div>
+                </form>
+
             </div>
         </div>
-	{{{footer}}}
+        <!--/Form with header-->
+    </div>
+    {{/department}}
+    <!--/.Main layout-->
+</main>
+<!--Footer-->
+<footer class="page-footer center-on-small-only primary-color-dark">
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="containter-fluid">
+            © 2016 Copyright: ООО Ланкс
+        </div>
+    </div>
+    <!--/.Copyright-->
+</footer>
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+
+<!-- JQuery -->
+<script type="text/javascript" src="vendor/js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="vendor/js/tether.min.js"></script>
+<script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/js/mdb.min.js"></script>
+
+<script type="text/javascript" src="js/admin/editDepartment.js"></script>
 </body>
 </html>

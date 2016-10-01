@@ -16,16 +16,13 @@
 
     <!--vendor-->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="scripts/vendor/jquery.tagcanvas.min.js"></script>
-    <script src="scripts/vendor/awesomplete.js"></script>
-    <link rel="stylesheet" href="stylesheets/vendor/awesomplete.css" />
 
     <!--ours: general and page-specific-->
-    <link rel="stylesheet" href="stylesheets/style.css" />
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
 
-    <link rel="stylesheet" href="stylesheets/pages/departments.css" />
-    <script src="scripts/pages/departments.js"></script>
+    <link rel="stylesheet" href="css/pages/departments.css" />
+    <script src="js/pages/departments.js"></script>
 </head>
 
 <body>

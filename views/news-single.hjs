@@ -16,14 +16,13 @@
 
     <!--vendor-->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="scripts/vendor/jquery.tagcanvas.min.js"></script>
 
     <!--ours: general and page-specific-->
-    <link rel="stylesheet" href="stylesheets/style.css" />
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
 
-    <link rel="stylesheet" href="stylesheets/pages/news.css" />
-    <script src="scripts/pages/news.js"></script>
+    <link rel="stylesheet" href="css/pages/news.css" />
+    <script src="js/pages/news.js"></script>
 </head>
 
 <body class="news">

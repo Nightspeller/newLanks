@@ -92,16 +92,18 @@ router.post('/', function(req, res) {
             date: fields.date,
             index: fields.index
         });
-        news.save(function(err){
+        news.save(function(err, data){
             if (err) throw err;
+            console.log(data);
             res.writeHead(200, {'content-type': 'text/plain'});
-            res.write('received upload:\n\n');
-            res.end(util.inspect({fields: fields, files: files}));
+            res.write(''+data._id);
+            res.end();
         })
     });
 });
 
 router.put('/', function(req, res) {
+    console.log('put');
     var form = new formidable.IncomingForm();
     form.encoding = 'utf-8';
     form.uploadDir = "temp";
@@ -137,6 +139,7 @@ router.put('/', function(req, res) {
 });
 
 router.delete('/', function(req, res) {
+    console.log('delete');
     News.findById(req.body.id, function (err, news) {
         if (err) throw err;
         if(!news) {

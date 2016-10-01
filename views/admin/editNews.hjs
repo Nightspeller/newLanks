@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/css/mdb.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+    <!--Navbar-->
+    <nav class="navbar navbar-dark primary-color-dark">
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="container">
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <!--Navbar Brand-->
+                <a class="navbar-brand waves-effect waves-light" href="/">ООО Ланкс</a>
+                <a class="navbar-brand waves-effect waves-light" href="admin">Филиалы</a>
+                <a class="navbar-brand waves-effect waves-light" href="/editNews">Новости</a>
+
+                <a class="navbar-brand waves-effect waves-light" style="float: right" href="login">Выйдти</a>
+            </div>
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+</header>
+<main>
+    <!--Main layout-->
+    <div class="container">
+        <br>
+        <!--Page heading-->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="h1-responsive">Редактирование новостей</h1>
+            </div>
+
+        </div>
+        <!--/.Page heading-->
+        <hr>
+        {{^mode}}
+        <article>
+            <a class="btn btn-deep-purple" href="?mode=add">Добавить новую новость</a>
+
+            <h3>Выберите новость для редактирования</h3>
+            <div>
+                <ul class="list-group">
+                    {{#news}}
+                    <a href="?id={{_id}}">
+                        <li class="list-group-item">
+                            {{title}} {{date}} Номер - {{index}}
+                        </li>
+                    </a>
+                    {{/news}}
+                </ul>
+            </div>
+        </article>
+        {{/mode}}
+        {{#mode}}
+        {{#news}}
+        <article>
+            <!--Form with header-->
+            <div class="card">
+                <div class="card-block">
+
+                    <!--Header-->
+                    <div class="form-header  purple darken-4">
+                        <h3>Редактирование новости</h3>
+                    </div>
+
+                    <!--Body-->
+                    <form id="newsForm">
+                        <div class="md-form">
+                            <input type="text" id="title" class="form-control" name="title" value="{{title}}">
+                            <label for="title">Заголовок (25 символов максимум включая пробелы)</label>
+                        </div>
+
+                        <div class="md-form">
+                            <textarea rows="4" id="shortDescription" class="md-textarea" name="shortDescription">{{shortDescription}}</textarea>
+                            <label for="shortDescription">Краткое описание новости (250 символов включая пробелы максимум): </label>
+                        </div>
+
+                        <div class="md-form">
+                            <textarea rows="4" id="description" class="md-textarea" name="description">{{description}}</textarea>
+                            <label for="description">Описание новости</label>
+                        </div>
+
+                        <div class="md-form">
+                            <textarea rows="4" type="text" id="fullText" class="md-textarea" name="fullText">{{fullText}}</textarea>
+                            <label for="fullText">Полный текст новости</label>
+                        </div>
+
+                        <div class="md-form">
+                            <div class="md-form">
+                                <input placeholder="{{date}}" type="text" id="date" class="form-control datepicker" name="date" value="{{date}}">
+                                <label for="date">Дата публикации новости</label>
+                            </div>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="number" id="index" class="form-control" name="index" value="{{index}}">
+                            <label for="index">Порядковый номер новости</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="hidden" name="_id" value="{{_id}}"/>
+                        </div>
+
+                        <div class="md-form">
+                            Текущее изображение: <img src="images/news/{{logo}}">
+                            <div class="file-field">
+                                <div class="btn btn-primary">
+                                    <span>Изображение</span>
+                                    <input type="file" multiple="multiple" name="logo">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Изображение">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-xs-center">
+                            <button class="btn btn-deep-purple" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                    {{#id}}
+                    <div class="text-xs-center">
+                        <button class="btn btn-deep-purple deleteButton">Удалить</button>
+                    </div>
+                    {{/id}}
+
+                </div>
+            </div>
+            <!--/Form with header-->
+        </article>
+        {{/news}}
+        {{/mode}}
+    </div>
+    <!--/.Main layout-->
+</main>
+<!--Footer-->
+<footer class="page-footer center-on-small-only primary-color-dark">
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="containter-fluid">
+            © 2016 Copyright: ООО Ланкс
+        </div>
+    </div>
+    <!--/.Copyright-->
+</footer>
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+
+<!-- JQuery -->
+<script type="text/javascript" src="vendor/js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="vendor/js/tether.min.js"></script>
+<script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/js/mdb.min.js"></script>
+
+<script type="text/javascript" src="js/admin/editNews.js"></script>
+</body>
+</html>

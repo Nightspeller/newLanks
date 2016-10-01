@@ -6,21 +6,18 @@ router.use(require('./../middleware/loadUser'));
 router.use(require('./../middleware/loadHeaderAndFooter'));
 
 router.use('/', require('./index'));
-router.use('/users', require('./users'));
 router.use('/about', require('./about'));
-router.use('/question', require('./question'));
 router.use('/services', require('./services'));
 router.use('/departments', require('./departments'));
 router.use('/calculate', require('./calculate'));
-router.use('/order', require('./order'));
 router.use('/online', require('./online'));
 router.use('/news', require('./news'));
-router.use('/editDepartment', require('./editDepartment'));
-router.use('/login', require('./login'));
-router.use('/admin', require('./admin'));
-router.use('/gallery', require('./gallery'));
-router.use('/postOriflameData', require('./postOriflameData'));
-router.use('/api', require('./api'));
-router.use('/externalApi', require('./externalApi'));
+router.use('/postOriflameData', require('./api/postOriflameData'));
+
+//Admin
+router.use('/login', require('./admin/login'));
+router.use('/admin', require('./admin/admin'));
+router.use('/editDepartment', require('./admin/editDepartment'));
+router.use('/editnews', require('./admin/editNews'));
 
 module.exports = router;

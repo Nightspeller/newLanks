@@ -1,6 +1,6 @@
 <footer class="mdl-mini-footer pad">
     <div class="footer_c">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light zapros" type="submit">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light zapros show-contact-dialog" >
             запросить стоимость перевозки
         </button>
         <div class="mdl-grid portfolio-max-width no-padding">
