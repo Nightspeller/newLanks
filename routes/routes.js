@@ -12,6 +12,7 @@ router.use('/departments', require('./departments'));
 router.use('/calculate', require('./calculate'));
 router.use('/online', require('./online'));
 router.use('/news', require('./news'));
+router.use('/question', require('./question'));
 router.use('/postOriflameData', require('./api/postOriflameData'));
 
 //Admin

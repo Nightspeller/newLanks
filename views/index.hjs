@@ -18,6 +18,8 @@
 
     <!--vendor-->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="vendor/js/dialog-polyfill.js"></script>
+    <link rel="stylesheet" href="vendor/css/dialog-polyfill.css" />
     <script src="vendor/js/jquery.tagcanvas.min.js"></script>
 
     <!--ours: general and page-specific-->
@@ -247,8 +249,9 @@
             </div>
         </div>
         {{{footer}}}
-        {{{tracking-dialog}}
     </main>
 </div>
+
+{{{tracking-dialog}}
 </body>
 </html>
