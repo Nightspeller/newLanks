@@ -53,6 +53,7 @@ function initializeContactDialog(){
     for (var i = 0; i < showDialogButton.length; i++) {
         showDialogButton[i].addEventListener('click', function() {
             dialog.showModal();
+            document.activeElement.blur();
         });
     }
 
