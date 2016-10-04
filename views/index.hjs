@@ -220,7 +220,7 @@
                 </div>
             </div>
 
-            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card tagcanvas">
                 <div class="mdl-card__title padding_b">
                     <h2 class="mdl-card__title-text">Наши филиалы</h2>
                 </div>
