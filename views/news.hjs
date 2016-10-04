@@ -12,12 +12,12 @@
 
     <!--template-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-blue.min.css" />
+    <link rel="stylesheet" href="/vendor/css/material.grey-blue.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="/vendor/js/material.min.js"></script>
 
     <!--vendor-->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/vendor/js/jquery-1.12.4.min.js"></script>
     <script src="vendor/js/dialog-polyfill.js"></script>
     <link rel="stylesheet" href="vendor/css/dialog-polyfill.css" />
 
