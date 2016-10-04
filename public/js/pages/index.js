@@ -11,5 +11,12 @@ $(document).ready(function() {
         minSpeed: 0.005
     });
 
+    $('.your-class').slick({
+        autoplay: true,
+        arrows: false,
+        pauseOnHover: false,
+        pauseOnFocus: false
+    });
+
     $("#price-request-form").on('submit',{path: '/'}, send_form_data);
 });

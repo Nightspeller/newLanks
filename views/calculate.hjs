@@ -17,7 +17,7 @@
     <script src="/vendor/js/material.min.js"></script>
 
     <!--vendor-->
-    <script src="/vendor/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="vendor/js/jquery-2.2.3.min.js"></script>
     <script src="vendor/js/dialog-polyfill.js"></script>
     <link rel="stylesheet" href="vendor/css/dialog-polyfill.css" />
 

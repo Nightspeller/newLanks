@@ -49,7 +49,7 @@ function initializeContactDialog(){
     if (! dialog.showModal) {
         dialogPolyfill.registerDialog(dialog);
     }
-    console.log(showDialogButton);
+
     for (var i = 0; i < showDialogButton.length; i++) {
         showDialogButton[i].addEventListener('click', function() {
             dialog.showModal();
@@ -68,6 +68,20 @@ function initializeContactDialog(){
 }
 
 function initializeTracking() {
+
+    var dialog = document.querySelector('#tracking-dialog');
+    if (! dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+    }
+
+    dialog.querySelector('.close').addEventListener('click', function() {
+        dialog.close();
+    });
+
+    dialog.querySelector('.m_close').addEventListener('click', function() {
+        dialog.close();
+    });
+
     $('#tracking-form').on('submit', function (event) {
         event.preventDefault();
 
@@ -80,18 +94,6 @@ function initializeTracking() {
                 console.log(data);
 
                 if (data.length === 1) {
-                    var dialog = document.querySelector('#tracking-dialog');
-                    if (! dialog.showModal) {
-                        dialogPolyfill.registerDialog(dialog);
-                    }
-
-                    dialog.querySelector('.close').addEventListener('click', function() {
-                        dialog.close();
-                    });
-
-                    dialog.querySelector('.m_close').addEventListener('click', function() {
-                        dialog.close();
-                    });
 
                     $(dialog).find('.orderInfo').remove();
                     $(dialog).find('h4').after('<div class="orderInfo"><strong>ФИО: </strong>'+data[0].name+'<br />' +
