@@ -1,4 +1,4 @@
-var CombinedCargoPrices = require('./modelsDB/combinedCargoPrices').CombinedCargoPrices;
+var CombinedCargoPrices = require('./../modelsDB/combinedCargoPrices').CombinedCargoPrices;
 
 fs = require('fs')
 fs.readFile('prices.csv', 'utf8', function (err,data) {

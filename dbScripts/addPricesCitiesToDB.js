@@ -1,4 +1,4 @@
-var CityCargoPrices = require('./modelsDB/cityCargoPrices').CityCargoPrices;
+var CityCargoPrices = require('./../modelsDB/cityCargoPrices').CityCargoPrices;
 
 fs = require('fs')
 fs.readFile('sbor-dostavka.csv', 'utf8', function (err,priceData) {

@@ -1,4 +1,4 @@
-var Departments = require('./modelsDB/departments').Departments;
+var Departments = require('./../modelsDB/departments').Departments;
 
 departments_data = [
     {"number":"0","name":"Волгоград","gerb":"volgograd","index":"400075","street":"Серийный Проезд","house":"5","office":"-","e_mail":"lanks.volgograd@mail.ru","phone":"+7 (8442) 58-03-95","fax":"+7(8442) 58-03-95","additional_phone":"+7 (927) 252-37-15","skype":"jana.lanks.vlg","street_stock":"Серийный Проезд","building":"5","place":"-","phone_stock":"+7 (8442) 58-03-95","coordinates":"48.756396,44.474805","map_id":"ymaps-map-id_134705026278533542022"},

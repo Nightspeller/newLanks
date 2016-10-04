@@ -1,4 +1,4 @@
-var moscowAndEdgePrices = require('./modelsDB/moscowAndEdgePrices').moscowAndEdgePrices;
+var moscowAndEdgePrices = require('./../modelsDB/moscowAndEdgePrices').moscowAndEdgePrices;
 
 var fs = require('fs');
 fs.readFile('prices-for-moscow.csv', 'utf8', function (err,data) {
