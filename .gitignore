@@ -3,4 +3,6 @@ addNewUserToDB.js
 config.json
 bin/www
 bin/postOriLog.txt
+bin/err.log
+bin/out.log
 .idea/
