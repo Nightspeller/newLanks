@@ -4,18 +4,18 @@
             запросить стоимость перевозки
         </button>
         <div class="mdl-grid portfolio-max-width no-padding">
-            <div class="mdl-cell mdl-cell--4-col adress">
-                <span class="adres">OOO Ланкс, 2016. Все права защищены.<br><span>Дизайн сайта от студии</span></span>
-            </div>
+            <div class="mdl-cell mdl-cell--4-col link"><a class="mdl-button show-contact-dialog">Связаться с нами</a></div>
             <div class="mdl-cell mdl-cell--4-col social">
                 <ul>
                     <li class="vk"><a href="https://new.vk.com/lanks"></a></li>
-                    <li class="b"><a href="http://lanksorg.blogspot.ru/"></a></li>
+                    <!--<li class="b"><a href="http://lanksorg.blogspot.ru/"></a></li>-->
                     <li class="ok"><a href="https://ok.ru/lankstrans"></a></li>
                     <li class="f"><a href="//www.facebook.com/pages/ООО-ланкс/551231688245030"></a></li>
                 </ul>
             </div>
-            <div class="mdl-cell mdl-cell--4-col link"><a class="mdl-button show-contact-dialog">Связаться с нами</a></div>
+            <div class="mdl-cell mdl-cell--4-col adress">
+                <span class="adres">OOO Ланкс, 2016. Все права защищены.<br><span>Дизайн сайта от студии</span></span>
+            </div>
         </div>
     </div>
 </footer>
