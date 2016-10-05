@@ -52,4 +52,26 @@ router.post('/', checkAuth, function(req, res) {
     });
 });
 
+router.delete('/', checkAuth, function(req, res) {
+    Departments.findById(req.body.id, function (err, department) {
+        if (err) throw err;
+        if(!department) {
+            res.statusCode = 404;
+            res.send({ error: 'Not found' });
+        } else {
+            fs.unlink("../public/images/departments/" + department.cityEng + '.png', function(err){
+                if (err) throw err;
+            });
+            department.remove(function (err) {
+                if (!err) {
+                    res.send({ status: 'OK' });
+                } else {
+                    res.statusCode = 500;
+                    res.send({ error: 'Server error' });
+                }
+            });
+        }
+    });
+});
+
 module.exports = router;

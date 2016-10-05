@@ -18,4 +18,24 @@ $(document).ready(function() {
             }
         });
     });
+
+    $('#delete-department-button').on('click', function(event){
+        var confirm = window.confirm("Вы уверены? Это действие нельзя отменить!");
+        if (confirm){
+            $.ajax({
+                url: '/editDepartment',
+                data: {id: $('input[name=_id]').val()},
+                type: 'DELETE',
+                success: function (data) {
+                    alert('Удалено');
+                    console.log('Success: ', data);
+                    window.location = '/admin'
+                },
+                error: function (error) {
+                    alert('К сожалению произошла ошибка. Повторите попытку или обратитесь к администратору.');
+                    console.log('Error: ', error)
+                }
+            });
+        }
+    })
 });

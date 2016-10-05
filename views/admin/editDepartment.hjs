@@ -122,10 +122,17 @@
                         <input id="picture" class="form-control" type="file" multiple="multiple" name="picture" placeholder="Изображение">
                     </div>
 
+                    <div class="md-form">
+                        <input type="hidden" name="_id" value="{{_id}}"/>
+                    </div>
+
                     <div class="text-xs-center">
                         <button class="btn btn-deep-purple" type="submit">Отправить</button>
                     </div>
                 </form>
+                <div class="text-xs-center">
+                    <button class="btn btn-danger" id="delete-department-button">Удалить филиал</button>
+                </div>
 
             </div>
         </div>
