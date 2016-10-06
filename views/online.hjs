@@ -110,13 +110,14 @@
                         </div>
                         <div class="mdl-card__actions mdl-card--border line_ots"></div>
                     </div>
+
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Связаться с нами</h4>
                             <p class="mdl-cell mdl-cell--12-col">Используйте электронную форму обратной связи чтобы связаться с нами или запросить обратный звонок:</p>
                             <div class="mdl-grid portfolio-max-width portfolio-contact">
                                 <div class="mdl-card__supporting-text">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras show-contact-dialog" type="submit">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras show-contact-dialog">
                                         Связаться
                                     </button>
                                 </div>
@@ -128,6 +129,7 @@
 
                         <div class="mdl-card__actions mdl-card--border line_ots"></div>
                     </div>
+
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Скачать документацию</h4>
@@ -145,6 +147,25 @@
                         <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                             <i class="material-icons">insert_drive_file</i>
                         </div>
+
+                        <div class="mdl-card__actions mdl-card--border line_ots"></div>
+                    </div>
+
+                    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
+                        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                            <h4 class="mdl-cell mdl-cell--12-col tile_s">Написать письмо руководству</h4>
+                            <p class="mdl-cell mdl-cell--12-col">Используйте эту форму обратной связи чтобы похвалить кого-либо из наших сотрудников или рассказать руководству как наша работа может быть улучшена:</p>
+                            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                                <div class="mdl-card__supporting-text">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras show-complain-dialog">
+                                        Написать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                            <i class="material-icons">mail</i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,6 +173,46 @@
         {{{footer}}}
     </main>
 </div>
+
+<dialog class="mdl-dialog ticket" id="complain-dialog">
+    <h4 class="mdl-dialog__title">Письмо руководству</h4>
+    <div class="mdl-dialog__content">
+        <p>Ваше сообщение будет получено лично территорияльным руководителем и не останется без внимания.</p>
+    </div>
+    <div class="mdl-dialog__content_my">
+        <div class="form_contact_section">
+            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                <form id="complain-dialog-form">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="complain-name" name="name">
+                        <label class="mdl-textfield__label" for="complain-name">Имя</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="complain-phone" name="phone">
+                        <label class="mdl-textfield__label" for="complain-phone">Телефон</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="complain-email" name="email">
+                        <label class="mdl-textfield__label" for="complain-email">E-mail</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="complain-company" name="company">
+                        <label class="mdl-textfield__label" for="complain-company">Компания</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="complain-message" name="message">
+                        <label class="mdl-textfield__label" for="complain-message">Сообщение</label>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="submit" class="mdl-button close">Послать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="m_close"><i class="material-icons">clear</i></div>
+</dialog>
+
 {{{tracking-dialog}}
 </body>
 </html>

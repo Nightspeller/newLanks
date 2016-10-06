@@ -150,7 +150,7 @@
                             <p class="small_p">Это тип внутригородской доставки, совмещающий оперативность обработки заказов
                                 на нашем складе, полноценную отчетность о получении, надежность и индивидуальность
                                 в обслуживании каждого клиента. Курьерская служба используется для доставки документов,
-                                небольших грузов, интернет-заказов и иной корреспонденции.</p>
+                                небольших грузов, интернет-заказов и иной корреспонденции. Возможно оказание инкассаторских услуг с последствующим зачислением денег на счет заказчика.</p>
                         </div>
                         <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone small_icon">
                             <i class="material-icons">keyboard_arrow_right</i>
@@ -164,7 +164,7 @@
                             <i class="material-icons">work</i>
                         </div>
                         <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                            <h4 class="mdl-cell mdl-cell--12-col title_hh">Складские услуги</h4>
+                            <h4 class="mdl-cell mdl-cell--12-col title_hh">Складские услуги и ответственное хранение</h4>
                             <p class="small_p">Включают в себя все типы работ, обеспечивающих сохранность, обработку, отгрузку
                                 и сопровождение грузов. Следуя пожеланиям наших клиентов, мы предоставляем
                                 бесплатное хранение первые семь дней с момента уведомления о приходе груза.
@@ -179,29 +179,11 @@
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing services_s">
 
                         <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                            <i class="material-icons">room</i>
-                        </div>
-                        <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                            <h4 class="mdl-cell mdl-cell--12-col title_hh">Мобильные пункты выдачи</h4>
-                            <p class="small_p">МПВ = Мобильный пункт выдачи.</p>
-                            <p class="small_p">Мобильные пункты выдачи организуются с помощью специально оборудованного автотранспорта,
-                                располагающегося в определенных местах, доступных для общего пользования, по графику,
-                                согласованному с заказчиком.</p>
-                        </div>
-                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone small_icon">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                        </div>
-
-                    </div>
-
-                    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing services_s">
-
-                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                             <i class="material-icons">add_circle</i>
                         </div>
                         <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                             <h4 class="mdl-cell mdl-cell--12-col title_hh">Сопутствующие услуги</h4>
-                            <p class="small_p">Предоставляем легковой транспорт с водителем для перевозки юридических и частных лиц;
+                            <p class="small_p">
                                 Осуществляем дистрибуцию товаров по договоренности с заказчиком;
                                 При осуществлении всех видов перевозок мы обеспечиваем диспетчерские услуги;
                                 Разработка индивидуальных маршрутов и схем доставки по заявкам клиентов всегда
