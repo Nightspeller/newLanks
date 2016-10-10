@@ -1,21 +1,67 @@
-.is-small-screen .tagcanvas {
-  min-height: 300px;
-}
-.mdl-card__media.clouds_tag {
-  position: relative;
-  flex: 1;
-  width: 100%;
-  height: 100%;
-}
-#myCanvas {
+.index-header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-@media only screen and (max-width: 850px) {
-  .mdl-cell.mdl-card__supporting-text.text_h {
-    display: none;
+.index-header .header-text {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  margin: 20px;
+  font-family: Roboto;
+}
+.index-header .header-text .header-title {
+  font-size: 44px;
+  line-height: 1.8em;
+}
+.mdl-card__actions.mdl-card--border.btn_blue a {
+  color: #40c4ff;
+}
+.index-services {
+  background: #f1f1f1;
+}
+.index-services a {
+  width: 100%;
+}
+.index-services a .index-services-list {
+  padding: 0 1em;
+}
+.index-services a .index-services-list h4 .material-icons {
+  float: right;
+  font-size: 36px;
+  color: #40c4ff;
+}
+.index-services a .index-services-list ul {
+  padding: 0 0 0 1em;
+}
+.index-services a:hover {
+  cursor: pointer;
+  background: #e7e7e7;
+}
+.is-small-screen .tag-cloud {
+  min-height: 300px;
+}
+.tag-cloud-container {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+.tag-cloud-container #tag-cloud-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 660px) {
+  .index-header .header-text {
+    margin: 10px 0;
+  }
+  .index-header .header-text .header-title {
+    font-size: 1em;
   }
 }

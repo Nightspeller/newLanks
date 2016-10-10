@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
+    <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
+    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
+    <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
+
+    <!--template-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="/vendor/css/material.grey-blue.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/vendor/js/material.min.js"></script>
+
+    <!--vendor-->
+    <script type="text/javascript" src="/vendor/js/jquery-2.2.3.min.js"></script>
+    <script src="/vendor/js/dialog-polyfill.js"></script>
+    <link rel="stylesheet" href="/vendor/css/dialog-polyfill.css" />
+
+    <!--ours: general and page-specific-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+
+    <link rel="stylesheet" href="/css/pages/services.css" />
+    <script src="/js/pages/services.js"></script>
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    {{{header}}}
+    <main class="mdl-layout__content">
+        <div class="mdl-grid portfolio-max-width">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media">
+                    <div class="title_container"><h2>Складские услуги и ответственное хранение</h2></div>
+                </div>
+                {{{contact-menu}}}
+                <div class="mdl-grid portfolio-copy">
+
+                    <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding">
+                        <p>
+                            Включают в себя все типы работ, обеспечивающих сохранность, обработку, отгрузку
+                            и сопровождение грузов. Следуя пожеланиям наших клиентов, мы предоставляем
+                            бесплатное хранение первые семь дней с момента уведомления о приходе груза.
+                        </p>
+                        <p>
+                            <b>Все наши складские помещения оснащены современным техническим оборудованием
+                            и обслуживаются квалифицированными сотрудниками. Мы предлагаем полный комплекс
+                            складских услуг, среди которых можно выделить:</b>
+                        </p>
+                        <ul>
+                            <li>Погрузочно-разгрузочные работы;</li>
+                            <li>Обработку грузов (маркировка, прием по местам, взвешивание, измерение объема грузов);</li>
+                            <li>Организацию ответственного хранения;</li>
+                            <li>Постоянный контроль за размещенными на складе грузами;</li>
+                        </ul>
+                        <b>По заказу клиента мы делаем дополнительную упаковку грузов:</b>
+                        <ul>
+                            <li>паллетирование и стрейчевание;</li>
+                            <li>жесткую упаковку (обрешетка груза);</li>
+                            <li>пломбирование груза/машины.</li>
+                        </ul>
+                        <p>
+                            <b>Жесткая упаковка:</b> оплачивается из расчета 1м3 – 500 руб.<br>
+                            (хрупкие грузы, например, стекло из расчета 1м3 – 1000 руб.)<br>
+                            Минимальная стоимость упаковки – 150 руб.
+                        </p>
+                        <p>
+                            <b>Пломбировка груза:</b> цена 1 пломбы – 20 руб.
+                        </p>
+                        <p>
+                            При необходимости наши клиенты могут заказать сбор, доставку хранящегося у нас груза,
+                            а также сортировку груза на мелкие партии.
+                        </p>
+                        <b>Наши преимущества в складских услугах:</b>
+                        <ul>
+                            <li>Умеренные цены на обслуживание;</li>
+                            <li>Возможность краткосрочного и долгосрочного хранения;</li>
+                            <li>Оперативные и качественные погрузочно-разгрузочные работы;</li>
+                            <li>Компьютеризированная система ведения складской логистики;</li>
+                            <li>Контроль соответствия груза заявленным параметрам (вес, габариты, маркировка);</li>
+                            <li>Удобное расположение складов для подъезда легкового и грузового транспорта, просторные стоянки;</li>
+                            <li>Строгая пропускная система (КПП);</li>
+                            <li>Высококвалифицированный персонал складского обслуживания.</li>
+                        </ul>
+                        <p><a href="/for_download/other_prices/Ответхранение%20Ланкс%202016.xlsx" class="lanks-link--accent">Скачать прайс</a> на услуги ответственного хранения по всем городам!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{{footer}}}
+    </main>
+</div>
+{{{tracking-dialog}}
+</body>
+</html>

@@ -1,0 +1,65 @@
+.service {
+  width: 100%;
+}
+.service .section__text {
+  padding: 0 10px;
+  text-align: justify;
+}
+.service .service-title {
+  width: 100%;
+  font-size: 18px;
+  color: #000;
+  margin: 1em 0;
+}
+.service .small_p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.service:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}
+.cargo-calculator {
+  position: relative;
+  text-align: center;
+}
+.cargo-calculator >div {
+  display: inline-block;
+  position: relative;
+}
+.cargo-calculator >div iframe {
+  max-width: 450px;
+  height: 500px;
+  margin: auto;
+}
+.cargo-calculator >div #iframe-cover-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #f7df34;
+}
+.cargo-calculator >div #iframe-cover-1 img {
+  height: 90%;
+  margin: 10px;
+}
+.cargo-calculator >div #iframe-cover-2 {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #f7df34;
+}
+.cargo-calculator >div #iframe-cover-3 {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #f7df34;
+}
+.cargo-calculator >div #iframe-cover-3 button {
+  margin: 5px;
+}

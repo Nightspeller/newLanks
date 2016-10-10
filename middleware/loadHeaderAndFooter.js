@@ -9,10 +9,14 @@ module.exports = function(req,res,next){
             if (err) throw next(err);
             res.render('include/tracking-dialog', function(err, trackingHtml){
                 if (err) throw next(err);
-                req.header = res.locals.header = headerHtml;
-                req.footer = res.locals.footer = footerHtml;
-                req['tracking-dialog'] = res.locals['tracking-dialog'] = trackingHtml;
-                next();
+                res.render('include/contact-menu', function(err, contactMenuHtml){
+                    if (err) throw next(err);
+                    req.header = res.locals.header = headerHtml;
+                    req.footer = res.locals.footer = footerHtml;
+                    req['tracking-dialog'] = res.locals['tracking-dialog'] = trackingHtml;
+                    req['contact-menu'] = res.locals['contact-menu'] = contactMenuHtml;
+                    next();
+                });
             });
         });
     });

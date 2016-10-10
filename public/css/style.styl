@@ -1,9 +1,65 @@
+/*variables*/
+main-color = #607d8b
+accent-color = #40c4ff
+
+/* Common classes and settings */
+
+.mdl-card__media
+  background inherit
+
+.mdl-card__supporting-text
+  color rgba(0,0,0,0.74)
+
+.lanks-link--no-style
+  text-decoration none
+  color inherit
+
+.lanks-link--accent
+  text-decoration none
+  color accent-color
+.lanks-link--accent:hover
+  text-decoration underline
+
+.lanks-icon__centered
+  display flex
+  align-items center
+  justify-content center
+  color #40c4ff
+  .material-icons
+    font-size 48px
+
+.portfolio-max-width
+  max-width 900px
+  margin auto
+
+.title_container
+  width 100%
+  height 64px
+  background main-color
+  h2
+    float left
+    height 64px
+    line-height 64px
+    padding 0
+    margin 0
+    color #fff
+    font-size 20px
+    margin-left 50px
+
+.no-padding
+  padding 0
+
+.no-margin
+  margin 0
+
+/* Header and menu */
+
 .portfolio-navigation-row .is-active
   position relative
   font-weight bold
 
 
-.portfolio-navigation-row .is-activeafter 
+.portfolio-navigation-row .is-active:after
   content ""
   width 70%
   height 2px
@@ -14,64 +70,18 @@
   left 15%
 
 
-.portfolio-card .mdl-card__title 
-  padding-bottom 0
-
-
-.portfolio-blog-card-compact .mdl-card__title 
-  padding-bottom 0
-
-
 .portfolio-blog-card-bg > .mdl-card__actions 
   height 52px
   padding 16px
   background rgba(0, 0, 0, 0.2)
 
 
-img.article-image 
+
+
+
+img.article-image
   width 100%
   height auto
-
-
-.portfolio-max-width 
-  max-width 900px
-  margin auto
-
-
-.portfolio-copy 
-  max-width 700px
-
-
-.no-padding 
-  padding 0
-
-
-.no-left-padding
-  padding-left 0
-
-
-.no-bottom-padding 
-  padding-bottom 0
-
-
-.padding-top 
-  padding 10px 0 0
-
-
-.portfolio-share-btn 
-  position relative
-  float right
-  top -4px
-
-
-.demo-card-event > .mdl-card__actions 
-  -webkit-align-items center
-  -ms-flex-align center
-  align-items center
-  box-sizing border-box
-  display -webkit-flex
-  display -ms-flexbox
-  display flex
 
 
 .portfolio-contact .mdl-textfield 
@@ -82,356 +92,12 @@ img.article-image
   max-width 550px
   margin auto
 
-
-.mdl-card__media.text_head
-  position relative
-
-
-.mdl-grid.portfolio-copy.h_k
-  position relative
-  width 100%
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section
-  position absolute
-  z-index 100
-  top 0
-  left -34px
-  width calc(100% + 68px)
-  height 0
-  box-sizing border-box
-  background #40c4ff
-  overflow hidden
-  transition-property height
-  transition-duration 0.5s
-  transition-timing-function ease
-  -webkit-transition-property height
-  -webkit-transition-duration 0.5s
-  -webkit-transition-timing-function ease
-  -moz-transition-property height
-  -moz-transition-duration 0.5s
-  -moz-transition-timing-function ease
-  -o-transition-property height
-  -o-transition-duration 0.5s
-  -o-transition-timing-function ease
-
-
-.mdl-button.open_contact
-  cursor pointer
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .close_phone_head_section
-  position absolute
-  z-index 10
-  top 15px
-  right 15px
-  width 16px
-  height 16px
-  cursor pointer
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .close_phone_head_section .material-icons
-  float left
-  font-size 16px
-  color #707070
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg
-  background none
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .material-icons
-  color #7ad6ff
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .title
-  font-size 42px
-  margin-top 35px
-  float left
-  width 100%
-  line-height 1em
-  color #000
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .phone
-  font-size 30px
-  margin-top 16px
-  margin-bottom 25px
-  float left
-  width 100%
-  line-height 1em
-  color #000
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text
-  float left
-  width 100%
-  margin-bottom 35px
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .material-icons.call
-  top 0
-  margin-top 50px
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .title_city
-  float left
-  width 100%
-  color #000
-  font-size 13px
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .phone_city
-  float left
-  width 100%
-  color black
-  font-size 12px
-  font-weight bolder
-  margin-top 5px
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .mdl-cell.w_p
-  margin 0
-  margin-top 8px
-
-
-.mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .mdl-button.filials
-  background-color #607d8b
-  font-size 11px
-  width 100% !important
-  padding 0 8px
-
-
-.mdl-card__media.text_head .phone_head
-  position absolute
-  bottom -31px
-  right 0
-  width 250px
-  height 62px
-  line-height 62px
-  background #36a7d9
-  text-align center
-
-
-.pager_section
-  float left
-  width 100%
-  text-align center
-
-
-.pager_section ul
-  display inline-block
-
-
-.pager_section ul li
-  list-style none
-  padding 0
-  float left
-  height 16px
-  line-height 16px
-  margin 0 15px
-  font-size 16px
-  color #000
-  cursor pointer
-
-
-.pager_section ul li.active
-  color #707070
-
-
-.pager_section ul li.prev,
-.pager_section ul li.next
-
-  width 18px
-  height 18px
-  line-height 18px
-  margin-top -2px
-
-
-.pager_section ul li.prev .material-icons,
-.pager_section ul li.next .material-icons
-  float left
-  font-size 20px
-  color #40c4ff
-  font-weight bold
-
-
-.mdl-card__media.text_head .phone_head .list_btn
-  position absolute
-  z-index 10
-  top 18px
-  right 30px
-  width 12px
-  height 12px
-  text-align center
-  cursor pointer
-
-
-.mdl-card__media.text_head .phone_head .list_btn .material-icons
-  float left
-
-
-.mdl-card__media.text_head .phone_head .list_btnhover .material-icons
-  color #fff
-
-
-.mdl-card__media.text_head .phone_head .mdl-button
-  position absolute
-  z-index 1
-  top -2px
-  left -30px
-  width 66px
-  height 66px
-  background #40c4ff !important
-
-
-.mdl-card__media.text_head .phone_head .mdl-button .material-icons
-  color #424242
-
-
-.mdl-card__actions.line_ots
-  margin-top 20px
-  margin-bottom 10px
-
-
-.mdl-card__actions.line_ots.small
-  margin-top 0
-  margin-bottom 0
-
-
-p.black_p
-  color #000
-
-
-.mdl-cell.mdl-cell--12-col.title_h.b_ot
-  margin-bottom 5px
-
-
-a.sk.blue
-  text-decoration none
-  color #57cbff
-
-
-#map
-  float left
-  width 100%
-  margin-top 20px
-
-
-#map img
-  max-width 100%
-  height auto
-
-.mdl-card__media
-  background-color inherit
-
-.mdl-card__media.text_head .phone_head .mdl-buttonhover
-  background #5ccdff !important
-
-
-.mdl-card__media.text_head .text_header
-  position absolute
-  top 0
-  left 0
-  width 100%
-  height 100%
-
-
-.mdl-card__supporting-text.text_h
-  color #fff
-  font-size 24px
-  text-transform uppercase
-  line-height 1.4em
-  margin-top 25px
-  padding 10px 0
-  font-family Roboto
-
-
-.mdl-card__supporting-text.text_h span
-  font-size 44px
-  line-height 1.8em
-
-
-.mdl-card__actions.mdl-card--border.btn_blue a
-  color #40c4ff
-
-
 .mdl-grid.portfolio-copy
   max-width 800px
 
 
-.mdl-cell.bg_brown
-  background #f1f1f1
-  margin-top -6px
-  padding 50px 0
-
-
-.mdl-cell.bg_brown.full-list
-  display none
-
-
-
-.section__circle-container.mdl-cell.mdl-cell--2-col.mdl-cell--1-col-phone
-  position relative
-
-
-.section__circle-container.mdl-cell.mdl-cell--2-col.mdl-cell--1-col-phone .material-icons,
-.section__circle-container.mdl-cell.mdl-cell--1-col.mdl-cell--1-col-phone .material-icons
-  position absolute
-  top 50%
-  margin-top -24px
-  font-size 48px
-  color #b2dfdb
-  width 100%
-  text-align center
-
-
-.mdl-card__supporting-text.mdl-grid.mdl-grid--no-spacing.services_s
-  width 100%
-  margin 0 0
-  padding 20px 0
-
-
-.mdl-card__supporting-text.mdl-grid.mdl-grid--no-spacing.services_shover
-  background #f1f1f1
-  cursor pointer
-
-
-.mdl-cell.mdl-cell--12-col.title_hh
-  width 100%
-  margin 0
-  font-size 18px
-  color #000
-  margin-bottom 10px
-
-
-p.small_p
-  font-size 14px
-  line-height 1.5em
-
-
-.section__circle-container.small_icon .material-icons
-  font-size 20px !important
-  color #57cbff !important
-
-
-.mdl-cell.mdl-cell--12-col.without_p
-  margin 0
-  width 100%
-
-
-.mdl-cell.preim
-  margin-top 30px
-
-
 .mdl-textfield.is-focused .mdl-textfield__input
   border-bottom 2px solid #40c4ff !important
-
-
-.mdl-card__actions.kod_g
-  margin-top 15px
-  line-height 1.5em
-
 
 .form_contact_section
   position relative
@@ -465,114 +131,9 @@ p.small_p
 .form_contact_section .close_form_contact_section i
   cursor pointer
 
-
-footer 
-  background-color #455a63 !important
-
-
-.footer_c
-  position relative
-  width 100%
-  max-width 900px
-  margin auto
-
-
-.footer_c .mdl-button.zapros
-  position fixed
-  display block
-  right 40px
-  bottom 20px
-  z-index 900
-  max-width 200px
-  height auto
-  line-height 1.2em
-  box-sizing border-box
-  padding 8px
-
-
-.mdl-cell.adress
-  text-align center
-
-
-.mdl-cell.adress .adres
-  position relative
-  display inline-block
-  color #697b83
-  line-height 1.5em
-  text-align left
-
-
-.mdl-cell.adress .adres span
-  padding-right 80px
-  background url(../images/template/cruelten.png) no-repeat bottom right
-
-
-.mdl-cell.social
-  text-align center
-
-
-.mdl-cell.social ul
-  padding 0
-  margin 0
-
-
-.mdl-cell.social ul li
-  display inline-block
-  width 30px
-  height 30px
-  margin 5px
-  border-radius 5px
-  background-image url(../images/template/social.png)
-  background-repeat no-repeat
-
-
-.mdl-cell.social ul li.vk
-  background-position 0 0
-
-
-.mdl-cell.social ul li.b
-  background-position -30px 0
-
-
-.mdl-cell.social ul li.ok
-  background-position -60px 0
-
-
-.mdl-cell.social ul li.f
-  background-position -90px 0
-
-
-.mdl-cell.social ul li a
-  display block
-  width 100%
-  height 100%
-
-
-.mdl-cell.link
-  text-align center
-
-
-.mdl-cell.link a
-  display inline-block
-  color #fff
-  text-decoration none
-
-
 .mdl-cell.mdl-cell--12-col.title_h
   font-size 18px
   color #000
-
-
-.mdl-cell.mdl-cell--12-col.title_h_b
-  font-size 34px
-  margin-top 20px
-
-
-h4.tit_about
-  font-size 18px
-  margin 0
-  margin-top 20px
-
 
 .light_bl
   color #40c4ff
@@ -585,112 +146,11 @@ h4.tit_about
   padding-left 5%
   margin-top 20px
 
-
-.btn_make_order
-  float left
-  color #40c4ff
-  text-transform uppercase
-  box-sizing border-box
-  padding 15px 5%
-  cursor pointer
-  font-weight 600
-
-
-.mdl-cell.call_op_block .mdl-button.call_op
-  background-color #607d8b !important
-  margin-top 40px
-  display inline-block
-
-
-.mdl-cell.big_section
-  min-height 700px
-
-
-@media only screen and (max-width: 839px)
-  .mdl-cell.call_op_block .mdl-button.call_op
-    margin-top 0
-    margin-left 10%
-  
-
-
-@media only screen and (max-width: 479px)
-  .mdl-cell.call_op_block
-    text-align center
-  
-
-  .mdl-cell.call_op_block .mdl-button.call_op
-    margin-top 0
-    margin-left 0
-  
-
-
-.form_price_order
-  float left
-  width 100%
-  box-sizing border-box
-  padding 25px 5%
-
-
-.form_price_order img
-  max-width: 100%
-  height auto
-
-
-.mdl-card--border.border_about
-  padding 0
-
-
-.mdl-card__actions.mdl-card--border.kod_g .mdl-card__supporting-text
-  padding 0 16px
-
-
 .mdl-button.light
   background-color #40c4ff !important
 
 
-.mdl-card__title.padding_b
-  padding-bottom 15px
 
-
-.mdl-card__supporting-text.pad_top
-  padding-top 15px !important
-
-
-.mdl-card__actions.mdl-card--border.small_t
-  font-size 12px
-  line-height 1.5em
-  padding-top 15px
-
-
-.mdl-mini-footer.pad
-  padding 10px 16px
-  padding-top 20px
-
-
-.title_container
-  width 100%
-  height 64px
-  background #607d8b
-
-
-.title_container.news
-  background #efefef
-
-
-.title_container h2
-  float left
-  height 64px
-  line-height 64px
-  padding 0
-  margin 0
-  color #fff
-  font-size 20px
-  margin-left 50px
-
-
-.title_container.news h2
-  color #707070
-  font-weight 300
 
 
 .mdl-cell.title_h
@@ -698,50 +158,8 @@ h4.tit_about
   font-size 24px !important
   margin-top 25px
 
-
-.mdl-cell.title_h.with_icon
-  padding-left 40px
-
-
-.mdl-cell.title_h.with_icon .icon
-  position absolute
-  top 0
-  left -5px
-  width 32px
-  height 32px
-
-
-.mdl-cell.title_h.with_icon .icon .material-icons
-  color #b2dfdb
-  font-size 32px
-
-
-.mdl-cell.title_h.with_icon.big
-  padding-top 10px
-  padding-left 50px
-
-
-.mdl-cell.title_h.with_icon.big .icon .material-icons
-  font-size 48px
-
-
-.mdl-cell.no-padding .price
-  text-decoration none
-  color #40c4ff
-
-
-.mdl-grid.portfolio-copy.h_k.we_o
-  padding 0 !important
-
 .mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent.blue
   color #40c4ff !important
-
-
-h3.title_adress
-  font-size 16px
-  color #000
-  padding-top 20px
-
 
 .mdl-dialog.ticket
   max-width: 520px
@@ -801,38 +219,69 @@ h3.title_adress
   color #40c4ff
   padding-left 0
 
-
-.mdl-grid.portfolio-copy.h_k.news
-  padding-top 40px
-
-.download_b
+/******************************** contact-menu ********************************************/
+.contact-menu
   position relative
+  z-index 2
+  .contact-controls
+    float right
+    display inline-block
+    margin-top -33px
+    background #36a7d9
+    cursor pointer
+    button
+      position relative
+      left -28px
+      width 66px
+      height 66px
+      color #415964
+      background accent-color
+      transition color 0.3s
+    button:hover
+      background accent-color
+    .arrow-down
+      position relative
+      top 6px
+      padding 0 15px
+      transition color 0.3s
+  .contact-controls:hover
+    button
+      color white
+    .arrow-down
+      color white
+  .contact-info
+    display none
+    position absolute
+    background accent-color
+    width 100%
+    padding 0
+    .contact-menu-close
+      position absolute
+      right 0
+      cursor pointer
+      padding 10px
+      transition color 0.3s
+    .contact-menu-close:hover
+      color white
+    .icon-holder
+      display flex
+      align-items center
+      justify-content center
+      i
+        font-size 3em
+        color main-color
+    .info-holder
+      .mdl-grid
+        text-align center
+        .mdl-cell--12-col
+          font-size 125%
+          padding-bottom 5px
+          border-bottom 1px solid main-color
+        .mdl-cell--6-col
+          .mdl-button
+            color white
+            background main-color
 
-
-.download_b .menu_p
-  float left
-
-/******************************** services-online ********************************************/
-.mdl-card__supporting-text.online_servicesfirst-child
-  margin-top 30px
-
-
-.mdl-card__supporting-text.online_services h4.tile_s
-  color #000
-  font-size 17px
-
-
-.mdl-button.gray
-  background-color #dddddd !important
-  color #707070 !important
-  margin-left 10px
-
-
-.mdl-list__item-secondary-action.ser_ol
-  float left
-  margin-top 5px
-  margin-bottom 20px
-  width 100%
 
 /******************************** template ********************************************/
 .portfolio-header
@@ -866,17 +315,18 @@ h3.title_adress
 
 
 .portfolio-logo
-  background url(../images/template/logo.png) 50% no-repeat
-  background-size cover
+  background url(../images/template/lanks-logo.svg) 50% no-repeat
+  background-size contain
   height 120px
   width 176px
   margin auto auto 10px
 
 .is-compact .portfolio-logo
+  background url(../images/template/lanks-logo-mini.svg) 50% no-repeat
+  background-size contain
   height 43px
   width 65px
   margin-top 7px
-  background url(../images/template/logo-mini.png) 50% no-repeat
 
 .portfolio-navigation-row
   background-color rgba(255, 255, 255, 0.4)
@@ -897,31 +347,69 @@ h3.title_adress
 .portfolio-header .mdl-layout__drawer-button
   background-color rgba(197, 197, 197, 0.44)
 
-
-@media only screen and (max-width: 480px)
-  .footer_c .mdl-button.zapros
-    display none
-
 @media only screen and (max-width: 580px)
-  .phone_head
-    width 0 !important
-  .phone_head .list_btn
-    display none
-  .mdl-card__media.text_head .phone_head .mdl-button
-    left -80px !important
   .mdl-dialog.ticket
     width 300px
-
-@media only screen and (max-width: 865px)
-  .mdl-grid.portfolio-copy.h_k .phone_head_section
-    left 0
-    width 100%
-
-@media only screen and (max-width: 640px)
-  .mdl-grid.portfolio-copy.h_k .phone_head_section .mdl-cell.with_bg .all_text .mdl-button.filials
-    font-size 10px
 
 @media only screen and (max-width: 440px)
   .form_contact_section.openf
     height 560px !important
   
+/* Footer */
+
+.mdl-mini-footer
+  background-color #455a63
+  padding 10px 0
+  .mdl-grid
+    position relative
+    width 100%
+    max-width 900px
+    margin auto
+    .contact
+      div
+        color white
+      button
+        background main-color
+    .social
+      ul
+        padding 0
+        margin 0
+        li
+          display inline-block
+          width 30px
+          height 30px
+          margin 5px
+          border-radius 5px
+          background-image url(../images/template/social.png)
+          background-repeat no-repeat
+          a
+            display block
+            width 100%
+            height 100%
+        li.vk
+          background-position 0 0
+        li.ok
+          background-position -60px 0
+        li.f
+          background-position -90px 0
+    .legal
+      >span
+        position relative
+        display inline-block
+        color #697b83
+        line-height 1.5em
+        text-align left
+        span
+          padding-right 80px
+          background url(../images/template/cruelten.png) no-repeat bottom right
+  .price-request-button
+    position fixed
+    display block
+    right 40px
+    bottom 20px
+    z-index 3
+    max-width 200px
+    height auto
+    line-height 1.2em
+    box-sizing border-box
+    padding 8px

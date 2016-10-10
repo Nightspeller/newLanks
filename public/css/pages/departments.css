@@ -9,3 +9,16 @@
   color: inherit;
   text-decoration: underline;
 }
+p.black_p {
+  color: #000;
+}
+#map {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+h3.title_adress {
+  font-size: 16px;
+  color: #000;
+  padding-top: 20px;
+}

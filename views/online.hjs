@@ -35,61 +35,18 @@
     <main class="mdl-layout__content">
         <div class="mdl-grid portfolio-max-width">
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__media text_head">
-                    <div class="phone_head">
-                        <div class="list_btn"><i class="material-icons">keyboard_arrow_down</i></div>
-                        8 (800) 200-46-86
-                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
-                            <i class="material-icons" role="presentation">phone</i></button>
-                        <span class="visuallyhidden">Add</span>
-                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span>
-                    </div>
+                <div class="mdl-card__media">
                     <div class="title_container"><h2>On-line сервисы</h2></div>
                 </div>
-                <div class="mdl-grid portfolio-copy h_k">
-                    <div class="phone_head_section">
-                        <div class="close_phone_head_section"><i class="material-icons">clear</i></div>
-                        <div class="mdl-cell mdl-cell--12-col mdl-card with_bg">
-                            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                    <i class="material-icons call">call</i>
-                                </div>
-                                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                    <div class="title">Единый номер</div>
-                                    <div class="phone">8 (800) 200-46-86</div>
-                                    <div class="all_text">
-                                        <div class="mdl-card__actions mdl-card--border line_ots">
-                                            <div class="mdl-grid portfolio-max-width no-padding">
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Москва</div>
-                                                    <div class="phone_city">(495) 591-71-48</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Санкт-Петербург</div>
-                                                    <div class="phone_city">(812) 384-24-73</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Воронеж</div>
-                                                    <div class="phone_city">(473) 261-22-11</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent filials" href="/departments">Другие Филиалы</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="mdl-cell mdl-cell--12-col without_p">
+                {{{contact-menu}}}
+
+                <div class="mdl-cell mdl-cell--12-col">
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Статус груза</h4>
                             <p class="mdl-cell mdl-cell--12-col">Введите код Вашего груза или номер заказа Орифлейм, чтобы проверить статус:</p>
-                            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                            <div class="mdl-grid portfolio-contact">
                                 <div class="mdl-card__supporting-text">
                                     <form id="tracking-form">
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -105,7 +62,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
                             <i class="material-icons">assignment_turned_in</i>
                         </div>
                         <div class="mdl-card__actions mdl-card--border line_ots"></div>
@@ -115,7 +72,7 @@
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Связаться с нами</h4>
                             <p class="mdl-cell mdl-cell--12-col">Используйте электронную форму обратной связи чтобы связаться с нами или запросить обратный звонок:</p>
-                            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                            <div class="mdl-grid portfolio-contact">
                                 <div class="mdl-card__supporting-text">
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras show-contact-dialog">
                                         Связаться
@@ -123,7 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
                             <i class="material-icons">textsms</i>
                         </div>
 
@@ -144,7 +101,7 @@
                             </ul>
                             </p>
                         </div>
-                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
                             <i class="material-icons">insert_drive_file</i>
                         </div>
 
@@ -155,7 +112,7 @@
                         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Написать письмо руководству</h4>
                             <p class="mdl-cell mdl-cell--12-col">Используйте эту форму обратной связи чтобы похвалить кого-либо из наших сотрудников или рассказать руководству как наша работа может быть улучшена:</p>
-                            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                            <div class="mdl-grid portfolio-contact">
                                 <div class="mdl-card__supporting-text">
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras show-complain-dialog">
                                         Написать
@@ -163,7 +120,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
                             <i class="material-icons">mail</i>
                         </div>
                     </div>

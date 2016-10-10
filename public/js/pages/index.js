@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#myCanvas').tagcanvas({
+    $('#tag-cloud-canvas').tagcanvas({
         textColour : '#000', // Цвет текста
         outlineThickness : 0, // Обводка у ссылок (Да, Нет)
         maxSpeed : 0.03, // Максимальная скорость
@@ -11,7 +11,7 @@ $(document).ready(function() {
         minSpeed: 0.005
     });
 
-    $('.your-class').slick({
+    $('.carousel').slick({
         autoplay: true,
         arrows: false,
         pauseOnHover: false,

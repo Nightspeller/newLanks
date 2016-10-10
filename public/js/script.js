@@ -23,19 +23,14 @@ $(function(){
         $('.form_contact_section').removeClass('openf');
     });
 
-    $('.mdl-button.open_contact').click(function(){
-        $('.phone_head').css('display', 'none');
-        $('.phone_head_section').css('height', 'auto');
+    $('.contact-menu .contact-controls').click(function(){
+        $('.contact-controls').css('visibility', 'hidden');
+        $('.contact-info').css('display', 'block');
     });
 
-    $('.phone_head .list_btn').click(function(){
-        $('.phone_head').css('display', 'none');
-        $('.phone_head_section').css('height', 'auto');
-    });
-
-    $('.close_phone_head_section').click(function(){
-        $('.phone_head_section').css('height', '0px');
-        $('.phone_head').css('display', 'block');
+    $('.contact-menu .contact-menu-close').click(function(){
+        $('.contact-info').css('display', 'none');
+        $('.contact-controls').css('visibility', 'visible');
     });
 
     initializeContactDialog();

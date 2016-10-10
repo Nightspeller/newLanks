@@ -41,66 +41,27 @@
     <main class="mdl-layout__content">
         <div class="mdl-grid portfolio-max-width">
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__media text_head">
 
-                    <div class="text_header">
-                        <div class="mdl-grid portfolio-copy">
-                            <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text text_h">
-                                <span>ООО «Ланкс»</span><br>Более 16 лет<br>на Российском рынке<br>грузоперевозок
+                <div class="mdl-card__media">
+                    <div class="index-header">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text header-text">
+                                <span class="header-title">ООО «Ланкс»</span><br>
+                                <span class="mdl-cell--hide-tablet mdl-cell--hide-phone">
+                                    Более 16 лет<br>
+                                    на Российском рынке<br>грузоперевозок
+                                </span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="phone_head">
-                        <div class="list_btn"><i class="material-icons">keyboard_arrow_down</i></div>
-                        8 (800) 200-46-86
-                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
-                            <i class="material-icons" role="presentation">phone</i></button>
-                        <span class="visuallyhidden">Add</span>
-                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span>
-                    </div>
-
                     <img class="article-image" src="images/index/about-header.jpg" border="0" alt="">
                 </div>
 
-                <div class="mdl-grid portfolio-copy h_k">
-                    <div class="phone_head_section">
-                        <div class="close_phone_head_section"><i class="material-icons">clear</i></div>
-                        <div class="mdl-cell mdl-cell--12-col mdl-card with_bg">
-                            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                    <i class="material-icons call">call</i>
-                                </div>
-                                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                    <div class="title">Единый номер</div>
-                                    <div class="phone">8 (800) 200-46-86</div>
-                                    <div class="all_text">
-                                        <div class="mdl-card__actions mdl-card--border line_ots">
-                                            <div class="mdl-grid portfolio-max-width no-padding">
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Москва</div>
-                                                    <div class="phone_city">(495) 591-71-48</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Санкт-Петербург</div>
-                                                    <div class="phone_city">(812) 384-24-73</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Воронеж</div>
-                                                    <div class="phone_city">(473) 261-22-11</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent filials" href="departments">Другие Филиалы</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline preim">Наши преимущества</h3>
-                    <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                {{{contact-menu}}}
+
+                <div class="mdl-grid portfolio-copy">
+                    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline no-margin">Наши преимущества</h3>
+                    <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
                         <ul>
                             <li>Чёткое соблюдение сроков доставки и прочих условий договора;</li>
                             <li>Самые низкие цены в отрасли среди компаний, которым Вы можете полностью доверять;</li>
@@ -111,12 +72,17 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="mdl-card__actions mdl-card--border btn_blue ras">
-                    <div class="mdl-grid portfolio-copy"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent zapr">Запросить стоимость перевозки</a></div>
+                    <div class="mdl-grid portfolio-copy">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent zapr">
+                            Запросить стоимость перевозки
+                        </a>
+                    </div>
                     <div class="mdl-cell mdl-cell--12-col">
                         <div class="form_contact_section">
                             <div class="close_form_contact_section"><i class="material-icons">clear</i></div>
-                            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                            <div class="mdl-grid portfolio-contact">
 
                                 <div class="mdl-card__supporting-text">
                                     <h4 class="mdl-cell mdl-cell--12-col title_h">Заполните соответствующие поля информацией о Вашей перевозке</h4>
@@ -152,29 +118,39 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp bg_brown">
-
-                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                    <h4 class="mdl-cell mdl-cell--12-col title_h">Сборный груз</h4>
-                    <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp mdl-card__supporting-text index-services no-padding">
+                <a class="mdl-grid mdl-grid--no-spacing lanks-link--no-style" href="/services/combined">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone lanks-icon__centered">
+                        <i class="material-icons">dashboard</i>
+                    </div>
+                    <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet index-services-list">
+                        <h4>Сборный груз <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                         <ul>
-                            <li>Самый выгодный вариант для небольших партий груза от 300 рублей;</li>
+                            <li><strong>Самый выгодный вариант для небольших партий груза от 300 рублей;</strong></li>
                             <li>Быстрая доставка по фиксированному графику;</li>
                             <li>Возможность контроля местоположения груза;</li>
                             <li>Возможность бесплатного использования складов ООО "Ланкс" (до 7 дней);</li>
                             <li>Возможность заказа доупаковки груза.</li>
                         </ul>
                     </div>
-                    <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                        <i class="material-icons">dashboard</i>
+                    <div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--hide-phone lanks-icon__centered">
+                        <i class="material-icons">keyboard_arrow_right</i>
                     </div>
+                </a>
 
-                    <div class="mdl-card__actions mdl-card--border line_ots"></div>
-                    <h4 class="mdl-cell mdl-cell--12-col title_h">Отдельные машины</h4>
-                    <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <div class="mdl-card__actions mdl-card--border no-padding"></div>
+
+                <a class="mdl-grid mdl-grid--no-spacing lanks-link--no-style" href="/services/whole-cars">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone lanks-icon__centered">
+                        <i class="material-icons">local_shipping</i>
+                    </div>
+                    <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet index-services-list">
+                        <h4>Междугородние перевозки <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                         <ul>
+                            <li><strong>Отдельная машина только для вашего груза;</strong></li>
                             <li>Самый оперативный вариант доставки;</li>
                             <li>Оптимален для больших партий груза;</li>
                             <li>Возможность опломбирования машины;</li>
@@ -182,15 +158,21 @@
                             <li>Возможность заказа дополнительных пунктов погрузки/разгрузки.</li>
                         </ul>
                     </div>
-                    <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                        <i class="material-icons">local_shipping</i>
+                    <div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--hide-phone lanks-icon__centered">
+                        <i class="material-icons">keyboard_arrow_right</i>
                     </div>
+                </a>
 
-                    <div class="mdl-card__actions mdl-card--border line_ots"></div>
-                    <h4 class="mdl-cell mdl-cell--12-col title_h">Кросс-докинг</h4>
-                    <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <div class="mdl-card__actions mdl-card--border no-padding"></div>
+
+                <a class="mdl-grid mdl-grid--no-spacing lanks-link--no-style" href="/services/cross-docking">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone lanks-icon__centered">
+                        <i class="material-icons">store</i>
+                    </div>
+                    <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet index-services-list">
+                        <h4>Кросс-докинг <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                         <ul>
-                            <li>Комплексное решение, оптимизирующее затраты по перевозке большой партии
+                            <li><strong>Комплексное решение, оптимизирующее затраты</strong> по перевозке большой партии
                                 груза с последующей доставкой его в несколько адресных точек;</li>
                             <li>Вам не нужно беспокоиться о перевозке, хранении, комплектовании и доставке груза;</li>
                             <li>Сроки доставки товара конечному потребителю сведены к минимуму;</li>
@@ -198,34 +180,36 @@
                                 и его доставка по требованию.</li>
                         </ul>
                     </div>
-                    <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                        <i class="material-icons">store</i>
+                    <div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--hide-phone lanks-icon__centered">
+                        <i class="material-icons">keyboard_arrow_right</i>
                     </div>
-                </div>
+                </a>
             </div>
 
-            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                <div class="mdl-card__title padding_b">
+            <div class="mdl-cell mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__title">
                     <h2 class="mdl-card__title-text">С нами сотрудничают</h2>
                 </div>
                 <div class="mdl-card__media">
-                    <div class="your-class">
+                    <div class="carousel">
                         <div><img class="article-image" src=" images/index/main_beeline.png" border="0" alt=""></div>
                         <div><img class="article-image" src=" images/index/main_megafon.png" border="0" alt=""></div>
                         <div><img class="article-image" src=" images/index/main_oriflame.png" border="0" alt=""></div>
+                        <div><img class="article-image" src=" images/index/main_mznak.png" border="0" alt=""></div>
+                        <div><img class="article-image" src=" images/index/main_vostok.jpg" border="0" alt=""></div>
                     </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border small_t">
-                    Убедитесь в качестве наших услуг на примере некоторых наших партнёров.
+                <div class="mdl-card__actions mdl-card--border">
+                    <small>Убедитесь в качестве наших услуг на примере некоторых наших партнёров.</small>
                 </div>
             </div>
 
-            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card tagcanvas">
-                <div class="mdl-card__title padding_b">
+            <div class="mdl-cell mdl-card mdl-shadow--4dp tag-cloud">
+                <div class="mdl-card__title">
                     <h2 class="mdl-card__title-text">Наши филиалы</h2>
                 </div>
-                <div class="mdl-card__media clouds_tag">
-                    <canvas width="auto" height="auto" id="myCanvas">
+                <div class="mdl-card__media tag-cloud-container">
+                    <canvas width="auto" height="auto" id="tag-cloud-canvas">
                         <ul>
                             {{#allDepartments}}
                             <li><a href="departments?city={{cityEng}}">{{city}}</a></li>
@@ -235,13 +219,13 @@
                 </div>
             </div>
 
-            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-cell mdl-card mdl-shadow--4dp">
                 <div class="mdl-card__title">
                     <h2 class="mdl-card__title-text">Статус груза</h2>
                 </div>
-                <div class="mdl-card__actions mdl-card--border kod_g">
+                <div class="mdl-card__actions mdl-card--border">
                     Введите код Вашего груза, чтобы проверить его статус:
-                    <div class="mdl-card__supporting-text pad_top">
+                    <div class="mdl-card__supporting-text">
                         <form id="tracking-form">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                 <input class="mdl-textfield__input" type="text" id="code" name="code">

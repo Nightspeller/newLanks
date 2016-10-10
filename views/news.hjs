@@ -35,87 +35,30 @@
     <main class="mdl-layout__content">
         <div class="mdl-grid portfolio-max-width">
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__media text_head">
-                    <div class="phone_head">
-                        <div class="list_btn"><i class="material-icons">keyboard_arrow_down</i></div>
-                        8 (800) 200-46-86
-                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
-                            <i class="material-icons" role="presentation">phone</i></button>
-                        <span class="visuallyhidden">Add</span>
-                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
-                    </div>
+                <div class="mdl-card__media">
                     <div class="title_container"><h2>Новости</h2></div>
                 </div>
 
-                <div class="mdl-grid portfolio-copy h_k news">
+                {{{contact-menu}}}
 
-                    <div class="phone_head_section">
-                        <div class="close_phone_head_section"><i class="material-icons">clear</i></div>
-                        <div class="mdl-cell mdl-cell--12-col mdl-card with_bg">
-                            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                    <i class="material-icons call">call</i>
-                                </div>
-                                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                    <div class="title">Единый номер</div>
-                                    <div class="phone">8 (800) 200-46-86</div>
-                                    <div class="all_text">
-                                        <div class="mdl-card__actions mdl-card--border line_ots">
-                                            <div class="mdl-grid portfolio-max-width no-padding">
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Москва</div>
-                                                    <div class="phone_city">(495) 591-71-48</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Санкт-Петербург</div>
-                                                    <div class="phone_city">(812) 384-24-73</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Воронеж</div>
-                                                    <div class="phone_city">(473) 261-22-11</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent filials" href="/departments">Другие Филиалы</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="mdl-grid portfolio-max-width">
+                    {{#allNews}}
+                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                            <div class="mdl-card__media">
+                                <img class="article-image" src="images/news/{{logo}}" border="0" alt="">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">{{title}}</h2>
+                            </div>
+                            <div class="mdl-card__title data_line">{{date}}</div>
+                            <div class="mdl-card__supporting-text">
+                                {{shortDescription}}
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="news?newsID={{_id}}">подробнее</a>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="mdl-grid portfolio-max-width">
-                        {{#allNews}}
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src="images/news/{{logo}}" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">{{title}}</h2>
-                                </div>
-                                <div class="mdl-card__title data_line">{{date}}</div>
-                                <div class="mdl-card__supporting-text">
-                                    {{shortDescription}}
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="news?newsID={{_id}}">подробнее</a>
-                                </div>
-                            </div>
-                        {{/allNews}}
-                    </div>
-                    <!--<div class="mdl-cell mdl-cell&#45;&#45;12-col">
-                        <div class="pager_section">
-                            <ul>
-                                <li class="prev"><i class="material-icons">keyboard_arrow_left</i></li>
-                                <li>1</li>
-                                <li class="active">2</li>
-                                <li>3</li>
-                                <li class="next"><i class="material-icons">keyboard_arrow_right</i></li>
-                            </ul>
-                        </div>
-                    </div>-->
+                    {{/allNews}}
                 </div>
             </div>
         </div>

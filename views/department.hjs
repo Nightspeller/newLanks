@@ -36,59 +36,15 @@
     <main class="mdl-layout__content">
         <div class="mdl-grid portfolio-max-width">
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__media text_head">
-                    <div class="phone_head">
-                        <div class="list_btn"><i class="material-icons">keyboard_arrow_down</i></div>
-                        8 (800) 200-46-86
-                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent open_contact" id="add" data-upgraded=",MaterialButton,MaterialRipple">
-                            <i class="material-icons" role="presentation">phone</i></button>
-                        <span class="visuallyhidden">Add</span>
-                        <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(15px, 35px);"></span></span></button>
-                    </div>
+                <div class="mdl-card__media">
                     <div class="title_container"><h2>Филиал в городе {{city}}</h2></div>
                 </div>
 
-                <div class="mdl-grid portfolio-copy h_k">
-                    <div class="phone_head_section">
-                        <div class="close_phone_head_section"><i class="material-icons">clear</i></div>
-                        <div class="mdl-cell mdl-cell--12-col mdl-card with_bg">
-                            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                    <i class="material-icons call">call</i>
-                                </div>
-                                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                    <div class="title">Единый номер</div>
-                                    <div class="phone">8 (800) 200-46-86</div>
-                                    <div class="all_text">
-                                        <div class="mdl-card__actions mdl-card--border line_ots">
-                                            <div class="mdl-grid portfolio-max-width no-padding">
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Москва</div>
-                                                    <div class="phone_city">(495) 591-71-48</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Санкт-Петербург</div>
-                                                    <div class="phone_city">(812) 384-24-73</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <div class="title_city">Воронеж</div>
-                                                    <div class="phone_city">(473) 261-22-11</div>
-                                                </div>
-                                                <div class="mdl-cell mdl-cell--3-col w_p">
-                                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent filials" href="/departments">Другие Филиалы</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{{contact-menu}}}
 
                 <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
 
-                    <h4 class="mdl-cell mdl-cell--12-col title_h b_ot">{{city}}</h4>
+                    <h4 class="mdl-cell mdl-cell--12-col title_h">{{city}}</h4>
                     <h3 class="mdl-cell mdl-cell--12-col title_adress">Офис</h3>
                     <div class="mdl-card__actions mdl-card--border line_ots small"></div>
 
@@ -119,10 +75,10 @@
                     </p>
                     <h3 class="mdl-cell mdl-cell--12-col title_adress">Цены</h3>
                     <div class="mdl-card__actions mdl-card--border line_ots small"></div>
-                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/courier_prices/{{city}}.pdf" class="sk blue">Скачать прайс</a> на курьерские услуги.</p>
-                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sbor_dostavka_prices/{{city}}.doc" class="sk blue">Скачать прайс</a> на сбор и доставку груза по региону.</p>
-                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sborni_gruz_prices/Прайс в {{city}}.xls" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза В этот город.</p>
-                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sborni_gruz_prices/Прайс из города {{city}}.xls" class="sk blue">Скачать прайс</a> на покилограммную перевозку груза ИЗ этого города.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/courier_prices/{{city}}.pdf" class="lanks-link--accent">Скачать прайс</a> на курьерские услуги.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sbor_dostavka_prices/{{city}}.doc" class="lanks-link--accent">Скачать прайс</a> на сбор и доставку груза по региону.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sborni_gruz_prices/Прайс в {{city}}.xls" class="lanks-link--accent">Скачать прайс</a> на покилограммную перевозку груза В этот город.</p>
+                    <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sborni_gruz_prices/Прайс из города {{city}}.xls" class="lanks-link--accent">Скачать прайс</a> на покилограммную перевозку груза ИЗ этого города.</p>
 
                 </div>
             </div>
