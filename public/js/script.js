@@ -33,50 +33,90 @@ $(function(){
         $('.contact-controls').css('visibility', 'visible');
     });
 
-    initializeContactDialog();
-
     initializeTracking();
 });
 
-function initializeContactDialog(){
-    var dialog = document.querySelector('#contact-dialog');
-    var showDialogButton = document.getElementsByClassName('show-contact-dialog');
-    if (! dialog.showModal) {
-        dialogPolyfill.registerDialog(dialog);
-    }
-
-    for (var i = 0; i < showDialogButton.length; i++) {
-        showDialogButton[i].addEventListener('click', function() {
-            dialog.showModal();
-            document.activeElement.blur();
-        });
-    }
-
-    dialog.querySelector('.close').addEventListener('click', function() {
-        dialog.close();
+function showContactDialog(){
+    vex.dialog.open({
+        message: 'Предоставьте информацию о себе:',
+        input:
+        '<form id="contact-dialog-form">'+
+        '<div>'+
+        '<label for="name">Имя</label>'+
+        '<input pattern="[A-Z,a-z, ]*" type="text" id="name" name="name">'+
+        '</div>'+
+        '<div>'+
+        '<label for="phone">Телефон</label>'+
+        '<input type="text" id="phone" name="phone">'+
+        '</div>'+
+        '<div>'+
+        '<label for="email">E-mail</label>'+
+        '<input type="text" id="email" name="email">'+
+        '</div>'+
+        '<div>'+
+        '<label for="message">Сообщение</label>'+
+        '<input type="text" id="message" name="message">'+
+        '</div>'+
+        '</form>'
+        ,buttons: [
+            $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
+            $.extend({}, vex.dialog.buttons.NO, { text: 'Отмена' })
+        ],
+        callback: function (data) {
+            if (!data) {
+                console.log('Cancelled')
+            } else {
+                $("#contact-dialog-form").on('submit',{path: '/question?type=callMe'}, send_form_data);
+                $("#contact-dialog-form").submit();
+                console.log('Done');
+            }
+        }
     });
+}
 
-    dialog.querySelector('.m_close').addEventListener('click', function() {
-        dialog.close();
+function showComplainDialog(){
+    vex.dialog.open({
+        message: 'Ваше сообщение будет получено лично территорияльным руководителем и не останется без внимания.',
+        input:
+        '<form id="complain-dialog-form">' +
+        '<div>' +
+        '<label for="complain-name">Имя</label>' +
+        '<input pattern="[A-Z,a-z, ]*" type="text" id="complain-name" name="name">' +
+        '</div>' +
+        '<div>' +
+        '<label for="complain-phone">Телефон</label>' +
+        '<input type="text" id="complain-phone" name="phone">' +
+        '</div>' +
+        '<div>' +
+        '<label for="complain-email">E-mail</label>' +
+        '<input type="text" id="complain-email" name="email">' +
+        '</div>' +
+        '<div>' +
+        '<label for="complain-company">Компания</label>' +
+        '<input type="text" id="complain-company" name="company">' +
+        '</div>' +
+        '<div>' +
+        '<label for="complain-message">Сообщение</label>' +
+        '<input type="text" id="complain-message" name="message">' +
+        '</div>' +
+        '</form>'
+        ,buttons: [
+            $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
+            $.extend({}, vex.dialog.buttons.NO, { text: 'Отмена' })
+        ],
+        callback: function (data) {
+            if (!data) {
+                console.log('Cancelled')
+            } else {
+                $("#complain-dialog-form").on('submit',{path: '/question?type=complain'}, send_form_data);
+                $("#complain-dialog-form").submit();
+                console.log('Done');
+            }
+        }
     });
-
-    $("#contact-dialog-form").on('submit',{path: '/question?type=callMe'}, send_form_data);
 }
 
 function initializeTracking() {
-
-    var dialog = document.querySelector('#tracking-dialog');
-    if (! dialog.showModal) {
-        dialogPolyfill.registerDialog(dialog);
-    }
-
-    dialog.querySelector('.close').addEventListener('click', function() {
-        dialog.close();
-    });
-
-    dialog.querySelector('.m_close').addEventListener('click', function() {
-        dialog.close();
-    });
 
     $('#tracking-form').on('submit', function (event) {
         event.preventDefault();
@@ -87,32 +127,37 @@ function initializeTracking() {
             url: 'online/oriflame?invoice='+id,
             type: 'GET',
             success: function (data) {
-                console.log(data);
-
                 if (data.length === 1) {
-
-                    $(dialog).find('.orderInfo').remove();
-                    $(dialog).find('h4').after('<div class="orderInfo"><strong>ФИО: </strong>'+data[0].name+'<br />' +
-                        '<strong>Номер накладной: </strong>'+data[0].invoiceNumber+'<br />' +
-                        '<strong>Номер консультанта: </strong>'+data[0].contractNumber+'<br />' +
-                        '<strong>Адрес доставки: </strong>'+data[0].address+'<br />' +
-                        '<strong>Контакт. телефон: </strong>'+data[0].phone+'<br />' +
-                        '<strong>Количество коробок: </strong>'+data[0].boxes+'<br />' +
-                        '<strong>Дата доставки: </strong>'+data[0].deliveryDate+'<br />' +
-                        '<strong>Время доставки: </strong>'+data[0].deliveryTime+'<br />' +
-                        '<strong>Водитель: </strong>'+data[0].driver+'<br />' +
-                        '<strong>Сумма накладной: </strong>'+data[0].invoiceAmount+'<br />' +
-                        '<strong>Сумма чека: </strong>'+data[0].checkAmount+'<br />' +
-                        //  '<strong>Тип клиента: </strong>'+data[0].clientType+'<br />' +
-                        //  '<strong>Пункт сбора: </strong>'+data[0].collectionPoint+'<br />' +
-                        '<strong>Дата заказа: </strong>'+data[0].orderDate+'<br />' +
-                        '<strong>Оплата: </strong>'+data[0].payment+'<br />' +
-                        '<strong>Статус: </strong>'+data[0].status+'<br />' +
-                        //  '<strong>Вес: </strong>'+data[0].weight+'<br />' +
-                        //20028046164
-                        '</div>');
-
-                    dialog.showModal();
+                    vex.dialog.alert({
+                        message: 'Информация о Вашем заказе:',
+                        input:
+                            '<div class="orderInfo"><strong>ФИО: </strong>'+data[0].name+'<br />' +
+                            '<strong>Номер накладной: </strong>'+data[0].invoiceNumber+'<br />' +
+                            '<strong>Номер консультанта: </strong>'+data[0].contractNumber+'<br />' +
+                            '<strong>Адрес доставки: </strong>'+data[0].address+'<br />' +
+                            '<strong>Контакт. телефон: </strong>'+data[0].phone+'<br />' +
+                            '<strong>Количество коробок: </strong>'+data[0].boxes+'<br />' +
+                            '<strong>Дата доставки: </strong>'+data[0].deliveryDate+'<br />' +
+                            '<strong>Время доставки: </strong>'+data[0].deliveryTime+'<br />' +
+                            '<strong>Водитель: </strong>'+data[0].driver+'<br />' +
+                            '<strong>Сумма накладной: </strong>'+data[0].invoiceAmount+'<br />' +
+                            '<strong>Сумма чека: </strong>'+data[0].checkAmount+'<br />' +
+                            //  '<strong>Тип клиента: </strong>'+data[0].clientType+'<br />' +
+                            //  '<strong>Пункт сбора: </strong>'+data[0].collectionPoint+'<br />' +
+                            '<strong>Дата заказа: </strong>'+data[0].orderDate+'<br />' +
+                            '<strong>Оплата: </strong>'+data[0].payment+'<br />' +
+                            '<strong>Статус: </strong>'+data[0].status+'<br />' +
+                            //  '<strong>Вес: </strong>'+data[0].weight+'<br />' +
+                            //20028046164
+                            '</div>'
+                        ,
+                        callback: function (data) {
+                            if (!data) {
+                                return console.log('Cancelled')
+                            }
+                            console.log('Done');
+                        }
+                    });
                 } else {
                     alert('Заказа с таким номером не найдено. Свяжитесь с оператором. Спасибо!');
                 }

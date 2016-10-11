@@ -2,28 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    {{{meta}}}
     <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
     <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
-    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
     <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
-
-    <!--template-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="/vendor/css/material.grey-blue.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="/vendor/js/material.min.js"></script>
-
-    <!--vendor-->
-    <script type="text/javascript" src="/vendor/js/jquery-2.2.3.min.js"></script>
-    <script src="/vendor/js/dialog-polyfill.js"></script>
-    <link rel="stylesheet" href="/vendor/css/dialog-polyfill.css" />
-
-    <!--ours: general and page-specific-->
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/script.js"></script>
 
     <link rel="stylesheet" href="/css/pages/services.css" />
     <script src="/js/pages/services.js"></script>
@@ -69,6 +51,5 @@
     {{{footer}}}
     </main>
 </div>
-{{{tracking-dialog}}
 </body>
 </html>

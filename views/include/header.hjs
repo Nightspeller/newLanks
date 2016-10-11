@@ -2,25 +2,24 @@
     <div class="mdl-layout__header-row portfolio-logo-row">
             <span class="mdl-layout__title">
                 <a href="/"><div class="portfolio-logo"></div></a>
-                <span class="mdl-layout__title"></span>
             </span>
     </div>
     <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
         <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-            <a class="mdl-navigation__link" href="/about">О компании</a>
-            <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
-            <a class="mdl-navigation__link" href="/departments">Филиалы</a>
-            <a class="mdl-navigation__link" href="/online">On-line сервисы</a>
-            <a class="mdl-navigation__link" href="/news">Новости</a>
+            <a class="mdl-navigation__link {{#pages.about}}is-active{{/pages.about}}" href="/about">О компании</a>
+            <a class="mdl-navigation__link {{#pages.services}}is-active{{/pages.services}}" href="/services">Услуги и тарифы</a>
+            <a class="mdl-navigation__link {{#pages.departments}}is-active{{/pages.departments}}" href="/departments">Филиалы</a>
+            <a class="mdl-navigation__link {{#pages.online}}is-active{{/pages.online}}" href="/online">On-line сервисы</a>
+            <a class="mdl-navigation__link {{#pages.news}}is-active{{/pages.news}}" href="/news">Новости</a>
         </nav>
     </div>
 </header>
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">
     <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-        <a class="mdl-navigation__link" href="/about">О компании</a>
-        <a class="mdl-navigation__link" href="/services">Услуги и тарифы</a>
-        <a class="mdl-navigation__link" href="/departments">Филиалы</a>
-        <a class="mdl-navigation__link" href="/online">On-line сервисы</a>
-        <a class="mdl-navigation__link" href="/news">Новости</a>
+        <a class="mdl-navigation__link {{#pages.about}}is-active{{/pages.about}}" href="/about">О компании</a>
+        <a class="mdl-navigation__link {{#pages.services}}is-active{{/pages.services}}" href="/services">Услуги и тарифы</a>
+        <a class="mdl-navigation__link {{#pages.departments}}is-active{{/pages.departments}}" href="/departments">Филиалы</a>
+        <a class="mdl-navigation__link {{#pages.online}}is-active{{/pages.online}}" href="/online">On-line сервисы</a>
+        <a class="mdl-navigation__link {{#pages.news}}is-active{{/pages.news}}" href="/news">Новости</a>
     </nav>
 </div>

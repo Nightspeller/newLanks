@@ -38,7 +38,7 @@
                         <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="/departments">Другие Филиалы</a>
                     </div>
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect show-contact-dialog">Обратный звонок</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="showContactDialog()">Обратный звонок</button>
                     </div>
                  </div>
             </div>

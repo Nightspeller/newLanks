@@ -1,6 +1,5 @@
 var express = require('express');
 var Departments = require('../modelsDB/departments').Departments;
-var News = require('../modelsDB/news').News;
 var formidable = require('formidable');
 var config = require('./../bin/config');
 var app = require('./../app');

@@ -2,7 +2,7 @@
     <div class="mdl-grid no-padding">
         <div class="mdl-cell mdl-cell--4-col mdl-typography--text-center contact">
             <div>8 (800) 200-46-86</div>
-            <button class="mdl-button mdl-button--raised mdl-button--accent show-contact-dialog">Связаться с нами</button>
+            <button class="mdl-button mdl-button--raised mdl-button--accent" onclick="showContactDialog()">Связаться с нами</button>
         </div>
         <div class="mdl-cell mdl-cell--4-col mdl-typography--text-center social">
             <ul>
@@ -20,7 +20,7 @@
     </div>
 
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-cell--hide-phone
-    light price-request-button show-contact-dialog">
+    light price-request-button" onclick="showContactDialog()">
         запросить стоимость перевозки
     </button>
 </footer>

@@ -52,19 +52,16 @@
   margin: 0;
 }
 /* Header and menu */
-.portfolio-navigation-row .is-active {
+.is-active {
   position: relative;
   font-weight: bold;
 }
-.portfolio-navigation-row .is-active:after {
-  content: "";
-  width: 70%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  background-color: #40c4ff;
-  left: 15%;
+.mdl-layout--large-screen-only .is-active {
+  border-bottom: 2px solid #40c4ff;
+}
+.mdl-layout--small-screen-only .is-active {
+  border-left: 2px solid #40c4ff;
+  border-right: 2px solid #40c4ff;
 }
 .portfolio-blog-card-bg > .mdl-card__actions {
   height: 52px;
@@ -397,4 +394,7 @@ img.article-image {
   line-height: 1.2em;
   box-sizing: border-box;
   padding: 8px;
+}
+.vex-dialog-message {
+  text-align: justify;
 }

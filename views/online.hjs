@@ -2,28 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    {{{meta}}}
     <meta name="keywords" content="Грузоперевозка, доставка, перевозка, отправить, перевезти, доставка, курьерская, груз, экспресс доставка, курьерская служба, срочная доставка, быстрая доставка, междугородние перевозки, международные перевозки, качественно, не дорого, низкие цены">
     <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
-    <meta name="author" content="Транспортно-экспедиционная компания ООО Ланкс">
     <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
-
-    <!--template-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="/vendor/css/material.grey-blue.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="/vendor/js/material.min.js"></script>
-
-    <!--vendor-->
-    <script type="text/javascript" src="vendor/js/jquery-2.2.3.min.js"></script>
-    <script src="vendor/js/dialog-polyfill.js"></script>
-    <link rel="stylesheet" href="vendor/css/dialog-polyfill.css" />
-
-    <!--ours: general and page-specific-->
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
 
     <link rel="stylesheet" href="css/pages/online.css" />
     <script src="js/pages/online.js"></script>
@@ -74,7 +56,7 @@
                             <p class="mdl-cell mdl-cell--12-col">Используйте электронную форму обратной связи чтобы связаться с нами или запросить обратный звонок:</p>
                             <div class="mdl-grid portfolio-contact">
                                 <div class="mdl-card__supporting-text">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras show-contact-dialog">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" onclick="showContactDialog()">
                                         Связаться
                                     </button>
                                 </div>
@@ -114,7 +96,7 @@
                             <p class="mdl-cell mdl-cell--12-col">Используйте эту форму обратной связи чтобы похвалить кого-либо из наших сотрудников или рассказать руководству как наша работа может быть улучшена:</p>
                             <div class="mdl-grid portfolio-contact">
                                 <div class="mdl-card__supporting-text">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras show-complain-dialog">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" onclick="showComplainDialog()">
                                         Написать
                                     </button>
                                 </div>
@@ -131,45 +113,5 @@
     </main>
 </div>
 
-<dialog class="mdl-dialog ticket" id="complain-dialog">
-    <h4 class="mdl-dialog__title">Письмо руководству</h4>
-    <div class="mdl-dialog__content">
-        <p>Ваше сообщение будет получено лично территорияльным руководителем и не останется без внимания.</p>
-    </div>
-    <div class="mdl-dialog__content_my">
-        <div class="form_contact_section">
-            <div class="mdl-grid portfolio-max-width portfolio-contact">
-                <form id="complain-dialog-form">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="complain-name" name="name">
-                        <label class="mdl-textfield__label" for="complain-name">Имя</label>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="complain-phone" name="phone">
-                        <label class="mdl-textfield__label" for="complain-phone">Телефон</label>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="complain-email" name="email">
-                        <label class="mdl-textfield__label" for="complain-email">E-mail</label>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="complain-company" name="company">
-                        <label class="mdl-textfield__label" for="complain-company">Компания</label>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="complain-message" name="message">
-                        <label class="mdl-textfield__label" for="complain-message">Сообщение</label>
-                    </div>
-                    <div class="mdl-dialog__actions">
-                        <button type="submit" class="mdl-button close">Послать</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="m_close"><i class="material-icons">clear</i></div>
-</dialog>
-
-{{{tracking-dialog}}
 </body>
 </html>

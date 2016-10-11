@@ -54,23 +54,17 @@ accent-color = #40c4ff
 
 /* Header and menu */
 
-.portfolio-navigation-row .is-active
+.is-active
   position relative
   font-weight bold
+.mdl-layout--large-screen-only .is-active
+  border-bottom 2px solid accent-color
+.mdl-layout--small-screen-only .is-active
+  border-left 2px solid accent-color
+  border-right 2px solid accent-color
 
 
-.portfolio-navigation-row .is-active:after
-  content ""
-  width 70%
-  height 2px
-  display block
-  position absolute
-  bottom 0
-  background-color rgb(64,196,255)
-  left 15%
-
-
-.portfolio-blog-card-bg > .mdl-card__actions 
+.portfolio-blog-card-bg > .mdl-card__actions
   height 52px
   padding 16px
   background rgba(0, 0, 0, 0.2)
@@ -401,3 +395,6 @@ img.article-image
     line-height 1.2em
     box-sizing border-box
     padding 8px
+
+.vex-dialog-message
+  text-align justify

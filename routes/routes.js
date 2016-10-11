@@ -3,6 +3,7 @@ var router = express.Router();
 
 router.use(require('./../middleware/shtmlCheck'));
 router.use(require('./../middleware/loadUser'));
+router.use(require('./../middleware/loadMeta'));
 router.use(require('./../middleware/loadHeaderAndFooter'));
 
 router.use('/', require('./index'));
