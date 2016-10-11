@@ -92,12 +92,12 @@
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Скачать документацию</h4>
                             <p>
                             <ul>
-                                <li><a class="light_bl" href="for_download/documents/Общие правила перевозки грузов.zip">Общие правила</a> перевозок грузов автомобильным транспортом.</li>
-                                <li><a class="light_bl" href="for_download/documents/Dogovor_TEO.zip">Типовой договор.</a></li>
-                                <li><a class="light_bl" href="for_download/documents/Акт о повреждении груза.zip">Приложение</a> акт о повреждении груза в пути (образец).</li>
-                                <li><a class="light_bl" href="for_download/documents/Zayavka.zip">Заявка</a> на забор/доставку груза.</li>
-                                <li><a class="light_bl" href="for_download/documents/Форма_претензии.zip">Форма</a> претензии.</li>
-                                <li><a class="light_bl" href="for_download/documents/eco.zip">Экологическая политика</a> компании.</li>
+                                <li><a class="lanks-link--accent" href="for_download/documents/Общие правила перевозки грузов.zip">Общие правила</a> перевозок грузов автомобильным транспортом.</li>
+                                <li><a class="lanks-link--accent" href="for_download/documents/Dogovor_TEO.zip">Типовой договор.</a></li>
+                                <li><a class="lanks-link--accent" href="for_download/documents/Акт о повреждении груза.zip">Приложение</a> акт о повреждении груза в пути (образец).</li>
+                                <li><a class="lanks-link--accent" href="for_download/documents/Zayavka.zip">Заявка</a> на забор/доставку груза.</li>
+                                <li><a class="lanks-link--accent" href="for_download/documents/Форма_претензии.zip">Форма</a> претензии.</li>
+                                <li><a class="lanks-link--accent" href="for_download/documents/eco.zip">Экологическая политика</a> компании.</li>
                             </ul>
                             </p>
                         </div>

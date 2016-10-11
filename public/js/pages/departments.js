@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    $('.mdl-button.blue.btn_all_fil').click(function(){
-        $('.mdl-cell.bg_brown.full-list').css('display', 'block');
-    });
 
 /*    var input = document.getElementById("cityFilter");
     var awesomplete = new Awesomplete(input);
