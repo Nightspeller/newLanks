@@ -1,7 +1,10 @@
 <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
     <div class="mdl-layout__header-row portfolio-logo-row">
             <span class="mdl-layout__title">
-                <a href="/"><div class="portfolio-logo"></div></a>
+                <a href="/">
+                    <img src="images/template/lanks-logo.svg" title="На главную" class="header-image"/>
+                    <img src="images/template/lanks-logo-mini.svg" title="На главную" class="header-image-small"/>
+                </a>
             </span>
     </div>
     <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">

@@ -8,7 +8,8 @@ $(document).ready(function() {
         textHeight: 10,
         outlineOffset: 0,
         initial: [0.05, 0.05],
-        minSpeed: 0.005
+        minSpeed: 0.005,
+        wheelZoom: false
     });
 
     $('.carousel').slick({

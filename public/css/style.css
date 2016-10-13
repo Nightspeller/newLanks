@@ -226,19 +226,15 @@ img.article-image {
 .is-compact .portfolio-logo-row {
   min-height: inherit;
 }
-.portfolio-logo {
-  background: url("../images/template/lanks-logo.svg") 50% no-repeat;
-  background-size: contain;
-  height: 120px;
-  width: 176px;
-  margin: auto auto 10px;
+.header-image-small {
+  display: none;
 }
-.is-compact .portfolio-logo {
-  background: url("../images/template/lanks-logo-mini.svg") 50% no-repeat;
-  background-size: contain;
-  height: 43px;
-  width: 65px;
-  margin-top: 7px;
+.is-compact .header-image-small {
+  display: block;
+  max-height: 50px;
+}
+.is-compact .header-image {
+  display: none;
 }
 .portfolio-navigation-row {
   background-color: rgba(255,255,255,0.4);
