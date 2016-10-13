@@ -2,8 +2,8 @@
     <div class="mdl-layout__header-row portfolio-logo-row">
             <span class="mdl-layout__title">
                 <a href="/">
-                    <img src="images/template/lanks-logo.svg" title="На главную" class="header-image"/>
-                    <img src="images/template/lanks-logo-mini.svg" title="На главную" class="header-image-small"/>
+                    <img src="/images/template/lanks-logo.svg" title="На главную" class="header-image"/>
+                    <img src="/images/template/lanks-logo-mini.svg" title="На главную" class="header-image-small"/>
                 </a>
             </span>
     </div>
