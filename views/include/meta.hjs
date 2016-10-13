@@ -13,9 +13,9 @@
 <script type="text/javascript" src="/vendor/js/jquery-2.2.3.min.js"></script>
 
 <script src="/vendor/js/vex.combined.min.js"></script>
-<script>vex.defaultOptions.className = 'vex-theme-os'</script>
+<script>vex.defaultOptions.className = 'vex-theme-top'</script>
 <link rel="stylesheet" href="/vendor/css/vex.css" />
-<link rel="stylesheet" href="/vendor/css/vex-theme-os.css" />
+<link rel="stylesheet" href="/vendor/css/vex-theme-top.css" />
 
 <!--ours: general-->
 <link rel="stylesheet" href="/css/style.css" />
