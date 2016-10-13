@@ -2,7 +2,6 @@
 {{#mailData}}
     Город отправления {{cityFrom}}<br />
     Город назначения {{cityTo}}<br />
-    Вес {{weight}}<br />
-    Объем {{volume}}<br />
-    Связаться через {{contact}}<br />
+    Характеристики груза {{cargo}}<br />
+    Телефон и/или e-mail {{contact}}<br />
 {{/mailData}}

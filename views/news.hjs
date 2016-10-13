@@ -33,11 +33,11 @@
                                 <h2 class="mdl-card__title-text">{{title}}</h2>
                             </div>
                             <div class="mdl-card__title data_line">{{date}}</div>
-                            <div class="mdl-card__supporting-text">
+                            <div class="mdl-card__supporting-text mdl-card--expand">
                                 {{shortDescription}}
                             </div>
                             <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="news?newsID={{_id}}">подробнее</a>
+                                <a class="mdl-button mdl-js-button mdl-js-ripple-effect lanks-link--main" href="news?newsID={{_id}}">подробнее</a>
                             </div>
                         </div>
                     {{/allNews}}

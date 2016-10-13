@@ -17,6 +17,27 @@
 .lanks-link--accent:hover {
   text-decoration: underline;
 }
+.lanks-link--main {
+  text-decoration: none;
+  color: #607d8b;
+}
+.lanks-link--main:hover {
+  text-decoration: underline;
+}
+.lanks-button--accent {
+  color: #fff;
+  background: #40c4ff;
+}
+.lanks-button--accent:hover {
+  background: #40c4ff;
+}
+.lanks-button--main {
+  color: #fff;
+  background: #607d8b;
+}
+.lanks-button--main:hover {
+  background: #607d8b;
+}
 .lanks-icon__centered {
   display: flex;
   align-items: center;
@@ -50,6 +71,9 @@
 }
 .no-margin {
   margin: 0;
+}
+.vex-dialog-message {
+  text-align: justify;
 }
 /* Header and menu */
 .is-active {
@@ -85,36 +109,6 @@ img.article-image {
 .mdl-textfield.is-focused .mdl-textfield__input {
   border-bottom: 2px solid #40c4ff !important;
 }
-.form_contact_section {
-  position: relative;
-  float: left;
-  width: 100%;
-  height: 0;
-  transition-property: height;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-  -webkit-transition-property: height;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-property: height;
-  -moz-transition-duration: 0.5s;
-  -moz-transition-timing-function: ease;
-  -o-transition-property: height;
-  -o-transition-duration: 0.5s;
-  -o-transition-timing-function: ease;
-}
-.form_contact_section .close_form_contact_section {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  width: 10px;
-  height: 10px;
-  color: #cacaca;
-  display: none;
-}
-.form_contact_section .close_form_contact_section i {
-  cursor: pointer;
-}
 .mdl-cell.mdl-cell--12-col.title_h {
   font-size: 18px;
   color: #000;
@@ -125,63 +119,10 @@ img.article-image {
   padding-left: 5%;
   margin-top: 20px;
 }
-.mdl-button.light {
-  background-color: #40c4ff !important;
-}
 .mdl-cell.title_h {
   position: relative;
   font-size: 24px !important;
   margin-top: 25px;
-}
-.mdl-dialog.ticket {
-  max-width: 520px;
-  width: auto;
-}
-.mdl-dialog.ticket .m_close {
-  position: absolute;
-  z-index: 100;
-  top: 16px;
-  right: 16px;
-  width: 16px;
-  min-width: 16px;
-  height: 16px;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-.mdl-dialog.ticket .m_close .material-icons {
-  color: #cacaca;
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-}
-.mdl-dialog__content_my {
-  float: left;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 16px;
-}
-.mdl-dialog__content_my .form_contact_section {
-  height: auto;
-}
-.mdl-dialog.ticket .mdl-dialog__title {
-  font-size: 24px;
-}
-.mdl-dialog.ticket .mdl-dialog__content {
-  font-size: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.mdl-dialog.ticket .mdl-dialog__actions {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding: 0;
-}
-.mdl-dialog.ticket .mdl-dialog__actions .mdl-button {
-  background: none;
-  color: #40c4ff;
-  padding-left: 0;
 }
 /******************************** contact-menu ********************************************/
 .contact-menu {
@@ -253,7 +194,7 @@ img.article-image {
   padding-bottom: 5px;
   border-bottom: 1px solid #607d8b;
 }
-.contact-menu .contact-info .info-holder .mdl-grid .mdl-cell--6-col .mdl-button {
+.contact-menu .contact-info .info-holder .mdl-grid .mdl-cell--4-col .mdl-button {
   color: #fff;
   background: #607d8b;
 }
@@ -318,16 +259,6 @@ img.article-image {
 .portfolio-header .mdl-layout__drawer-button {
   background-color: rgba(197,197,197,0.44);
 }
-@media only screen and (max-width: 580px) {
-  .mdl-dialog.ticket {
-    width: 300px;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .form_contact_section.openf {
-    height: 560px !important;
-  }
-}
 /* Footer */
 .mdl-mini-footer {
   background-color: #455a63;
@@ -338,6 +269,7 @@ img.article-image {
   width: 100%;
   max-width: 900px;
   margin: auto;
+  align-items: center;
 }
 .mdl-mini-footer .mdl-grid .contact div {
   color: #fff;
@@ -395,6 +327,11 @@ img.article-image {
   box-sizing: border-box;
   padding: 8px;
 }
-.vex-dialog-message {
-  text-align: justify;
+@media only screen and (max-width: 480px) {
+  .mdl-mini-footer .price-request-button {
+    position: relative;
+    margin: auto;
+    right: auto;
+    bottom: auto;
+  }
 }

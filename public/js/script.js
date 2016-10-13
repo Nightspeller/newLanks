@@ -9,20 +9,6 @@ $(function(){
     ga('send', 'pageview');
 
 
-    $('.btn_blue.ras .mdl-button.zapr').click(function(){
-        $('.form_contact_section').css('height', '520px');
-        $('.form_contact_section').addClass('openf');
-        $(this).css('display', 'none');
-        $('.close_form_contact_section').css('display', 'block');
-    });
-
-    $('.close_form_contact_section').click(function(){
-        $('.form_contact_section').css('height', '0px');
-        $('.btn_blue.ras .mdl-button').css('display', 'block');
-        $(this).css('display', 'none');
-        $('.form_contact_section').removeClass('openf');
-    });
-
     $('.contact-menu .contact-controls').click(function(){
         $('.contact-controls').css('visibility', 'hidden');
         $('.contact-info').css('display', 'block');
@@ -41,22 +27,16 @@ function showContactDialog(){
         message: 'Предоставьте информацию о себе:',
         input:
         '<form id="contact-dialog-form">'+
-        '<div>'+
         '<label for="name">Имя</label>'+
         '<input pattern="[A-Z,a-z, ]*" type="text" id="name" name="name">'+
-        '</div>'+
-        '<div>'+
         '<label for="phone">Телефон</label>'+
         '<input type="text" id="phone" name="phone">'+
-        '</div>'+
-        '<div>'+
         '<label for="email">E-mail</label>'+
         '<input type="text" id="email" name="email">'+
-        '</div>'+
-        '<div>'+
         '<label for="message">Сообщение</label>'+
         '<input type="text" id="message" name="message">'+
-        '</div>'+
+        '<label for="callMe">Жду ответа</label>'+
+        '<input type="checkbox" id="callMe" name="callMe" value="Да" checked>'+
         '</form>'
         ,buttons: [
             $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
@@ -74,31 +54,52 @@ function showContactDialog(){
     });
 }
 
+function showRequestPriceDialog(){
+    vex.dialog.open({
+        message: 'Предоставьте информацию о себе и перевозке:',
+        input:
+        '<form id="request-price-dialog-form">'+
+        '<label for="cityFrom">Пункт отправления</label>'+
+        '<input type="text" id="cityFrom" name="cityFrom">'+
+        '<label for="cityTo">Пункт назначения</label>'+
+        '<input type="text" id="cityTo" name="cityTo">'+
+        '<label for="cargo">Вес, объем, характер груза</label>'+
+        '<input type="text" id="cargo" name="cargo">'+
+        '<label for="contact">Телефон и/или e-mail</label>'+
+        '<input type="text" id="contact" name="contact">'+
+        '</div>'+
+        '</form>'
+        ,buttons: [
+            $.extend({}, vex.dialog.buttons.YES, { text: 'Запросить' }),
+            $.extend({}, vex.dialog.buttons.NO, { text: 'Отмена' })
+        ],
+        callback: function (data) {
+            if (!data) {
+                console.log('Cancelled')
+            } else {
+                $("#request-price-dialog-form").on('submit',{path: '/'}, send_form_data);
+                $("#request-price-dialog-form").submit();
+                console.log('Done');
+            }
+        }
+    });
+}
+
 function showComplainDialog(){
     vex.dialog.open({
         message: 'Ваше сообщение будет получено лично территорияльным руководителем и не останется без внимания.',
         input:
         '<form id="complain-dialog-form">' +
-        '<div>' +
         '<label for="complain-name">Имя</label>' +
         '<input pattern="[A-Z,a-z, ]*" type="text" id="complain-name" name="name">' +
-        '</div>' +
-        '<div>' +
         '<label for="complain-phone">Телефон</label>' +
         '<input type="text" id="complain-phone" name="phone">' +
-        '</div>' +
-        '<div>' +
         '<label for="complain-email">E-mail</label>' +
         '<input type="text" id="complain-email" name="email">' +
-        '</div>' +
-        '<div>' +
         '<label for="complain-company">Компания</label>' +
         '<input type="text" id="complain-company" name="company">' +
-        '</div>' +
-        '<div>' +
         '<label for="complain-message">Сообщение</label>' +
         '<input type="text" id="complain-message" name="message">' +
-        '</div>' +
         '</form>'
         ,buttons: [
             $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),

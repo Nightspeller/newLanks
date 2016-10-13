@@ -36,7 +36,7 @@
                                             <label class="mdl-textfield__label" for="code">Код груза</label>
                                         </div>
                                         <p>
-                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" type="submit">
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect lanks-button--accent" type="submit">
                                                 проверить
                                             </button>
                                         </p>
@@ -56,7 +56,7 @@
                             <p class="mdl-cell mdl-cell--12-col">Используйте электронную форму обратной связи чтобы связаться с нами или запросить обратный звонок:</p>
                             <div class="mdl-grid portfolio-contact">
                                 <div class="mdl-card__supporting-text">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" onclick="showContactDialog()">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect lanks-button--accent" onclick="showContactDialog()">
                                         Связаться
                                     </button>
                                 </div>
@@ -96,7 +96,7 @@
                             <p class="mdl-cell mdl-cell--12-col">Используйте эту форму обратной связи чтобы похвалить кого-либо из наших сотрудников или рассказать руководству как наша работа может быть улучшена:</p>
                             <div class="mdl-grid portfolio-contact">
                                 <div class="mdl-card__supporting-text">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" onclick="showComplainDialog()">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect lanks-button--accent" onclick="showComplainDialog()">
                                         Написать
                                     </button>
                                 </div>

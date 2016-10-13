@@ -17,8 +17,39 @@
   font-size: 44px;
   line-height: 1.8em;
 }
-.mdl-card__actions.mdl-card--border.btn_blue a {
+.request-menu .request-button button {
+  margin: auto;
   color: #40c4ff;
+  border: 1px solid #607d8b;
+}
+.request-menu .request-form {
+  position: relative;
+  max-width: 580px;
+  max-height: 0;
+  opacity: 0;
+  margin: 0 auto;
+  transition: max-height 0.5s, opacity 1s;
+}
+.request-menu .request-form button[type="submit"] {
+  display: block;
+  margin: auto;
+}
+.request-menu .request-form .request-close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: -5px;
+  color: #cacaca;
+}
+.request-menu .request-form.opened {
+  max-height: 520px;
+  opacity: 1;
+}
+.form_contact_section {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 0;
 }
 .index-services {
   background: #f1f1f1;

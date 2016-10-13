@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="index-page">
     {{{header}}}
     <main class="mdl-layout__content">
         <div class="mdl-grid portfolio-max-width">
@@ -53,52 +53,94 @@
                     </div>
                 </div>
 
-                <div class="mdl-card__actions mdl-card--border btn_blue ras">
-                    <div class="mdl-grid portfolio-copy">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent zapr">
+                <div class="mdl-card__actions mdl-card--border request-menu">
+                    <div class="mdl-grid request-button">
+                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent ">
                             Запросить стоимость перевозки
-                        </a>
+                        </button>
                     </div>
-                    <div class="mdl-cell mdl-cell--12-col">
-                        <div class="form_contact_section">
-                            <div class="close_form_contact_section"><i class="material-icons">clear</i></div>
-                            <div class="mdl-grid portfolio-contact">
-
-                                <div class="mdl-card__supporting-text">
-                                    <h4 class="mdl-cell mdl-cell--12-col title_h">Заполните соответствующие поля информацией о Вашей перевозке</h4>
-                                    <form id="price-request-form">
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="cityFrom" name="cityFrom">
-                                            <label class="mdl-textfield__label" for="cityFrom">Пункт отправления…</label>
-                                        </div>
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="cityTo" name="cityTo">
-                                            <label class="mdl-textfield__label" for="cityTo">Пункт назначения…</label>
-                                        </div>
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="weight" name="weight">
-                                            <label class="mdl-textfield__label" for="weight">Вес груза (кг)…</label>
-                                        </div>
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="volume" name="volume">
-                                            <label class="mdl-textfield__label" for="volume">Объём груза (м3)…</label>
-                                        </div>
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="contact" name="contact">
-                                            <label class="mdl-textfield__label" for="contact">Телефон и/или e-mail…</label>
-                                        </div>
-                                        <p>
-                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light ras" type="submit">
-                                                Запросить стоимость
-                                            </button>
-                                        </p>
-                                    </form>
-                                </div>
-                            </div>
+                    <div class="mdl-cell mdl-cell--12-col request-form">
+                        <div class="request-close-button"><i class="material-icons">clear</i></div>
+                        <div class="mdl-grid">
+                                <h5 class="mdl-cell mdl-cell--12-col">Заполните соответствующие поля информацией о Вашей перевозке</h5>
+                                <form class="mdl-cell mdl-cell--12-col" id="price-request-form">
+                                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="cityFrom" name="cityFrom">
+                                        <label class="mdl-textfield__label" for="cityFrom">Пункт отправления…</label>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="cityTo" name="cityTo">
+                                        <label class="mdl-textfield__label" for="cityTo">Пункт назначения…</label>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="cargo" name="cargo">
+                                        <label class="mdl-textfield__label" for="cargo">Вес, объем, характер груза…</label>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="contact" name="contact">
+                                        <label class="mdl-textfield__label" for="contact">Телефон и/или e-mail…</label>
+                                    </div>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect lanks-button--accent" type="submit">
+                                        Запросить стоимость
+                                    </button>
+                                </form>
                         </div>
                     </div>
                 </div>
 
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">С нами сотрудничают</h2>
+                </div>
+                <div class="mdl-card__media">
+                    <div class="carousel">
+                        <div><img class="article-image" src=" images/index/main_beeline.png" border="0" alt=""></div>
+                        <div><img class="article-image" src=" images/index/main_megafon.png" border="0" alt=""></div>
+                        <div><img class="article-image" src=" images/index/main_oriflame.png" border="0" alt=""></div>
+                        <div><img class="article-image" src=" images/index/main_mznak.png" border="0" alt=""></div>
+                        <div><img class="article-image" src=" images/index/main_vostok.jpg" border="0" alt=""></div>
+                    </div>
+                </div>
+                <div class="mdl-card__actions mdl-card--border mdl-">
+                    <small>Убедитесь в качестве наших услуг на примере некоторых наших партнёров.</small>
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-shadow--4dp tag-cloud">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Наши филиалы</h2>
+                </div>
+                <div class="mdl-card__media tag-cloud-container">
+                    <canvas width="auto" height="auto" id="tag-cloud-canvas">
+                        <ul>
+                            {{#allDepartments}}
+                            <li><a href="departments?city={{cityEng}}">{{city}}</a></li>
+                            {{/allDepartments}}
+                        </ul>
+                    </canvas>
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Статус груза</h2>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    Введите номер накладной или код Вашего груза, чтобы проверить его статус:
+                    <div class="mdl-card__supporting-text">
+                        <form id="tracking-form" class="mdl-typography--text-center">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="code" name="code">
+                                <label class="mdl-textfield__label" for="code">Код груза…</label>
+                            </div>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect lanks-button--accent" type="submit">
+                                Проверить
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp mdl-card__supporting-text index-services no-padding">
@@ -109,7 +151,7 @@
                     <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet index-services-list">
                         <h4>Сборный груз <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                         <ul>
-                            <li><strong>Самый выгодный вариант для небольших партий груза от 300 рублей;</strong></li>
+                            <li><strong>Самый выгодный вариант для небольших партий груза - от 300 рублей;</strong></li>
                             <li>Быстрая доставка по фиксированному графику;</li>
                             <li>Возможность контроля местоположения груза;</li>
                             <li>Возможность бесплатного использования складов ООО "Ланкс" (до 7 дней);</li>
@@ -166,60 +208,7 @@
                 </a>
             </div>
 
-            <div class="mdl-cell mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">С нами сотрудничают</h2>
-                </div>
-                <div class="mdl-card__media">
-                    <div class="carousel">
-                        <div><img class="article-image" src=" images/index/main_beeline.png" border="0" alt=""></div>
-                        <div><img class="article-image" src=" images/index/main_megafon.png" border="0" alt=""></div>
-                        <div><img class="article-image" src=" images/index/main_oriflame.png" border="0" alt=""></div>
-                        <div><img class="article-image" src=" images/index/main_mznak.png" border="0" alt=""></div>
-                        <div><img class="article-image" src=" images/index/main_vostok.jpg" border="0" alt=""></div>
-                    </div>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <small>Убедитесь в качестве наших услуг на примере некоторых наших партнёров.</small>
-                </div>
-            </div>
 
-            <div class="mdl-cell mdl-card mdl-shadow--4dp tag-cloud">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Наши филиалы</h2>
-                </div>
-                <div class="mdl-card__media tag-cloud-container">
-                    <canvas width="auto" height="auto" id="tag-cloud-canvas">
-                        <ul>
-                            {{#allDepartments}}
-                            <li><a href="departments?city={{cityEng}}">{{city}}</a></li>
-                            {{/allDepartments}}
-                        </ul>
-                    </canvas>
-                </div>
-            </div>
-
-            <div class="mdl-cell mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Статус груза</h2>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    Введите код Вашего груза, чтобы проверить его статус:
-                    <div class="mdl-card__supporting-text">
-                        <form id="tracking-form">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="code" name="code">
-                                <label class="mdl-textfield__label" for="code">Код груза…</label>
-                            </div>
-                            <p>
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent light" type="submit">
-                                    Проверить
-                                </button>
-                            </p>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
         {{{footer}}}
     </main>

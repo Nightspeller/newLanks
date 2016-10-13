@@ -19,7 +19,6 @@
                         <strong>Единый номер</strong><br/>
                         8 (800) 200-46-86
                     </div>
-                    <hr>
                     <div class="mdl-cell mdl-cell--4-col">
                         <strong>Москва</strong>
                         <div class="phone_city">(495) 591-71-48</div>
@@ -32,13 +31,18 @@
                         <strong>Воронеж</strong>
                         <div class="phone_city">(473) 261-22-11</div>
                     </div>
+
+                    <hr>
                 </div>
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
                         <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="/departments">Другие Филиалы</a>
                     </div>
-                    <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="showContactDialog()">Обратный звонок</button>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="showRequestPriceDialog()">Запросить стоимость</button>
                     </div>
                  </div>
             </div>

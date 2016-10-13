@@ -1,5 +1,11 @@
 <footer class="mdl-mini-footer">
     <div class="mdl-grid no-padding">
+
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect lanks-button--accent
+         price-request-button" onclick="showRequestPriceDialog()">
+            запросить стоимость перевозки
+        </button>
+
         <div class="mdl-cell mdl-cell--4-col mdl-typography--text-center contact">
             <div>8 (800) 200-46-86</div>
             <button class="mdl-button mdl-button--raised mdl-button--accent" onclick="showContactDialog()">Связаться с нами</button>
@@ -19,8 +25,5 @@
         </div>
     </div>
 
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-cell--hide-phone
-    light price-request-button" onclick="showContactDialog()">
-        запросить стоимость перевозки
-    </button>
+
 </footer>

@@ -18,5 +18,15 @@ $(document).ready(function() {
         pauseOnFocus: false
     });
 
+    $('.request-button').click(function(){
+        $('.request-form').addClass('opened');
+        $(this).css('display', 'none');
+    });
+
+    $('.request-close-button').click(function(){
+        $('.request-form').removeClass('opened');
+        $('.request-button').css('display', 'flex');
+    });
+
     $("#price-request-form").on('submit',{path: '/'}, send_form_data);
 });
