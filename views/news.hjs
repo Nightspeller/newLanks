@@ -23,7 +23,7 @@
 
                 {{{contact-menu}}}
 
-                <div class="mdl-grid portfolio-max-width">
+                <div class="mdl-grid portfolio-max-width justify-content--space-around">
                     {{#allNews}}
                         <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                             <div class="mdl-card__media">
