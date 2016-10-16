@@ -26,36 +26,36 @@
 
                 <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
 
-                    <h4 class="mdl-cell mdl-cell--12-col title_h">{{city}}</h4>
-                    <h3 class="mdl-cell mdl-cell--12-col title_adress">Офис</h3>
-                    <div class="mdl-card__actions mdl-card--border line_ots small"></div>
+                    <h4 class="mdl-cell mdl-cell--12-col">{{city}}</h4>
 
-                    <p class="mdl-cell mdl-cell--12-col black_p">Адрес</p>
+                    <h3 class="mdl-cell mdl-cell--12-col">Офис</h3>
+                    <div class="mdl-card__actions mdl-card--border"></div>
+                    <h6 class="mdl-cell mdl-cell--12-col">Адрес</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{address}}</p>
-                    <p class="mdl-cell mdl-cell--12-col black_p">E-mail</p>
+                    <h6 class="mdl-cell mdl-cell--12-col">E-mail</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{email}}</p>
-                    <p class="mdl-cell mdl-cell--12-col black_p">Телефон</p>
+                    <h6 class="mdl-cell mdl-cell--12-col">Телефон</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{mainPhone}}</p>
-                    <p class="mdl-cell mdl-cell--12-col black_p">Факс</p>
+                    <h6 class="mdl-cell mdl-cell--12-col">Факс</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{fax}}</p>
-                    <p class="mdl-cell mdl-cell--12-col black_p">Skype</p>
+                    <h6 class="mdl-cell mdl-cell--12-col">Skype</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{skype}}</p>
-                    <p class="mdl-cell mdl-cell--12-col black_p">Дополнительные номера</p>
+                    <h6 class="mdl-cell mdl-cell--12-col">Дополнительные номера</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{additionalPhone}}</p>
 
-
-                    <h3 class="mdl-cell mdl-cell--12-col title_adress">Склад</h3>
-                    <div class="mdl-card__actions mdl-card--border line_ots small"></div>
-                    <p class="mdl-cell mdl-cell--12-col black_p">Адрес</p>
+                    <h3 class="mdl-cell mdl-cell--12-col">Склад</h3>
+                    <div class="mdl-card__actions mdl-card--border"></div>
+                    <h6 class="mdl-cell mdl-cell--12-col">Адрес</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{stockAddress}}</p>
-                    <p class="mdl-cell mdl-cell--12-col black_p">Координаты</p>
+                    <h6 class="mdl-cell mdl-cell--12-col">Координаты</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{coordinates}}</p>
                     <p class="mdl-cell mdl-cell--12-col">
-                    <div id="map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid={{mapID}}&width=400&height=300"></script>
-                    </div>
+                        <div id="map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid={{mapID}}&width=400&height=300"></script>
+                        </div>
                     </p>
-                    <h3 class="mdl-cell mdl-cell--12-col title_adress">Цены</h3>
+
+                    <h3 class="mdl-cell mdl-cell--12-col">Цены</h3>
                     <div class="mdl-card__actions mdl-card--border line_ots small"></div>
                     <p class="mdl-cell mdl-cell--12-col"><a href="for_download/courier_prices/{{city}}.pdf" class="lanks-link--accent">Скачать прайс</a> на курьерские услуги.</p>
                     <p class="mdl-cell mdl-cell--12-col"><a href="for_download/sbor_dostavka_prices/{{city}}.doc" class="lanks-link--accent">Скачать прайс</a> на сбор и доставку груза по региону.</p>

@@ -26,19 +26,23 @@
                 <div class="mdl-cell mdl-cell--12-col">Выберите филиал. Каждый филиал также обслуживает близлежащие города.</div>
 
                 <div class="mdl-cell mdl-cell--12-col mdl-card">
-                    <div class="mdl-list">
+                    <ul class="mdl-list">
                         {{#allDepartments}}
                         <a class="city-navigation-link" href="departments?city={{cityEng}}">
-                            <div class="mdl-list__item mdl-list__item--two-line">
-                                    <span class="mdl-list__item-primary-content">
-                                        <i class="material-icons mdl-list__item-avatar">business</i>
-                                        <span>{{city}}</span>
-                                        <span class="mdl-list__item-sub-title">{{satellites.length}} городов обслуживания</span>
-                                    </span>
-                            </div>
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                                <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons mdl-list__item-avatar">business</i>
+                                    <span>{{city}}</span>
+                                    <span class="mdl-list__item-sub-title mdl-cell--hide-phone">{{satellites.length}} городов обслуживания</span>
+                                    <span class="mdl-list__item-sub-title mdl-cell--hide-desktop mdl-cell--hide-tablet">Тел: {{mainPhone}}</span>
+                                </span>
+                                <span class="mdl-list__item-secondary-content mdl-cell--hide-phone">
+                                    <span class="mdl-list__item-secondary-info"><strong>Тел: {{mainPhone}}</strong></span>
+                                </span>
+                            </li>
                         </a>
                         {{/allDepartments}}
-                    </div>
+                    </ul>
                 </div>
             </div>
         </div>

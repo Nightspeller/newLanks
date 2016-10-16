@@ -109,20 +109,11 @@ img.article-image {
 .mdl-textfield.is-focused .mdl-textfield__input {
   border-bottom: 2px solid #40c4ff !important;
 }
-.mdl-cell.mdl-cell--12-col.title_h {
-  font-size: 18px;
-  color: #000;
-}
 .mdl-cell.mdl-cell--12-col.tit_t {
   font-size: 16px;
   box-sizing: border-box;
   padding-left: 5%;
   margin-top: 20px;
-}
-.mdl-cell.title_h {
-  position: relative;
-  font-size: 24px !important;
-  margin-top: 25px;
 }
 /******************************** contact-menu ********************************************/
 .contact-menu {
@@ -197,6 +188,11 @@ img.article-image {
 .contact-menu .contact-info .info-holder .mdl-grid .mdl-cell--4-col .mdl-button {
   color: #fff;
   background: #607d8b;
+}
+@media only screen and (max-width: 480px) {
+  .contact-menu .contact-controls {
+    background: none;
+  }
 }
 /******************************** template ********************************************/
 .portfolio-header {
