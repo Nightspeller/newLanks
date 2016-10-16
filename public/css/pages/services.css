@@ -11,6 +11,12 @@
   color: #000;
   margin: 1em 0;
 }
+.service .service-title h4,
+.service .service-title .material-icons {
+  float: right;
+  font-size: 36px;
+  color: #40c4ff;
+}
 .service .small_p {
   font-size: 14px;
   line-height: 1.5em;

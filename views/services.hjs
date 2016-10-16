@@ -30,14 +30,14 @@
                             <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">dashboard</i>
                             </div>
-                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--3-col-phone">
-                                <h4 class="mdl-cell mdl-cell--12-col service-title">Сборный груз</h4>
+                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet">
+                                <h4 class="mdl-cell mdl-cell--12-col service-title">Сборный груз <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                                 <p class="small_p">Сборный груз – это способ доставки, при котором грузы небольших габаритов, принадлежащие
                                     разным отправителям, перевозятся одним транспортным средством. На складе транспортной
                                     компании грузы объединяются в партии, в зависимости от конечного пункта выгрузки,
                                     и распределяются по машинам для последующей транспортировки.</p>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">keyboard_arrow_right</i>
                             </div>
                         </div>
@@ -49,14 +49,14 @@
                             <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">local_shipping</i>
                             </div>
-                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--3-col-phone">
-                                <h4 class="mdl-cell mdl-cell--12-col service-title">Междугородние перевозки</h4>
+                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet">
+                                <h4 class="mdl-cell mdl-cell--12-col service-title">Междугородние перевозки <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                                 <p class="small_p">Междугородние грузовые перевозки для организаций и частных лиц. Это услуга доставки
                                     товаров и грузов в любых направлениях, интересующих фирму-отправителя. Для частных лиц
                                     мы также осуществляем перевозку различных видов грузов, например мебели, при переездах
                                     в города и регионы.</p>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">keyboard_arrow_right</i>
                             </div>
                         </div>
@@ -68,14 +68,14 @@
                             <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">store_mall_directory</i>
                             </div>
-                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--3-col-phone">
-                                <h4 class="mdl-cell mdl-cell--12-col service-title">Кросс-докинг</h4>
+                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet">
+                                <h4 class="mdl-cell mdl-cell--12-col service-title">Кросс-докинг <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                                 <p class="small_p">Это тип перевозки, при котором прием и отгрузка товаров происходят непосредственно
                                     через наш склад. При необходимости по реестру (заявке) заказчика мы оперативно
                                     комплектуем товар на складе, распределяем его из большегрузных автомобилей
                                     в мелкотоннажные машины и направляем по заранее составленному маршруту.</p>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">keyboard_arrow_right</i>
                             </div>
                         </div>
@@ -87,14 +87,14 @@
                             <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">home</i>
                             </div>
-                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--3-col-phone">
-                                <h4 class="mdl-cell mdl-cell--12-col service-title">Курьерские услуги</h4>
+                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet">
+                                <h4 class="mdl-cell mdl-cell--12-col service-title">Курьерские услуги <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                                 <p class="small_p">Это тип внутригородской доставки, совмещающий оперативность обработки заказов
                                     на нашем складе, полноценную отчетность о получении, надежность и индивидуальность
                                     в обслуживании каждого клиента. Курьерская служба используется для доставки документов,
                                     небольших грузов, интернет-заказов и иной корреспонденции. Возможно оказание инкассаторских услуг с последующим зачислением денег на счет заказчика.</p>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">keyboard_arrow_right</i>
                             </div>
                         </div>
@@ -106,14 +106,14 @@
                             <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">work</i>
                             </div>
-                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--3-col-phone">
-                                <h4 class="mdl-cell mdl-cell--12-col service-title">Складские услуги и ответственное хранение</h4>
+                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet">
+                                <h4 class="mdl-cell mdl-cell--12-col service-title">Складские услуги и ответственное хранение <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                                 <p class="small_p">Включают в себя все типы работ, обеспечивающих сохранность, обработку, отгрузку
                                     и сопровождение грузов. Следуя пожеланиям наших клиентов, мы предоставляем
                                     бесплатное хранение первые семь дней с момента уведомления о приходе груза.
                                     Все наши складские помещения оснащены современным техническим оборудованием.</p>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">keyboard_arrow_right</i>
                             </div>
                         </div>
@@ -125,8 +125,8 @@
                             <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">add_circle</i>
                             </div>
-                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--3-col-phone">
-                                <h4 class="mdl-cell mdl-cell--12-col service-title">Сопутствующие услуги</h4>
+                            <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet">
+                                <h4 class="mdl-cell mdl-cell--12-col service-title">Сопутствующие услуги <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                                 <p class="small_p">
                                     Осуществляем дистрибуцию товаров по договоренности с заказчиком;
                                     При осуществлении всех видов перевозок мы обеспечиваем диспетчерские услуги;
@@ -136,7 +136,7 @@
                                     Предоставляем услуги по страхованию грузов;
                                     Действует система скидок для постоянных клиентов.</p>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone lanks-icon__centered">
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-phone lanks-icon__centered">
                                 <i class="material-icons">keyboard_arrow_right</i>
                             </div>
                         </div>
