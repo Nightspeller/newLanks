@@ -93,6 +93,11 @@
                     </div>
 
                     <div class="md-form">
+                        <input type="text" id="officeHours" class="form-control" name="officeHours" value="{{officeHours}}">
+                        <label for="officeHours">Время работы офиса</label>
+                    </div>
+
+                    <div class="md-form">
                         <input type="text" id="stockAddress" class="form-control" name="stockAddress" value="{{stockAddress}}">
                         <label for="stockAddress">Адрес Склада</label>
                     </div>
@@ -101,6 +106,12 @@
                         <input type="text" id="coordinates" class="form-control" name="coordinates" value="{{coordinates}}">
                         <label for="coordinates">Координаты</label>
                     </div>
+
+                    <div class="md-form">
+                        <input type="text" id="stockHours" class="form-control" name="stockHours" value="{{stockHours}}">
+                        <label for="stockHours">Время работы склада</label>
+                    </div>
+
 
                     <div class="md-form">
                         <input type="text" id="mapID" class="form-control" name="mapID" value="{{mapID}}">

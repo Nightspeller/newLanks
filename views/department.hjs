@@ -42,6 +42,8 @@
                     <p class="mdl-cell mdl-cell--12-col">{{skype}}</p>
                     <h6 class="mdl-cell mdl-cell--12-col">Дополнительные номера</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{additionalPhone}}</p>
+                    <h6 class="mdl-cell mdl-cell--12-col">Время работы офиса</h6>
+                    <p class="mdl-cell mdl-cell--12-col">{{officeHours}}</p>
 
                     <h3 class="mdl-cell mdl-cell--12-col">Склад</h3>
                     <div class="mdl-card__actions mdl-card--border"></div>
@@ -49,6 +51,8 @@
                     <p class="mdl-cell mdl-cell--12-col">{{stockAddress}}</p>
                     <h6 class="mdl-cell mdl-cell--12-col">Координаты</h6>
                     <p class="mdl-cell mdl-cell--12-col">{{coordinates}}</p>
+                    <h6 class="mdl-cell mdl-cell--12-col">Время работы склада</h6>
+                    <p class="mdl-cell mdl-cell--12-col">{{stockHours}}</p>
                     <p class="mdl-cell mdl-cell--12-col">
                         <div id="map">
                             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid={{mapID}}&width=400&height=300"></script>

@@ -11,9 +11,11 @@ var schema = new Schema({ index:  String,
     additionalPhone: String,
     fax: String,
     skype: String,
+    officeHours: String,
     stockAddress:  String,
     coordinates: String,
     mapID: String,
+    stockHours: String,
     satellites: Array
 });
 
