@@ -1,3 +1,4 @@
+var departmentsHtmlList = '';
 $(function(){
 
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,6 +20,15 @@ $(function(){
         $('.contact-controls').css('visibility', 'visible');
     });
 
+    var departments = [];
+
+    $.get('/departments/json').then(function (data) {
+        departments = data;
+        for (var i = 0; i < departments.length; i++){
+            departmentsHtmlList += '<option value="'+ departments[i].city +'">'+ departments[i].city + '</option>'
+        }
+    });
+
     initializeTracking();
 });
 
@@ -33,6 +43,11 @@ function showContactDialog(){
         '<input type="text" id="phone" name="phone">'+
         '<label for="email">E-mail</label>'+
         '<input type="text" id="email" name="email">'+
+        '<label for="department">Филиал</label>'+
+        '<select id="department" name="department">'+
+            '<option value="Без уточнения">Без уточнения</option>'+
+            departmentsHtmlList+
+        '</select>'+
         '<label for="message">Сообщение</label>'+
         '<input type="text" id="message" name="message">'+
         '<label for="callMe">Жду ответа</label>'+
@@ -98,6 +113,11 @@ function showComplainDialog(){
         '<input type="text" id="complain-email" name="email">' +
         '<label for="complain-company">Компания</label>' +
         '<input type="text" id="complain-company" name="company">' +
+        '<label for="department">Филиал</label>'+
+        '<select id="department" name="department">'+
+        '<option value="Без уточнения">Без уточнения</option>'+
+        departmentsHtmlList+
+        '</select>'+
         '<label for="complain-message">Сообщение</label>' +
         '<input type="text" id="complain-message" name="message">' +
         '</form>'

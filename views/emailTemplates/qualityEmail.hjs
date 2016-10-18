@@ -5,4 +5,5 @@
     Компания {{company}}<br />
     Телефон {{phone}}<br />
     E-mail {{email}}<br />
+    Филиал {{department}}
 {{/mailData}}

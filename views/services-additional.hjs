@@ -18,7 +18,7 @@
         <div class="mdl-grid portfolio-max-width">
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
                 <div class="mdl-card__media">
-                    <div class="title_container"><h2>Дополнительные услуги</h2></div>
+                    <div class="title_container"><h2>Сопутствующие услуги</h2></div>
                 </div>
                 {{{contact-menu}}}
                 <div class="mdl-grid portfolio-copy">

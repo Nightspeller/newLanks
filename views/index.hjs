@@ -187,19 +187,19 @@
 
                 <div class="mdl-card__actions mdl-card--border no-padding"></div>
 
-                <a class="mdl-grid mdl-grid--no-spacing lanks-link--no-style" href="/services/cross-docking">
+                <a class="mdl-grid mdl-grid--no-spacing lanks-link--no-style" href="/services/warehouse">
                     <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone lanks-icon__centered">
-                        <i class="material-icons">store</i>
+                        <i class="material-icons">work</i>
                     </div>
                     <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet index-services-list">
-                        <h4>Кросс-докинг <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
+                        <h4>Складские услуги и ответственное хранение <i class="material-icons mdl-cell--hide-desktop mdl-cell--hide-tablet">keyboard_arrow_right</i></h4>
                         <ul>
-                            <li><strong>Комплексное решение, оптимизирующее затраты</strong> по перевозке большой партии
-                                груза с последующей доставкой его в несколько адресных точек;</li>
-                            <li>Вам не нужно беспокоиться о перевозке, хранении, комплектовании и доставке груза;</li>
-                            <li>Сроки доставки товара конечному потребителю сведены к минимуму;</li>
-                            <li>Возможность длительного хранения товара на складах ООО «Ланкс»
-                                и его доставка по требованию.</li>
+                            <li><strong>Все наши складские помещения оснащены современным техническим оборудованием;</strong></li>
+                            <li>Возможность краткосрочного и долгосрочного хранения;</li>
+                            <li>Оперативные и качественные погрузочно-разгрузочные работы;</li>
+                            <li>Высококвалифицированный персонал складского обслуживания;</li>
+                            <li>Удобное расположение складов для подъезда транспорта, просторные стоянки;</li>
+                            <li>Умеренные цены на все типы работ;</li>
                         </ul>
                     </div>
                     <div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--hide-phone lanks-icon__centered">

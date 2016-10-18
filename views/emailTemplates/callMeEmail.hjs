@@ -3,6 +3,7 @@
     ФИО: {{name}}<br />
     E-mail: {{email}}<br />
     Телефон: {{phone}}<br />
+    Филиал: {{department}}<br />
     Сообщение: {{message}}<br />
     Жду ответа: {{callMe}}<br />
 {{/mailData}}
