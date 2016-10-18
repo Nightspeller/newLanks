@@ -47,7 +47,8 @@
   background: #f7df34;
 }
 .cargo-calculator >div #iframe-cover-1 img {
-  height: 90%;
+  max-width: 40%;
+  max-height: 90%;
   margin: 10px;
 }
 .cargo-calculator >div #iframe-cover-2 {
