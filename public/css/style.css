@@ -75,16 +75,6 @@
 .no-margin {
   margin: 0;
 }
-.mdl-textfield.is-invalid input,
-.mdl-textfield.is-invalid label,
-.mdl-textfield.is-invalid label:after {
-  color: initial !important;
-  border-color: initial !important;
-  background-color: initial !important;
-}
-.vex-dialog-message {
-  text-align: justify;
-}
 /* Header and menu */
 .is-active {
   position: relative;
@@ -330,8 +320,12 @@ img.article-image {
   }
 }
 /* Dialogs */
+.vex-dialog-message {
+  text-align: justify;
+}
 .vex-dialog-form select {
   display: block;
   width: 100%;
-  height: 3.5em;
+  height: 2.5em;
+  font-size: 1em;
 }
