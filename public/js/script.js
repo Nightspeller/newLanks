@@ -38,7 +38,7 @@ function showContactDialog(){
         overlayClosesOnClick: false,
         input:
         '<label for="name">Имя*</label>'+
-        '<input pattern="[A-Z,a-z, ]*" type="text" id="name" name="name" required>'+
+        '<input type="text" id="name" name="name" required>'+
         '<label for="phone">Телефон</label>'+
         '<input type="text" id="phone" name="phone">'+
         '<label for="email">E-mail*</label>'+
@@ -104,7 +104,7 @@ function showComplainDialog(){
         overlayClosesOnClick: false,
         input:
         '<label for="complain-name">Имя*</label>' +
-        '<input pattern="[A-Z,a-z, ]*" type="text" id="complain-name" name="name" required>' +
+        '<input type="text" id="complain-name" name="name" required>' +
         '<label for="complain-phone">Телефон</label>' +
         '<input type="text" id="complain-phone" name="phone">' +
         '<label for="complain-email">E-mail*</label>' +
