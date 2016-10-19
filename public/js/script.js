@@ -35,24 +35,23 @@ $(function(){
 function showContactDialog(){
     vex.dialog.open({
         message: 'Предоставьте информацию о себе:',
+        overlayClosesOnClick: false,
         input:
-        '<form id="contact-dialog-form">'+
-        '<label for="name">Имя</label>'+
-        '<input pattern="[A-Z,a-z, ]*" type="text" id="name" name="name">'+
+        '<label for="name">Имя*</label>'+
+        '<input pattern="[A-Z,a-z, ]*" type="text" id="name" name="name" required>'+
         '<label for="phone">Телефон</label>'+
         '<input type="text" id="phone" name="phone">'+
-        '<label for="email">E-mail</label>'+
-        '<input type="text" id="email" name="email">'+
+        '<label for="email">E-mail*</label>'+
+        '<input type="text" id="email" name="email" required>'+
         '<label for="department">Филиал</label>'+
         '<select id="department" name="department">'+
             '<option value="Без уточнения">Без уточнения</option>'+
             departmentsHtmlList+
         '</select>'+
-        '<label for="message">Сообщение</label>'+
-        '<input type="text" id="message" name="message">'+
+        '<label for="message">Сообщение*</label>'+
+        '<input type="text" id="message" name="message" required>'+
         '<label for="callMe">Жду ответа</label>'+
-        '<input type="checkbox" id="callMe" name="callMe" value="Да" checked>'+
-        '</form>'
+        '<input type="checkbox" id="callMe" name="callMe" value="Да" checked>'
         ,buttons: [
             $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
             $.extend({}, vex.dialog.buttons.NO, { text: 'Отмена' })
@@ -61,8 +60,8 @@ function showContactDialog(){
             if (!data) {
                 console.log('Cancelled')
             } else {
-                $("#contact-dialog-form").on('submit',{path: '/question?type=callMe'}, send_form_data);
-                $("#contact-dialog-form").submit();
+                $($(this)[0].content).on('submit',{path: '/question?type=callMe'}, send_form_data);
+                $($(this)[0].content).submit();
                 console.log('Done');
             }
         }
@@ -72,18 +71,17 @@ function showContactDialog(){
 function showRequestPriceDialog(){
     vex.dialog.open({
         message: 'Предоставьте информацию о себе и перевозке:',
+        overlayClosesOnClick: false,
         input:
-        '<form id="request-price-dialog-form">'+
-        '<label for="cityFrom">Пункт отправления</label>'+
-        '<input type="text" id="cityFrom" name="cityFrom">'+
-        '<label for="cityTo">Пункт назначения</label>'+
-        '<input type="text" id="cityTo" name="cityTo">'+
-        '<label for="cargo">Вес, объем, характер груза</label>'+
-        '<input type="text" id="cargo" name="cargo">'+
-        '<label for="contact">Телефон и/или e-mail</label>'+
-        '<input type="text" id="contact" name="contact">'+
-        '</div>'+
-        '</form>'
+        '<label for="cityFrom">Пункт отправления*</label>'+
+        '<input type="text" id="cityFrom" name="cityFrom" required>'+
+        '<label for="cityTo">Пункт назначения*</label>'+
+        '<input type="text" id="cityTo" name="cityTo" required>'+
+        '<label for="cargo">Вес, объем, характер груза*</label>'+
+        '<input type="text" id="cargo" name="cargo" required>'+
+        '<label for="contact">Телефон и/или e-mail*</label>'+
+        '<input type="text" id="contact" name="contact" required>'+
+        '</div>'
         ,buttons: [
             $.extend({}, vex.dialog.buttons.YES, { text: 'Запросить' }),
             $.extend({}, vex.dialog.buttons.NO, { text: 'Отмена' })
@@ -92,8 +90,8 @@ function showRequestPriceDialog(){
             if (!data) {
                 console.log('Cancelled')
             } else {
-                $("#request-price-dialog-form").on('submit',{path: '/'}, send_form_data);
-                $("#request-price-dialog-form").submit();
+                $($(this)[0].content).on('submit',{path: '/'}, send_form_data);
+                $($(this)[0].content).submit();
                 console.log('Done');
             }
         }
@@ -103,14 +101,14 @@ function showRequestPriceDialog(){
 function showComplainDialog(){
     vex.dialog.open({
         message: 'Ваше сообщение будет получено лично территорияльным руководителем и не останется без внимания.',
+        overlayClosesOnClick: false,
         input:
-        '<form id="complain-dialog-form">' +
-        '<label for="complain-name">Имя</label>' +
-        '<input pattern="[A-Z,a-z, ]*" type="text" id="complain-name" name="name">' +
+        '<label for="complain-name">Имя*</label>' +
+        '<input pattern="[A-Z,a-z, ]*" type="text" id="complain-name" name="name" required>' +
         '<label for="complain-phone">Телефон</label>' +
         '<input type="text" id="complain-phone" name="phone">' +
-        '<label for="complain-email">E-mail</label>' +
-        '<input type="text" id="complain-email" name="email">' +
+        '<label for="complain-email">E-mail*</label>' +
+        '<input type="text" id="complain-email" name="email" required>' +
         '<label for="complain-company">Компания</label>' +
         '<input type="text" id="complain-company" name="company">' +
         '<label for="department">Филиал</label>'+
@@ -118,19 +116,19 @@ function showComplainDialog(){
         '<option value="Без уточнения">Без уточнения</option>'+
         departmentsHtmlList+
         '</select>'+
-        '<label for="complain-message">Сообщение</label>' +
-        '<input type="text" id="complain-message" name="message">' +
-        '</form>'
+        '<label for="complain-message">Сообщение*</label>' +
+        '<input type="text" id="complain-message" name="message" required>'
         ,buttons: [
             $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
             $.extend({}, vex.dialog.buttons.NO, { text: 'Отмена' })
         ],
         callback: function (data) {
+                console.log(data);
             if (!data) {
                 console.log('Cancelled')
             } else {
-                $("#complain-dialog-form").on('submit',{path: '/question?type=complain'}, send_form_data);
-                $("#complain-dialog-form").submit();
+                $($(this)[0].content).on('submit',{path: '/question?type=complain'}, send_form_data);
+                $($(this)[0].content).submit();
                 console.log('Done');
             }
         }
