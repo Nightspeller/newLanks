@@ -31,7 +31,7 @@
                         <a class="city-navigation-link" href="departments?city={{cityEng}}">
                             <li class="mdl-list__item mdl-list__item--two-line">
                                 <span class="mdl-list__item-primary-content">
-                                    <i class="material-icons mdl-list__item-avatar">business</i>
+                                    <img class="mdl-list__item-avatar" src="/images/departments/{{cityEng}}.png">
                                     <span>{{city}}</span>
                                     <span class="mdl-list__item-sub-title mdl-cell--hide-phone">{{satellites.length}} городов обслуживания</span>
                                     <span class="mdl-list__item-sub-title mdl-cell--hide-desktop mdl-cell--hide-tablet">Тел: {{mainPhone}}</span>
