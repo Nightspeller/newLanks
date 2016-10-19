@@ -65,19 +65,19 @@
                                 <h5 class="mdl-cell mdl-cell--12-col">Заполните соответствующие поля информацией о Вашей перевозке</h5>
                                 <form class="mdl-cell mdl-cell--12-col" id="price-request-form">
                                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="cityFrom" name="cityFrom">
+                                        <input class="mdl-textfield__input" type="text" id="cityFrom" name="cityFrom" required>
                                         <label class="mdl-textfield__label" for="cityFrom">Пункт отправления…</label>
                                     </div>
                                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="cityTo" name="cityTo">
+                                        <input class="mdl-textfield__input" type="text" id="cityTo" name="cityTo" required>
                                         <label class="mdl-textfield__label" for="cityTo">Пункт назначения…</label>
                                     </div>
                                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="cargo" name="cargo">
+                                        <input class="mdl-textfield__input" type="text" id="cargo" name="cargo" required>
                                         <label class="mdl-textfield__label" for="cargo">Вес, объем, характер груза…</label>
                                     </div>
                                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="contact" name="contact">
+                                        <input class="mdl-textfield__input" type="text" id="contact" name="contact" required>
                                         <label class="mdl-textfield__label" for="contact">Телефон и/или e-mail…</label>
                                     </div>
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect lanks-button--accent" type="submit">

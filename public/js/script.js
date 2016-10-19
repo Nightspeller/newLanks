@@ -123,7 +123,6 @@ function showComplainDialog(){
             $.extend({}, vex.dialog.buttons.NO, { text: 'Отмена' })
         ],
         callback: function (data) {
-                console.log(data);
             if (!data) {
                 console.log('Cancelled')
             } else {

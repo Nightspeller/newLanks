@@ -75,6 +75,13 @@
 .no-margin {
   margin: 0;
 }
+.mdl-textfield.is-invalid input,
+.mdl-textfield.is-invalid label,
+.mdl-textfield.is-invalid label:after {
+  color: initial !important;
+  border-color: initial !important;
+  background-color: initial !important;
+}
 .vex-dialog-message {
   text-align: justify;
 }
@@ -108,9 +115,6 @@ img.article-image {
 }
 .mdl-grid.portfolio-copy {
   max-width: 800px;
-}
-.mdl-textfield.is-focused .mdl-textfield__input {
-  border-bottom: 2px solid #40c4ff !important;
 }
 /******************************** contact-menu ********************************************/
 .contact-menu {
