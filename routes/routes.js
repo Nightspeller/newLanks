@@ -15,6 +15,7 @@ router.use('/online', require('./online'));
 router.use('/news', require('./news'));
 router.use('/question', require('./question'));
 router.use('/postOriflameData', require('./api/postOriflameData'));
+router.use('/externalApi', require('./api/externalApi'));
 
 //Admin
 router.use('/login', require('./admin/login'));
