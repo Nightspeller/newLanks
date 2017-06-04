@@ -32,7 +32,12 @@ $(function(){
     initializeTracking();
 });
 
-function showContactDialog(){
+function showContactDialog(country){
+    if (country) {
+        country = '&country='+country;
+    } else {
+        country = '';
+    }
     vex.dialog.open({
         message: 'Предоставьте информацию о себе:',
         overlayClosesOnClick: false,
@@ -60,7 +65,7 @@ function showContactDialog(){
             if (!data) {
                 console.log('Cancelled')
             } else {
-                $($(this)[0].content).on('submit',{path: '/question?type=callMe'}, send_form_data);
+                $($(this)[0].content).on('submit',{path: '/question?type=callMe'+country}, send_form_data);
                 $($(this)[0].content).submit();
                 console.log('Done');
             }
@@ -98,7 +103,12 @@ function showRequestPriceDialog(){
     });
 }
 
-function showComplainDialog(){
+function showComplainDialog(country){
+    if (country) {
+        country = '&country='+country;
+    } else {
+        country = '';
+    }
     vex.dialog.open({
         message: 'Ваше сообщение будет получено лично территорияльным руководителем и не останется без внимания.',
         overlayClosesOnClick: false,
@@ -126,7 +136,7 @@ function showComplainDialog(){
             if (!data) {
                 console.log('Cancelled')
             } else {
-                $($(this)[0].content).on('submit',{path: '/question?type=complain'}, send_form_data);
+                $($(this)[0].content).on('submit',{path: '/question?type=complain'+country}, send_form_data);
                 $($(this)[0].content).submit();
                 console.log('Done');
             }
@@ -142,7 +152,7 @@ function initializeTracking() {
         var id = $('#code').val();
 
         $.ajax({
-            url: 'online/oriflame?invoice='+id,
+            url: '/online/oriflame?invoice='+id,
             type: 'GET',
             success: function (data) {
                 if (data.length === 1) {

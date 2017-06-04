@@ -21,19 +21,21 @@ router.post('/', function(req,res){
         if(err) throw err;
 
         var mailType = '';
+        var to = config.get('questionEmail');
         var mailSettings = {};
+        if (req.query.country === 'belarus') to = config.get('questionEmailBelarus');
 
         if (req.query.type === 'callMe'){
             mailType = 'emailTemplates/callMeEmail';
             mailSettings = {
-                to: config.get('questionEmail'), // REQUIRED. This can be a comma delimited string just like a normal email to field.
+                to: to, // REQUIRED. This can be a comma delimited string just like a normal email to field.
                 subject: 'Сообщение с сайта - обратный звонок', // REQUIRED.
                 mailData: fields
             }
         } else {
             mailType = 'emailTemplates/qualityEmail';
             mailSettings = {
-                to: config.get('questionEmail'), // REQUIRED. This can be a comma delimited string just like a normal email to field.
+                to: to, // REQUIRED. This can be a comma delimited string just like a normal email to field.
                 subject: 'Сообщение с сайта - письмо руководству', // REQUIRED.
                 mailData: fields
             }

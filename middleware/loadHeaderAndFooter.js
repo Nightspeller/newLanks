@@ -17,11 +17,15 @@ module.exports = function(req,res,next){
         if (err) throw next(err);
         res.render('include/footer', function(err, footerHtml){
             if (err) throw next(err);
-            res.render('include/contact-menu', function(err, contactMenuHtml){
+            var menu = 'contact-menu';
+            if (req.path.toLocaleLowerCase().split("/")[2] === 'belarus') {
+                menu = 'contact-menu-belarus';
+            }
+            res.render('include/'+menu, function(err, contactMenuHtml){
                 if (err) throw next(err);
                 req.header = res.locals.header = headerHtml;
                 req.footer = res.locals.footer = footerHtml;
-                req['contact-menu'] = res.locals['contact-menu'] = contactMenuHtml;
+                req[menu] = res.locals[menu] = contactMenuHtml;
                 next();
             });
         });

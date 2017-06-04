@@ -7,8 +7,8 @@
     <meta name="description" content="Доставка грузов по городам, по областям, по всей России. Экспресс-перевозки и курьерские услуги. Быстро, качетсвенно, не дорого.">
     <title>ООО Ланкс - транспортно-экспедиционная компания. Грузоперевозки в городах: Москва, Санкт-Петербург, Воронеж и других городах России и Белоруси. Перевозка, доставка и ответственное хранение грузов.</title>
 
-    <link rel="stylesheet" href="css/pages/online.css" />
-    <script src="js/pages/online.js"></script>
+    <link rel="stylesheet" href="/css/pages/online.css" />
+    <script src="/js/pages/online.js"></script>
 </head>
 
 <body>
@@ -20,12 +20,12 @@
                 <div class="mdl-card__media">
                     <div class="title_container flags">
                         <h2>On-line сервисы</h2>
-                        <a href="/online"><img src="/images/online/russia.svg" title="Для России" class="active"/></a>
-                        <a href="/online/belarus"><img src="/images/online/belarus.svg" title="Для Белорусии" /></a>
+                        <a href="/online"><img src="/images/online/russia.svg" title="Для России" /></a>
+                        <a href="/online/belarus"><img src="/images/online/belarus.svg" title="Для Белорусии" class="active"/></a>
                     </div>
                 </div>
 
-                {{{contact-menu}}}
+                {{{contact-menu-belarus}}}
 
                 <div class="mdl-cell mdl-cell--12-col">
                     <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing online_services">
@@ -60,7 +60,7 @@
                             <p class="mdl-cell mdl-cell--12-col">Используйте электронную форму обратной связи чтобы связаться с нами или запросить обратный звонок:</p>
                             <div class="mdl-grid portfolio-contact">
                                 <div class="mdl-card__supporting-text">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect lanks-button--accent" onclick="showContactDialog()">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect lanks-button--accent" onclick="showContactDialog('belarus')">
                                         Связаться
                                     </button>
                                 </div>
@@ -78,12 +78,12 @@
                             <h4 class="mdl-cell mdl-cell--12-col tile_s">Скачать документацию</h4>
                             <p>
                             <ul>
-                                <li><a class="lanks-link--accent" href="for_download/documents/Общие правила перевозки грузов.zip">Общие правила</a> перевозок грузов автомобильным транспортом.</li>
-                                <li><a class="lanks-link--accent" href="for_download/documents/Dogovor_TEO.zip">Типовой договор.</a></li>
-                                <li><a class="lanks-link--accent" href="for_download/documents/Акт о повреждении груза.zip">Приложение</a> акт о повреждении груза в пути (образец).</li>
-                                <li><a class="lanks-link--accent" href="for_download/documents/Zayavka.zip">Заявка</a> на забор/доставку груза.</li>
-                                <li><a class="lanks-link--accent" href="for_download/documents/Форма_претензии.zip">Форма</a> претензии.</li>
-                                <li><a class="lanks-link--accent" href="for_download/documents/eco.zip">Экологическая политика</a> компании.</li>
+                                <li><a class="lanks-link--accent" href="/for_download/documents/Общие правила перевозки грузов.zip">Общие правила</a> перевозок грузов автомобильным транспортом.</li>
+                                <li><a class="lanks-link--accent" href="/for_download/documents/Dogovor_TEO.zip">Типовой договор.</a></li>
+                                <li><a class="lanks-link--accent" href="/for_download/documents/Акт о повреждении груза.zip">Приложение</a> акт о повреждении груза в пути (образец).</li>
+                                <li><a class="lanks-link--accent" href="/for_download/documents/Zayavka.zip">Заявка</a> на забор/доставку груза.</li>
+                                <li><a class="lanks-link--accent" href="/for_download/documents/Форма_претензии.zip">Форма</a> претензии.</li>
+                                <li><a class="lanks-link--accent" href="/for_download/documents/eco.zip">Экологическая политика</a> компании.</li>
                             </ul>
                             </p>
                         </div>

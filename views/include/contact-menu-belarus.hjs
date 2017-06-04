@@ -1,0 +1,43 @@
+<div class="contact-menu">
+    <div class="contact-controls">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp">
+            <i class="material-icons" role="presentation">phone</i>
+        </button>
+        <span class="mdl-cell--hide-phone">37 (544) 567-00-03</span>
+        <i class="material-icons arrow-down mdl-cell--hide-phone">keyboard_arrow_down</i>
+    </div>
+    <div class="contact-info">
+        <div class="contact-menu-close"><i class="material-icons">clear</i></div>
+
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--hide-phone icon-holder">
+                <i class="material-icons call">call</i>
+            </div>
+            <div class="mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone info-holder">
+                <div class="mdl-grid">
+                    <div class="mdl-cell--12-col">
+                        <strong>Единый номер для Белорусии</strong><br/>
+                        37 (544) 567-00-03
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-offset">
+                        <strong>Дополнительный номер</strong>
+                        <div class="phone_city">37 (533) 637-03-43</div>
+                    </div>
+
+                    <hr>
+                </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="/departments">Другие Филиалы</a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="showContactDialog()">Обратный звонок</button>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="showRequestPriceDialog()">Запросить стоимость</button>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>

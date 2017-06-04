@@ -1,3 +1,15 @@
+.flags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flags img {
+  margin: 0.5em;
+}
+.flags img.active {
+  border: 0.25em solid #40c4ff;
+  border-radius: 5px;
+}
 .tile_s {
   color: #000;
   font-size: 17px;

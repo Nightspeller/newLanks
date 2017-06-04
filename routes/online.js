@@ -8,6 +8,10 @@ router.get('/', function(req, res) {
   res.render('online', { });
 });
 
+router.get('/belarus', function(req, res) {
+    res.render('online-belarus', { });
+});
+
 router.get('/oriflame', function(req, res) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
